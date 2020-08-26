@@ -100,7 +100,7 @@
 					</li>
 				</associations>
 				
-				<debug>false</debug>
+				<!-- <debug>true</debug> -->
 			</li>
 		</comps>
 	</HediffDef>

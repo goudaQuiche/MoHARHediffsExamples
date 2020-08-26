@@ -8,10 +8,11 @@
 
 		<modExtensions>
 			<li Class="YORHG.HediffDefModExtension">
-<!-- if no race is specified, the hediffGiver decalaration in the race definition should still sort it out -->
+				<!-- if no race is specified, the hediffGiver decalaration in the race definition should still sort it out -->
 				<race>Alien_GuineaPig</race>
-<!-- if cBP is specified, if BP is missing or artificial, hediff will be removed -->
-				<conditionnalBodyPart>Nose</conditionnalBodyPart>
+				<!-- if cBP is specified, if BP is missing or artificial, hediff will be removed -->
+				<conditionalBodyPart>Nose</conditionalBodyPart>
+				<TriggeredOnIntervalPassed>true</TriggeredOnIntervalPassed>
 				<!-- <debug>true</debug> -->
 			</li>
 		</modExtensions>

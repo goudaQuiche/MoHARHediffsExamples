@@ -39,7 +39,7 @@
 					</li>
 				</associations>
 				
-				<debug>true</debug>
+				<!-- <debug>true</debug> -->
 			</li>
 		</comps>
 	</HediffDef>

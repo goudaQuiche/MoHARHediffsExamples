@@ -3,10 +3,10 @@
 
 	<ScenarioDef>
 		<defName>MoHARTribeScenario</defName>
-		<label>MoHAR - hediffs for race mod creators</label>
+		<label>MoHAR - hediffs for modders</label>
 		<description>This is a test</description>
 		<scenario>
-			<summary>This is a test</summary>
+			<summary>This is only a test</summary>
 
 			<playerFaction>
 				<def>PlayerFaction</def>
@@ -37,7 +37,7 @@
 
 				<!-- Player starting things -->
 
-				<!-- Drugs -->
+				<!-- MoHar Drugs -->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>MoharHediff_Antiprod</thingDef>
@@ -63,6 +63,12 @@
 					<thingDef>MoharHediff_DUDOD</thingDef>		
 					<count>5</count>
 				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MoharHediff_Random</thingDef>		
+					<count>5</count>
+				</li>
+				
 
 				<!-- Eggs -->
 				<li Class="ScenPart_StartingThing_Defined">
@@ -75,30 +81,9 @@
 					<thingDef>MoHar_PawnEgg</thingDef>		
 					<count>5</count>
 				</li>
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>MoHar_MechaEgg</thingDef>		
-					<count>5</count>
-				</li>
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>MoHar_myOwnMechaEgg</thingDef>		
-					<count>1</count>
-				</li>
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>MoHar_myOwnMechaEgg</thingDef>		
-					<count>1</count>
-				</li>
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>MoHar_myOwnMechaEgg</thingDef>		
-					<count>1</count>
-				</li>
-				
 
 
-				<!-- More Drugs -->
+				<!-- Vanilla Drugs -->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Beer</thingDef>
@@ -110,7 +95,7 @@
 					<count>50</count>
 				</li>
 
-
+				<!-- weapons -->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>MedicineIndustrial</thingDef>
@@ -148,7 +133,7 @@
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text>This is ScenPart_GameStartDialog GameStartDialog</text>
+					<text>This is ScenPart_GameStartDialog text</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
 

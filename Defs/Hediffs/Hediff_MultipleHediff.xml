@@ -29,7 +29,7 @@
 		<defName>Hediff_AllInOne</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 
-		<description>destroy all inner organs except from brain</description>
+		<description>destroy all inner organs except for brain</description>
 		<label>AllInOne</label>
 
 		<comps>
