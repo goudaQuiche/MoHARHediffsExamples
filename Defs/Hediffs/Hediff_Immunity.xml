@@ -9,6 +9,8 @@
 		<label>no alcohol effect</label>
 		<labelNoun>Hediff_AlcoholImmunity.labelNoun</labelNoun>
 		
+		<scenarioCanAdd>false</scenarioCanAdd>
+		
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
 				<hediffToNullify>
@@ -18,6 +20,33 @@
 					<!-- <li>AlcoholAddiction</li> -->
 					<!-- <li>Cirrhosis</li> -->
 				</hediffToNullify>
+			</li>
+		</comps>
+	</HediffDef>
+	<!---->
+	<HediffDef>
+		<defName>Hediff_AlcoholImmunityWithFeet</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		
+		<description>Alcohol effects immunity. Only for people with one foot.</description>
+		<label>no alcohol effect if feet</label>
+		<labelNoun>Hediff_AlcoholImmunity.labelNoun</labelNoun>
+		
+		<scenarioCanAdd>false</scenarioCanAdd>
+		
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>AlcoholHigh</li>
+					<li>AlcoholTolerance</li>
+					<li>Hangover</li>
+					<!-- <li>AlcoholAddiction</li> -->
+					<!-- <li>Cirrhosis</li> -->
+				</hediffToNullify>
+				<RequiredBodyPart>
+					<li>Foot</li>
+				</RequiredBodyPart>
+				
 			</li>
 		</comps>
 	</HediffDef>
