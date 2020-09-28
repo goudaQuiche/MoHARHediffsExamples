@@ -22,5 +22,27 @@
 		</ingestible>
 
 	</ThingDef>
+	
+	<ThingDef ParentName="MoHarPillBase">
+	
+		<defName>MoharHediff_WeightedRandom</defName>
+		<label>weighted random effect pill</label>
+		
+		<description>A drug.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Hediff_CoinFlip</HediffDef>
+		</descriptionHyperlinks>
+
+		<ingestible>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Hediff_WeightedCoinFlip</hediffDef>
+					<severity>.7</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+
+	</ThingDef>
   
 </Defs>
