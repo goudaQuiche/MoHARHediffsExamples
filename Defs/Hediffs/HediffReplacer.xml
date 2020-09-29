@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!---->	
+	<HediffDef ParentName="HiddenHediffBase">
+		<defName>Hediff_HEREHEGI</defName>
+		
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>stores data for hediff replacer hediff giver</description>
+		<label>Herehegi data</label>
+		<labelNoun>Tell me if you see this Hediff_HEREHEGI.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="HEREHEGI.HediffCompProperties_DataHediff">
+				<InputHediffPool>
+					<li>SleepingSickness</li>
+					<li>GutWorms</li>
+					<li>Malaria</li>
+				</InputHediffPool>
+				
+				<OutputHediffPool>
+					<li>Frostbite</li>
+					<li>FibrousMechanites</li>
+					<!-- this hediff does nothing, it's only required bc RW wont accept null/empty values as valid xml parameters -->
+					<li>NullHediff_HEREHEGI</li>
+				</OutputHediffPool>
+				
+				<HediffReplacementChance>
+					<li>1</li>
+					<li>.5</li>
+					<li>1</li>
+				</HediffReplacementChance>
+				
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+	
+		<!---->	
+	<HediffDef ParentName="HiddenHediffBase">
+		<defName>NullHediff_HEREHEGI</defName>
+		
+		<description>This hediff does nothing. It is meant to replace an hediff by nothing aka simply remove it</description>
+		<label>NullHediff_HEREHEGI</label>
+		<labelNoun>Tell me if you see this NullHediff_HEREHEGI.labelNoun</labelNoun>
+
+	</HediffDef>
+</Defs>

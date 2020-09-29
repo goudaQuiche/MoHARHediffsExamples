@@ -218,6 +218,7 @@
 
 			<hediffGiverSets>
 				<li>YourOwnRace_HediffGiverSet</li>
+				<li>HEREGI_HediffGiverSet</li>
 				<li>OrganicStandard</li>
 				<li>Human</li>
 			</hediffGiverSets>
