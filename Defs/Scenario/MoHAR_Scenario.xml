@@ -87,6 +87,11 @@
 					<thingDef>MoharHediff_alcoholImmunity_IfFeet</thingDef>
 					<count>5</count>
 				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MoharHediff_ExclusiveTest</thingDef>
+					<count>5</count>
+				</li>
 
 
 				<!-- Eggs -->
