@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->	
+	<HediffDef ParentName="HiddenHediffBase">
+
+		<defName>Hediff_Regeneration</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>Hediff_Regeneration test.</description>
+		<label>Hediff_Regeneration test.</label>
+		<labelNoun>Hediff_Regeneration.labelNoun</labelNoun>
+
+		<scenarioCanAdd>false</scenarioCanAdd>
+
+		<comps>
+			<li Class="MoharRegeneration.HediffCompProperties_Regeneration">
+
+				<CheckingTicksPeriod>300</CheckingTicksPeriod>
+
+				<!-- Tending -->
+				<BloodLossTendingParams>
+					<PeriodBase>120~180</PeriodBase>
+					<TendingQuality>.75~2</TendingQuality>
+				</BloodLossTendingParams>
+
+				<ChronicHediffTendingParams>
+					<PeriodBase>180~240</PeriodBase>
+					<TendingQuality>.75~2</TendingQuality>
+				</ChronicHediffTendingParams>
+
+				<RegularDiseaseTendingParams>
+					<PeriodBase>300~360</PeriodBase>
+					<TendingQuality>.75~2</TendingQuality>
+				</RegularDiseaseTendingParams>
+
+				<!-- Hediff removal -->
+				<PhysicalInjuryRegenParams>
+					<PeriodBase>300~360</PeriodBase>
+					<RegenerationBase>.05~.15</RegenerationBase>
+					<HediffDefs>
+						<li>Burn</li>
+						<li>ChemicalBurn</li>
+						<li>Crush</li>
+						<li>Crack</li>
+						<li>Cut</li>
+						<li>SurgicalCut</li>
+						<li>ExecutionCut</li>
+						<li>Scratch</li>
+						<li>Bite</li>
+						<li>Stab</li>
+						<li>Gunshot</li>
+						<li>Shredded</li>
+						<li>Bruise</li>
+						<li>Frostbite</li>
+					</HediffDefs>
+				</PhysicalInjuryRegenParams>
+
+				<ChemicalHediffRegenParams>
+					<PeriodBase>300~360</PeriodBase>
+					<RegenerationBase>.05~.1</RegenerationBase>
+					<HediffDefs>
+						<li>ToxicBuildup</li>
+						<li>DrugOverdose</li>
+						
+						<li>AlcoholHigh</li>
+						<li>AlcoholTolerance</li>
+						<li>AlcoholAddiction</li>
+						<li>Hangover</li>
+						
+					</HediffDefs>
+				</ChemicalHediffRegenParams>
+
+				<DiseaseHediffRegenParams>
+					<PeriodBase>300~360</PeriodBase>
+					<RegenerationBase>.05~.1</RegenerationBase>
+					<HediffDefs>
+						<li>WoundInfection</li>
+						<li>Flu</li>
+						<li>Animal_Flu</li>
+						<li>Plague</li>
+						<li>Animal_Plague</li>
+						<li>Malaria</li>
+						<li>SleepingSickness</li>
+					</HediffDefs>
+				</DiseaseHediffRegenParams>
+
+				<!-- scares removal -->
+				<PermanentInjuryRegenParams>
+					<PeriodBase>300~360</PeriodBase>
+					<RegenerationBase>.05~.1</RegenerationBase>
+				</PermanentInjuryRegenParams>
+
+				<!-- body part regen -->
+				<BodyPartRegenParams>
+					<PeriodBase>3000~3600</PeriodBase>
+				</BodyPartRegenParams>
+
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>
