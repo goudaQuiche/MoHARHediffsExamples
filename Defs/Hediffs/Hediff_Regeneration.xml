@@ -20,23 +20,38 @@
 				<!-- Tending -->
 				<BloodLossTendingParams>
 					<PeriodBase>120~180</PeriodBase>
-					<TendingQuality>.75~2</TendingQuality>
+					<HealingQuality>.75~2</HealingQuality>
+					
+					<HungerCost>.03</HungerCost>
+					<RestCost>.04</RestCost>
+					
+					<MoteDef>Mote_TendingBloodloss</MoteDef>
 				</BloodLossTendingParams>
 
 				<ChronicHediffTendingParams>
 					<PeriodBase>180~240</PeriodBase>
-					<TendingQuality>.75~2</TendingQuality>
+					<HealingQuality>.75~2</HealingQuality>
+					
+					<HungerCost>.05</HungerCost>
+					<RestCost>.06</RestCost>
+					
+					<MoteDef>Mote_TendingChronicDisease</MoteDef>
 				</ChronicHediffTendingParams>
 
 				<RegularDiseaseTendingParams>
 					<PeriodBase>300~360</PeriodBase>
-					<TendingQuality>.75~2</TendingQuality>
+					<HealingQuality>.75~2</HealingQuality>
+					
+					<HungerCost>.07</HungerCost>
+					<RestCost>.08</RestCost>
+					
+					<MoteDef>Mote_TendingDisease</MoteDef>
 				</RegularDiseaseTendingParams>
 
 				<!-- Hediff removal -->
 				<PhysicalInjuryRegenParams>
 					<PeriodBase>300~360</PeriodBase>
-					<RegenerationBase>.05~.15</RegenerationBase>
+					<HealingQuality>.05~.15</HealingQuality>
 					<HediffDefs>
 						<li>Burn</li>
 						<li>ChemicalBurn</li>
@@ -53,11 +68,16 @@
 						<li>Bruise</li>
 						<li>Frostbite</li>
 					</HediffDefs>
+					
+					<HungerCost>.11</HungerCost>
+					<RestCost>.13</RestCost>
+					
+					<MoteDef>Mote_HealingInjury</MoteDef>
 				</PhysicalInjuryRegenParams>
 
 				<ChemicalHediffRegenParams>
 					<PeriodBase>300~360</PeriodBase>
-					<RegenerationBase>.05~.1</RegenerationBase>
+					<HealingQuality>.05~.1</HealingQuality>
 					<HediffDefs>
 						<li>ToxicBuildup</li>
 						<li>DrugOverdose</li>
@@ -66,13 +86,17 @@
 						<li>AlcoholTolerance</li>
 						<li>AlcoholAddiction</li>
 						<li>Hangover</li>
-						
 					</HediffDefs>
+					
+					<HungerCost>.13</HungerCost>
+					<RestCost>.15</RestCost>
+					
+					<MoteDef>Mote_HealingChemicals</MoteDef>
 				</ChemicalHediffRegenParams>
 
 				<DiseaseHediffRegenParams>
 					<PeriodBase>300~360</PeriodBase>
-					<RegenerationBase>.05~.1</RegenerationBase>
+					<HealingQuality>.05~.1</HealingQuality>
 					<HediffDefs>
 						<li>WoundInfection</li>
 						<li>Flu</li>
@@ -82,17 +106,36 @@
 						<li>Malaria</li>
 						<li>SleepingSickness</li>
 					</HediffDefs>
+					
+					<HungerCost>.15</HungerCost>
+					<RestCost>.17</RestCost>
+					
+					<MoteDef>Mote_HealingDisease</MoteDef>
 				</DiseaseHediffRegenParams>
 
 				<!-- scares removal -->
 				<PermanentInjuryRegenParams>
 					<PeriodBase>300~360</PeriodBase>
-					<RegenerationBase>.05~.1</RegenerationBase>
+					<HealingQuality>.03~.07</HealingQuality>
+					
+					<HungerCost>.17</HungerCost>
+					<RestCost>.19</RestCost>
+					
+					<!-- <BPMaxHealth>1</BPMaxHealth> -->
+					
+					<MoteDef>Mote_RegenScare</MoteDef>
 				</PermanentInjuryRegenParams>
 
 				<!-- body part regen -->
 				<BodyPartRegenParams>
 					<PeriodBase>3000~3600</PeriodBase>
+					
+					<HungerCost>.19</HungerCost>
+					<RestCost>.21</RestCost>
+					
+					<BPMaxHealth>.35</BPMaxHealth>
+					
+					<MoteDef>Mote_RegenBodyPart</MoteDef>
 				</BodyPartRegenParams>
 
 				<debug>true</debug>
