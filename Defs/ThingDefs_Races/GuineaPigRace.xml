@@ -167,34 +167,42 @@
 			<lifeStageAges>
 				<li>
 					<def>HumanlikeBaby</def>
+					<!-- <label>baby</label> -->
 					<minAge>0</minAge>
 				</li>
 				<li>
 					<def>HumanlikeToddler</def>
+					<!-- <label>toddler</label> -->
 					<minAge>1.2</minAge>
 				</li>
 				<li>
 					<def>HumanlikeChild</def>
+					<!-- <label>child</label> -->
 					<minAge>4</minAge>
 				</li>
 				<li>
 					<def>HumanlikeTeenager</def>
+					<!-- <label>teenager</label> -->
 					<minAge>13</minAge>
 				</li>
 				<li>
 					<def>HumanlikeAdult</def>
+					<!-- <label>adult</label> -->
 					<minAge>18</minAge>
 				</li>
 				<li>
 					<def>HumanlikeMature</def>
+					<!-- <label>mature</label> -->
 					<minAge>35</minAge>
 				</li>
 				<li>
 					<def>HumanlikeOld</def>
+					<!-- <label>old</label> -->
 					<minAge>51</minAge>
 				</li>
 				<li>
 					<def>HumanlikeElder</def>
+					<!-- <label>eldeer</label> -->
 					<minAge>66</minAge>
 				</li>
 			</lifeStageAges>
