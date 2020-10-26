@@ -51,6 +51,13 @@
 					<HungerCost>.07</HungerCost>
 					<RestCost>.08</RestCost>
 
+					<!--
+					Optionnal
+					<TargetedHediffDefs>
+						<li>GutWorms</li>
+					</TargetedHediffDefs>
+					-->
+					
 					<MoteDef>Mote_TendingDisease</MoteDef>
 				</RegularDiseaseTendingParams>
 
@@ -154,6 +161,7 @@
 						<li>Animal_Plague</li>
 						<li>Malaria</li>
 						<li>SleepingSickness</li>
+						<!-- <li>GutWorms</li> -->
 					</TargetedHediffDefs>
 
 					<HungerCost>.15</HungerCost>
