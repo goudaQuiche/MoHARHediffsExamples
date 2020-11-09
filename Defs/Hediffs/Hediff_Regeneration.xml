@@ -27,7 +27,7 @@
 					<HungerCost>.03</HungerCost>
 					<RestCost>.04</RestCost>
 
-					<MoteDef>Mote_TendingBloodloss</MoteDef>
+					<!-- <MoteDef>Mote_TendingBloodloss</MoteDef> -->
 				</BloodLossTendingParams>
 
 				<ChronicHediffTendingParams>
