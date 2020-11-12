@@ -25,8 +25,8 @@
 				<!-- Player starting stuff spawn method-->
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>
-					<method>DropPods</method>
-					<visible>false</visible>
+					<method>Standing</method>
+					<!-- <visible>false</visible> -->
 				</li>
 
 				<!-- Starting research -->
@@ -97,6 +97,12 @@
 					<thingDef>MoharHediff_RegenerationDrug</thingDef>
 					<count>10</count>
 				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MoharHediff_RandomSpawnerUponDeathPill</thingDef>
+					<count>2</count>
+				</li>
+				
 				
 
 				<!-- Eggs -->

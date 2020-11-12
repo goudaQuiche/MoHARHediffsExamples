@@ -21,6 +21,11 @@
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2057001924</steamWorkshopUrl>
 		</li>
 	</modDependencies>
+	
+	<loadAfter>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>goudaquiche.MoharHediffs</li>
+	</loadAfter>
 
 	<description>Examples for MoHAR hediffs
 https://github.com/goudaQuiche/MoharHediffs/wiki</description>
