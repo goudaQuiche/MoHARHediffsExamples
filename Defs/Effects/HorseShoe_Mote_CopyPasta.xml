@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_Horseshoe_CopyPasta</defName>
+
+		<graphicData>
+			<texPath>Things/Mote/Horseshoe</texPath>
+		</graphicData>
+
+		<altitudeLayer>MoteLow</altitudeLayer>
+
+		<mote>
+			<solidTime>10</solidTime>
+			<fadeOutTime>4</fadeOutTime>
+			<landSound>HorseshoeImpact</landSound>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_Horseshoe_NoSound_CopyPasta</defName>
+
+		<graphicData>
+			<texPath>Things/Mote/Horseshoe</texPath>
+		</graphicData>
+
+		<altitudeLayer>MoteLow</altitudeLayer>
+
+		<mote>
+			<solidTime>10</solidTime>
+			<fadeOutTime>4</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>HorseShoe_EffecterDef</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>Mote_Horseshoe_NoSound_CopyPasta</moteDef>
+				
+				<!-- <positionRadius>0.1</positionRadius> -->
+				<burstCount>1</burstCount>
+				
+				<scale>1~1</scale>
+				<speed>3.8~5.6</speed>
+				<rotation>-300~300</rotation>
+				
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+</Defs>
