@@ -18,7 +18,8 @@
 
 	<!-- <ThingDef Class="MoharGamez.GameMotesClass"> -->
 	<ThingDef Class="MoharGamez.GameProjectileDef">
-		<defName>GenericTargetingGame</defName>
+		<!-- <defName>GenericTargetingGame</defName> -->
+		<defName>HorseShoreCopyPastaParameters</defName>
 		<label>whatever</label>
 
 		<thingClass>MoharGamez.GameProjectileClass</thingClass>
