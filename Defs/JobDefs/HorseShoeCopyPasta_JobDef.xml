@@ -17,15 +17,15 @@
 	</JobDef>
 
 	<!-- <ThingDef Class="MoharGamez.GameMotesClass"> -->
-	<ThingDef Class="MoharGamez.GameProjectileDef">
+	<ThingDef Class="MoharGamez.GameSettingsDef">
 		<!-- <defName>GenericTargetingGame</defName> -->
 		<defName>HorseShoreCopyPastaParameters</defName>
 		<label>whatever</label>
 
-		<thingClass>MoharGamez.GameProjectileClass</thingClass>
+		<thingClass>MoharGamez.TargetingGameSetting</thingClass>
 		<!-- <thingClass>MoharGamez.GameMotesDef</thingClass> -->
 
-		<gameProjectileList>
+		<gameSettingsList>
 
 			<li>
 				<driverClass>MoharGamez.JobDriver_PlayGenericTargetingGame</driverClass>
@@ -46,7 +46,7 @@
 				</projectileOptionList>
 			</li>
 
-		</gameProjectileList>
+		</gameSettingsList>
 	</ThingDef>
 	<!-- <MoteDef><Mote_Horseshoe/MoteDef> -->
 	<!-- <speed>3.8~5.6</speed> -->

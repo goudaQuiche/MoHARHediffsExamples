@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!---->	
+	<!---->	
 	<HediffDef ParentName="HiddenHediffBase">
 		<defName>Hediff_RandomSpawner</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		
+
 		<description>A rare condition that forces the pawn to exudate some insects</description>
 		<label>Hediff_RandomSpawner</label>
-		
+
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_RandySpawner">
-			
+
 				<itemParameters>
 					<li>
 						<thingToSpawn>ChunkGranite</thingToSpawn>
@@ -21,10 +21,10 @@
 						<weight>.3</weight>
 						<spawnVerb>delivery</spawnVerb>
 					</li>
-					
+
 					<li>
 						<pawnKindToSpawn>Megascarab</pawnKindToSpawn>
-						
+
 						<randomFactionParameters>
 							<li>
 								<forcedFaction>Insect</forcedFaction>
@@ -39,7 +39,7 @@
 								<weight>.5</weight>
 							</li>
 						</randomFactionParameters>
-						
+
 						<spawnCount>1~1</spawnCount>
 						<daysB4Next>.01~.02</daysB4Next>
 						<graceChance>0</graceChance>
@@ -47,76 +47,14 @@
 						<spawnVerb>birth</spawnVerb>
 					</li>
 				</itemParameters>
-				
+
 				<spawnMaxAdjacent>40</spawnMaxAdjacent>
 				<spawnForbidden>false</spawnForbidden>
-				
+
 				<hungerRelative>true</hungerRelative>
 				<healthRelative>true</healthRelative>				
 				<logNextSpawn>true</logNextSpawn>
-				
-				<debug>true</debug>
-			</li>
-		</comps>
-	</HediffDef>
-	
-	<HediffDef ParentName="HiddenHediffBase">
-		<defName>Hediff_RandomSpawnerUponDeath</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		
-		<description>A rare condition that forces the pawn to exudate some insects or chunk upon death</description>
-		<label>Hediff_RandomSpawnerUponDeath</label>
-		
-		<comps>
-			<li Class="MoharHediffs.HediffCompProperties_RandySpawnUponDeath">
-			
-				<pawnOrThingParameters>
-					<li>
-						<thingToSpawn>ChunkGranite</thingToSpawn>
-						<spawnCount>1~1</spawnCount>
-						<weight>5</weight>
-						<!-- <spawnVerb>delivery</spawnVerb> -->
-					</li>
-					
-					<li>
-						<pawnKindToSpawn>Megascarab</pawnKindToSpawn>
-						
-						<factionPickerParameters>
-							<li>
-								<forcedFaction>Insect</forcedFaction>
-								<weight>1</weight>
-							</li>
-							<li>
-								<noFaction>true</noFaction>
-								<weight>1</weight>
-							</li>
-							<li>
-								<playerFaction>true</playerFaction>
-								<weight>1</weight>
-								<newBorn>true</newBorn>
-							</li>
-							<li>
-								<defaultPawnKindFaction>true</defaultPawnKindFaction>
-								<weight>1</weight>
-							</li>
-							<li>
-								<inheritedFaction>true</inheritedFaction>
-								<weight>1</weight>
-							</li>
-						</factionPickerParameters>
-						
-						<spawnCount>1~1</spawnCount>
-						
-						<weight>5</weight>
-						<!-- <spawnVerb>birth</spawnVerb> -->
-					</li>
-				</pawnOrThingParameters>
-				
-				<spawnMaxAdjacent>40</spawnMaxAdjacent>
-				<spawnForbidden>false</spawnForbidden>
-				
-				<!-- <logNextSpawn>true</logNextSpawn> -->
-				
+
 				<debug>true</debug>
 			</li>
 		</comps>

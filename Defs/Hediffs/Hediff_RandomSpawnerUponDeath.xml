@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="HiddenHediffBase">
+		<defName>Hediff_RandomSpawnerUponDeath</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>A rare condition that forces the pawn to exudate some insects or chunk upon death</description>
+		<label>Hediff_RandomSpawnerUponDeath</label>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_RandySpawnUponDeath">
+				<settings>
+					<things>
+						<li>
+							<thingToSpawn>ChunkGranite</thingToSpawn>
+							<weight>3</weight>
+						</li>
+
+						<li>
+							<pawnKindToSpawn>Megascarab</pawnKindToSpawn>
+
+							<factionPickerParameters>
+								<li>
+									<forcedFaction>Insect</forcedFaction>
+									<weight>1</weight>
+								</li>
+								<li>
+									<noFaction>true</noFaction>
+									<weight>1</weight>
+								</li>
+								<li>
+									<playerFaction>true</playerFaction>
+									<weight>1</weight>
+
+								</li>
+								<li>
+									<defaultPawnKindFaction>true</defaultPawnKindFaction>
+									<weight>1</weight>
+								</li>
+								<li>
+									<inheritedFaction>true</inheritedFaction>
+									<weight>1</weight>
+								</li>
+							</factionPickerParameters>
+
+							<weight>2</weight>
+						</li>
+						<li>
+							<copyParentName>true</copyParentName>
+							<copyParentPawnKind>true</copyParentPawnKind>
+							<copyParentAge>true</copyParentAge>
+							<weight>5</weight>
+						</li>
+					</things>
+					<defaultSettings>
+						<spawnCount>1~1</spawnCount>
+						<filthDef>Filth_Slime</filthDef>
+					</defaultSettings>
+				</settings>
+
+				<destroyBodyUponDeath>true</destroyBodyUponDeath>
+				<StripBeforeDeath>true</StripBeforeDeath>
+
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<spawnForbidden>false</spawnForbidden>
+
+				<!-- <logNextSpawn>true</logNextSpawn> -->
+
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>
