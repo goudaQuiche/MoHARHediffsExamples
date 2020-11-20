@@ -46,15 +46,21 @@
 							<weight>2</weight>
 						</li>
 						<li>
-							<copyParentName>true</copyParentName>
-							<copyParentPawnKind>true</copyParentPawnKind>
-							<copyParentAge>true</copyParentAge>
+							<copyParent>
+								<name>true</name>
+								<pawnKind>true</pawnKind>
+								<age>true</age>
+							</copyParent>
 							<weight>5</weight>
 						</li>
 					</things>
 					<defaultSettings>
-						<spawnCount>1~1</spawnCount>
-						<filthDef>Filth_Slime</filthDef>
+						<stack>
+							<spawnCount>1~1</spawnCount>
+						</stack>
+						<filth>
+							<filthDef>Filth_Slime</filthDef>
+						</filth>
 					</defaultSettings>
 				</settings>
 
@@ -64,7 +70,79 @@
 				<spawnMaxAdjacent>40</spawnMaxAdjacent>
 				<spawnForbidden>false</spawnForbidden>
 
-				<!-- <logNextSpawn>true</logNextSpawn> -->
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="HiddenHediffBase">
+		<defName>Hediff_Reborn</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>A rare weeb condition</description>
+		<label>Hediff_Reborn</label>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_RandySpawnUponDeath">
+				<settings>
+					<things>
+						<li>
+							<copyParent>
+								<name>true</name>
+								<pawnKind>true</pawnKind>
+								<age>true</age>
+								<gender>true</gender>
+
+								<melanin>true</melanin>
+								<skinColorChannel>true</skinColorChannel>
+								<bodyType>true</bodyType>
+								<crownType>true</crownType>
+								<hair>true</hair>
+								<hairColor>true</hairColor>
+
+								<hediff>true</hediff>
+								<excludeHediff>
+									<li>Hediff_Reborn</li>
+								</excludeHediff>
+
+								<childBS>true</childBS>
+								<adultBS>true</adultBS>
+
+								<skills>true</skills>
+								<passions>true</passions>
+								<traits>true</traits>
+							</copyParent>
+							
+							<redressNewPawn>
+								<destroyApparel>true</destroyApparel>
+								<destroyEquipment>true</destroyEquipment>
+								<destroyInventory>true</destroyInventory>
+							</redressNewPawn>
+							
+							<factionPickerParameters>
+								<li>
+									<inheritedFaction>true</inheritedFaction>
+								</li>
+							</factionPickerParameters>
+						</li>
+					</things>
+					<defaultSettings>
+						<stack>
+							<spawnCount>1</spawnCount>
+						</stack>
+						<filth>
+							<filthDef>Filth_Slime</filthDef>
+							<filthNum>10~12</filthNum>
+							<filthRadius>1~2</filthRadius>
+						</filth>
+					</defaultSettings>
+				</settings>
+
+				<destroyBodyUponDeath>true</destroyBodyUponDeath>
+				<StripBeforeDeath>true</StripBeforeDeath>
+
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<spawnForbidden>false</spawnForbidden>
 
 				<debug>true</debug>
 			</li>
