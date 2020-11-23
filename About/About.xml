@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>MoHAR hediffs examples</name>
 	<author>Gouda quiche</author>
-	<url>https://github.com/goudaQuiche</url>
+	<url>https://github.com/goudaQuiche/MoharFramework/wiki</url>
 
 	<supportedVersions>
 		<li>1.2</li>
@@ -16,19 +16,18 @@
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=839005762</steamWorkshopUrl>
 		</li>
 		<li>
-			<packageId>goudaquiche.MoharHediffs</packageId>
-			<displayName>MoHAR hediffs</displayName>
+			<packageId>goudaquiche.MoharFramework</packageId>
+			<displayName>MoHAR framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2057001924</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	
 	<loadAfter>
 		<li>erdelf.HumanoidAlienRaces</li>
-		<li>goudaquiche.MoharHediffs</li>
+		<li>goudaquiche.MoharFramework</li>
 	</loadAfter>
 
-	<description>Examples for MoHAR hediffs
-https://github.com/goudaQuiche/MoharHediffs/wiki</description>
+	<description>Examples for MoHAR framework</description>
 
 
 </ModMetaData>

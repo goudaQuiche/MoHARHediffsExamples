@@ -8,50 +8,75 @@
 		<xpath>/Defs/ThingDef[defName="Campfire"]/comps</xpath>
 		<value>
 			<li Class="OLB.CompProperties_Decorate">
-				<moteDecorations>
+				<mote>
 					<li>
+						<label>regularSmoke</label>
 						<moteDef>MyMote_Smoke</moteDef>
-						<whenFueled>true</whenFueled>
-						<buildingCentered>true</buildingCentered>
-
-						<!--
-						<offset>
-						<North>0,0</North>
-						<East>1,0</East>
-						<South></South>
-						<West></West>
-						</offset>
-						<randomOffset></randomOffset>
-						-->
-
-
-						<rotationRate>-30~30</rotationRate>
-						<!-- <exactRotation></exactRotation> -->
-						<xVelocity>30~40</xVelocity>
-						<yVelocity>.5~.7</yVelocity>
-
-						<scale>1.5~2.5</scale>
-						<graceTime>60</graceTime>
-					</li>
-					<li>
-						<moteDef>MyMote_DarkSmoke</moteDef>
-						<whenWorker>true</whenWorker>
-						<buildingCentered>true</buildingCentered>
-
-						<rotationRate>-40~40</rotationRate>
-
-						<xVelocity>40~50</xVelocity>
-						<yVelocity>1~2</yVelocity>
-
-						<scale>1.5~2.5</scale>
-						<graceTime>15</graceTime>
 						
-						<multipleMotesCoexisting>true</multipleMotesCoexisting>
+						<condition>
+							<ifFueled>true</ifFueled>
+						</condition>
+
+						<origin>BuildingCenter</origin>
+
+						<transformation>
+							<rotationRate>-30~30</rotationRate>
+							<xVelocity>30~40</xVelocity>
+							<yVelocity>.5~.7</yVelocity>
+							<scale>1.5~2.5</scale>
+						</transformation>
+
+						<graceTicks>60</graceTicks>
+						
+						<coexistsWithOther>true</coexistsWithOther>
 					</li>
-				</moteDecorations>
+
+					<li>
+						<label>smokeWhenBurningDrugs</label>
+						<moteDef>MyMote_DarkSmoke</moteDef>
+						
+						<condition>
+							<ifFueled>true</ifFueled>
+							<ifWorker>true</ifWorker>
+							<includeJob>
+								<li>DoBill</li>
+							</includeJob>
+							<!--
+							<excludeJob>
+								<li>Repair</li>
+								<li>FixBrokenDownBuilding</li>
+								<li>Deconstruct</li>
+								<li>Uninstall</li>
+							</excludeJob>
+							-->
+							<includeRecipe>
+								<li>BurnDrugs</li>
+							</includeRecipe>
+						</condition>
+
+						<origin>BuildingCenter</origin>
+
+						<transformation>
+							<rotationRate>-40~40</rotationRate>
+
+							<xVelocity>40~50</xVelocity>
+							<yVelocity>1~2</yVelocity>
+
+							<scale>1.5~2.5</scale>
+						</transformation>
+
+						<graceTicks>15</graceTicks>
+
+						<coexistsWithSame>true</coexistsWithSame>
+						<coexistsWithOther>true</coexistsWithOther>
+						
+						<debug>true</debug>
+					</li>
+				</mote>
 
 				<workerReservationUpdateFrequency>10</workerReservationUpdateFrequency>
 				<debug>true</debug>
+				<!-- <verboseLevel>3</verboseLevel> -->
 			</li>
 		</value>
 
