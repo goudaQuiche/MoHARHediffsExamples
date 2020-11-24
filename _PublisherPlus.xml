@@ -3,6 +3,7 @@
   <Excluded>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoHAR hediffs examples\.git</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoHAR hediffs examples\Defs\Drugs\Syringue.xml.aze</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoHAR hediffs examples\Defs\ThingDefs_Buildings\test_OLB.xml.dis</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoHAR hediffs examples\Patches\Human_Add_OneHediffPerLifeStage_HediffGiver.xml.txt</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoHAR hediffs examples\README.md</exclude>
   </Excluded>

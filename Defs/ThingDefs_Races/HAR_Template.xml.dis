@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 
+	Do not use this file as is it will not work this is a short cut and possibly a guide.
+	A great deal of this was changed to match the HAR Github Wiki       =      https://github.com/RimWorld-CCL-Reborn/AlienRaces/wiki
+	Not everything matches as I find that working with differnt things ordered differntly helps me.
+	-->
+	
+	<!-- Using BasePawn as a Parent which will Inherit Values inside of it when doing Inheritance you should pay attention to <li> entries as those can not be gotten rid of unless setting Inherit="False" which will prevent all Values of that Node from any parents from being passed on to us-->
+	<!-- BasePawn can be found here   =   \RimWorld\Data\Core\Defs\ThingDefs_Races\Races_Animal_Base.xml    // Most of the time there is no reason to make your own Base and if you do it is recomended to Inherit from BasePawn and only list what you need changed -->
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>ExampleAlien</defName>
+		<label>Alien for example</label>
+		<description>This alien is really special.. because it is used as an example
+		\n This is how you make new lines</description>
+		<alienRace>
+			<graphicPaths>
+				<!-- These are Example paths starting from the Textures file then from there they follow the Path ommit what you don't want entirely  Blank Paths will give no texture, not including the node will default to Human-->
+				<li>
+					<body>TestPawn/Base/</body>
+					<head>TestPawn/Head/</head>
+					<skeleton>TestPawn/Dessicated/</skeleton>
+					<skull>TestPawn/Skull/</skull>
+				</li>
+				<!-- We can also have Paths per-LifeStage -->
+				<li>
+					<lifeStageDefs>
+						<li>HumanlikeAdult</li>
+					</lifeStageDefs>
+					<body>TestPawn/BaseAdult/</body>
+					<head>TestPawn/HeadAdults/</head>
+					<skeleton>TestPawn/Dessicated/</skeleton>
+					<skull>TestPawn/Skull/</skull>
+				</li>
+			</graphicPaths>
+
+			<hairSettings>
+				<!-- Hair should be colored as such only <shader>Cutout</shader> should be used and this should be assigned by default so we can omit any shader tags -->
+				<hasHair>true</hasHair>
+				<!-- <shader>Cutout</shader> -->
+				<getsGreyAt>50</getsGreyAt>
+				<hairTags>
+					<li>exampleTagHair</li>
+				</hairTags>
+			</hairSettings>
+
+			<generalSettings>
+				<maleGenderProbability>0.5</maleGenderProbability>
+				<!-- avoud using immune to age "true" as it will prevent hediff giver sets, ommit those if you don't want their affects -->
+				<immuneToAge>false</immuneToAge>
+				<humanRecipeImport>true</humanRecipeImport>
+				
+				<!-- My Race can laydown //can omit  -->
+				<canLayDown>true</canLayDown>
+				<!-- My Race can use these beds // can omit -->
+				<validBeds>
+					<li>Dummy_Bed</li>
+				</validBeds>
+
+				<!-- changes the effect of chemicals for your Race and if they can even ingest such things //can omit -->
+				<chemicalSettings>
+					<li>
+						<chemical>Smokeleaf</chemical>
+						<reactions>
+							<li Class="IngestionOutcomeDoer_GiveHediff">
+								<hediff>LungFailure</hediff>
+								<severity>0.75</severity>
+							</li>
+						</reactions>
+					</li>
+					<li>
+						<chemical>Luciferium</chemical>
+						<ingestible>false</ingestible>
+					</li>
+				</chemicalSettings>
+				
+				<forcedRaceTraitEntries>
+					<!-- My Race will spawn with these traits -->
+					<li>
+						<defName>NaturalMood</defName>
+						<degree>2</degree>
+						<chance>50</chance>
+						<commonalityMale>50</commonalityMale>
+						<commonalityFemale>20</commonalityFemale>
+					</li>
+					<li>
+						<defName>Nerves</defName>
+						<degree>2</degree>
+						<chance>50</chance>
+						<commonalityMale>50</commonalityMale>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>2</degree>
+						<chance>50</chance>
+					</li>
+					<li>
+						<defName>Gay</defName>
+						<chance>50</chance>
+					</li>
+					<li>
+						<defName>Psychopath</defName>
+					</li>
+				</forcedRaceTraitEntries>
+				<disallowedTraits>
+					<!-- My Race can not get these traits  -->
+					<li>
+						<defName>Beauty</defName>
+						<degree>2</degree>
+						<chance>50</chance>
+					</li>
+					<li>
+						<defName>Gay</defName>
+						<chance>50</chance>
+					</li>
+					<li>
+						<defName>Psychopath</defName>
+					</li>
+				</disallowedTraits>
+				<!-- Choose between this range of more traits to spawn my Race with -->
+				<additionalTraits>1~5</additionalTraits>
+
+				<factionRelations>
+					 <!-- Used to make Factions of your Race be Friends or enemies with other factions -->
+					 <li>
+						<factions>
+							<li>FactionExample</li>
+						</factions>
+						<goodwill>
+							<min>-100</min>
+							<max>100</max>
+						</goodwill>
+					</li> 
+				</factionRelations>
+				
+				<!-- Don't murder your friend by setting a maxDamage Default is unlimited -->
+				<maxDamageForSocialfight>6</maxDamageForSocialfight>
+				<allowHumanBios>true</allowHumanBios>
+				
+				<!-- is my Race Racist and toward who ? -->
+				<ImmuneToXenophobia>false</ImmuneToXenophobia>
+				<notXenophobistTowards>
+					<li>OtherAlien</li>
+					<li>AnotherAlien</li>
+				</notXenophobistTowards>
+				
+				<minAgeForAdulthood>16</minAgeForAdulthood>
+
+				<alienPartGenerator>
+					<aliencrowntypes>
+						<!-- Allowed crown types -->
+						<li>Average_Normal</li>
+						<li>Average_Wide</li>
+						<li>Average_Pointy</li>
+						<li>Narrow_Normal</li>
+						<li>Narrow_Pointy</li>
+						<li>Narrow_Wide</li>
+					</aliencrowntypes>
+					<alienbodytypes>
+						<!-- Allowed body types  -->
+						<li>Hulk</li>
+						<li>Thin</li>
+						<li>Male</li>
+						<li>Female</li>
+						<li>Fat</li>
+					</alienbodytypes>
+					<useGenderedHeads>true</useGenderedHeads>
+					<useGenderedBodies>true</useGenderedBodies>
+
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGB(255, 255, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(255, 255, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(255, 255, 255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGB(255, 255, 255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="AlienRace.ColorGenerator_CustomAlienChannel">
+								<colorChannel>skin_2</colorChannel>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGB(255, 255, 255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+
+					<!-- Ommit this unless your Race is Visually a differnt size to Humans  -->
+					<customDrawSize>(1.5, 1.5)</customDrawSize>
+					<customHeadDrawSize>(1.25, 1.25)</customHeadDrawSize>
+					<customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize>
+					<headOffset>(0.25, 0.15)</headOffset>
+					<headBodyPartDef>AlienHead</headBodyPartDef>
+
+					<bodyAddons>
+					<!-- Ok this is a lot of work to do right for a Template so I won't do it now if ever  
+					here is a link to the wiki page for it  =  https://github.com/RimWorld-CCL-Reborn/AlienRaces/wiki/General-Settings#bodyaddons
+					otherwise look at other alien races and how they did it
+					-->
+					</bodyAddons>
+
+				</alienPartGenerator>
+			</generalSettings>
+
+			<thoughtSettings>
+				<replacerList>
+					<!-- My Race will see this Normal thought as another thought I made  -->
+					<li>
+						<original>AttendedParty</original>
+						<replacer>AlienAttendedParty</replacer>
+					</li>
+				</replacerList>
+				
+				<cannotReceiveThoughtsAtAll>false</cannotReceiveThoughtsAtAll>
+				<cannotReceiveThoughts>
+					<li>Pain</li>
+				</cannotReceiveThoughts>
+				<canStillReceiveThoughts>
+					<!-- use this if <cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll> -->
+					<li>Pain</li>
+				</canStillReceiveThoughts>
+				
+				<restrictedThoughts>
+					<!-- Only my Race will get this though -->
+					<li>AlienPain</li>
+				</restrictedThoughts>
+				
+				<butcherThoughtGeneral><!-- my Race reacts to all racese -->
+					<thought>ButcheredHumanlikeCorpse</thought>
+					<knowThought>KnowButcheredHumanlikeCorpse</knowThought>
+				</butcherThoughtGeneral>
+				
+				<ateThoughtGeneral><!-- my Race reacts to all racese -->
+					<thought>AteHumanlikeMeatDirect</thought>
+					<ingredientThought>AteHumanlikeMeatAsIngredient</ingredientThought>
+				</ateThoughtGeneral>
+				
+				<butcherThoughtSpecific><!-- my Race reacts to a certain race -->
+					<li>
+						<raceList>
+							<li>Human</li>
+						</raceList>
+						<thought>ButcheredHuman</thought>
+						<knowThought>KnowButcheredHuman</knowThought>
+					</li>
+				</butcherThoughtSpecific>
+				
+				<ateThoughtSpecific><!--  my Race reacts to a certain race -->
+					<li>
+						<raceList>
+							<li>Human</li>
+						</raceList>
+						<thought>AteHumanlikeMeatDirect</thought>
+						<ingredientThought>AteHumanIngredient</ingredientThought>
+					</li>
+				</ateThoughtSpecific>
+			</thoughtSettings>
+
+			<relationSettings><!--  chance factor for my Race to spawn with these relationships 1 would be Normal Human chance -->
+				<relationChanceModifierLover>1</relationChanceModifierLover>
+				<relationChanceModifierExLover>1</relationChanceModifierExLover>
+
+				<relationChanceModifierFiance>1</relationChanceModifierFiance>
+				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+
+				<relationChanceModifierParent>1</relationChanceModifierParent>
+				<relationChanceModifierChild>1</relationChanceModifierChild>
+				<relationChanceModifierSibling>1</relationChanceModifierSibling>
+				
+				<renamer><!-- rename (Label) relationships for my Race -->
+					<li>
+						<relation>Parent</relation>
+						<label>AlienFather</label>
+						<femaleLabel>AlienMother</femaleLabel>
+					</li>
+				</renamer>
+			</relationSettings>
+			
+			<!-- only my race = my Race is needed to be able to do these things -->
+			<!-- my race is limited = my Race can not do anything outside this list unless it is in the whitelist-->
+			<!-- items in the white list are not removed from other races, if more than one race has a thing race restricted then any of them can do that thing but unpatched humans or other races can not -->
+			<raceRestriction>
+				<researchList><!-- only my race -->
+					<li>
+						<projects>
+							<li>ChargedShot</li>
+						</projects>
+						<apparelList>
+							<li>Apparel_TestJacker</li>
+						</apparelList>
+					</li>
+				</researchList>
+				
+				<!-- all the below Lists use the same format -->
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel><!-- my race is limited -->
+				<apparelList>
+					<li>Example_Apparel</li>
+				</apparelList>
+				<whiteApparelList><!-- if limtied not to these -->
+					<li>Example_Apparel</li>
+					<li MayRequire="Mod.ID">DefName</li><!-- this is how you build in other mods integrations without throwing an error if that mod is not loaded. This should not be used for Core and your own Rasce mod or it's dependencies but rather what ever is might not be loade alway or mods that are optional. (Using this should in theory be more friendly on load time than using Xpath in very large lists) -->
+				</whiteApparelList>
+				
+				<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons><!-- my race is limited -->
+				<weaponList>
+				</weaponList>
+				<whiteWeaponList>
+				</whiteWeaponList>
+				
+				<onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes><!-- my race is limited -->
+				<recipeList>
+				</recipeList>
+				<whiteRecipeList>
+				</whiteRecipeList>
+				
+				<onlyGetRaceRestrictedTraits>false</onlyGetRaceRestrictedTraits><!-- my race is limited -->
+				<traitList>
+				</traitList>
+				<whiteTraitList>
+				</whiteTraitList>
+
+				<onlyEatRaceRestrictedFood>false</onlyEatRaceRestrictedFood><!-- my race is limited -->
+				<foodList>
+				</foodList>
+				<whiteFoodList>
+				</whiteFoodList>
+				
+				<onlyBuildRaceRestrictedBuildings>false</onlyBuildRaceRestrictedBuildings><!-- my race is limited -->
+				<buildingList>
+				</buildingList>
+				<whiteBuildingList>
+				</whiteBuildingList>
+				
+				<!-- <onlyDoRaceRestrictedPlants>false</onlyDoRaceRestrictedPlants> // does not work my race is limited -->
+				<plantList>
+				</plantList>
+				<whitePlantList>
+				</whitePlantList>
+				
+				
+				<conceptList><!--when they get my race trigger --><!-- I don't understand this one -->
+				</conceptList>
+				
+				<workGiverList><!-- only my race but no other race, not limited -->
+				</workGiverList>
+			</raceRestriction>
+
+			<compatibility>
+				<!-- this is not really used for the most part but it allows other mods using C# to filter things related to your race -->
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient> 
+				<hasBlood>true</hasBlood>
+			</compatibility>
+		</alienRace>
+		<!-- Below is no longer HAR specific code and can be found in Vanilla -->
+		<race>
+			<!-- Basically human taken straight from Core Humans mostly -->
+			<!-- Choose your own values  -->
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>100</lifeExpectancy>
+			<leatherDef>Leather_Human</leatherDef>
+			<nameCategory>HumanStandard</nameCategory>
+			<body>Human</body>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<meatMarketValue>0.8</meatMarketValue>
+			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<litterSizeCurve>
+				<!-- how many babies are made. unused in vanilla for humanlikes but is used for animals -->
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<!-- These affect stats and if your Race is ready to Lay eggs or be milked if you set that up in the LifeStage, it also determins when your Race is Sexualy Mature and can Reproduce which is not used by Humanlikes in Vanilla -->
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HumanlikeToddler</def>
+					<minAge>1.2</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>4</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<!-- HAR lets you do something like the below which should change the Body Def at that life stage, not the Body Type. -->
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>AlienAdult</def>
+					<minAge>18</minAge>
+					<body>AdultAlienBody</body>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<!-- these values must be less than your youngest pawnkind and greater than your oldest pawn kind of this Race -->
+				<points>
+					<li>(14,0)</li>
+					<li>(16,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,3)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			
+			<hediffGiverSets>
+				<!-- this is what controls what illnesses you get or any hediff really and can be a very powerful tool but you have to set immune to age to false -->
+				<li>YourOwnRace_HediffGiverSet</li>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+
+		<statBases>
+			<!-- These are the Human stats you should use your own refer to the Core files in = \RimWorld\Data\Core\Defs\Stats -->
+			<!-- Some stats are Inherited from the parent such as BasePawn commented below are the stats that are inherited -->
+			<MarketValue>1750</MarketValue>
+			<MoveSpeed>4.6</MoveSpeed>
+			<ComfyTemperatureMin>16</ComfyTemperatureMin>
+			<ComfyTemperatureMax>26</ComfyTemperatureMax>
+			<LeatherAmount>50</LeatherAmount>
+			<RoyalFavorValue>3</RoyalFavorValue>
+			<!-- these two below are inherited from BasePawn, if you wanted to overwrite their values you should just list their nodes and use your own values after which the Parent inherited values will be overwritten only in here -->
+			<!-- <Mass>60</Mass> -->
+			<!-- <Flammability>0.7</Flammability> -->
+		</statBases>
+		
+		<tools Inherit="False">
+		<!-- I recommend setting this not to inherit but this up there is to show you that you can decide to not inherit -->
+		<!-- An example from the Human File  -->
+		<li>
+			<label>left fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>8.2</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		</tools>
+		
+		<recipes>
+		<!-- Just a normal list of recipes mostly not needed if using <humanRecipeImport>true</humanRecipeImport> asdie from adding non human recipes  -->
+		</recipes>
+		
+		<comps>
+		<!-- if you have to use this you will know that you have to usually -->
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+																																																												<!-- By Abraxas -->
+</Defs>
