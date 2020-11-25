@@ -2,7 +2,7 @@
 <Defs>
 
 	<!---->	
-	<HediffDef>
+	<HediffDef ParentName="HiddenHediffBase">
 		<defName>Hediff_Twodiseases</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 
@@ -25,7 +25,7 @@
 		</comps>
 	</HediffDef>
 
-	<HediffDef>
+	<HediffDef ParentName="HiddenHediffBase">
 		<defName>Hediff_AllInOne</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace>
+		<alienRace>
+			<alienPartGenerator>
+				<bodyAddons>
+					<li>
+						<path>Things/Tails/Tail</path>
+						<bodyPart>Tail</bodyPart>
+
+						<shaderType>Transparent</shaderType>
+						<colorChannel>skin</colorChannel>
+
+						<inFrontOfBody>false</inFrontOfBody>
+						<layerInvert>false</layerInvert>
+						<layerOffset>0.02</layerOffset>
+
+						<angle>20</angle>
+						<drawSize>(1.25,0.8)</drawSize>
+						<drawSizePortrait>(1.25,0.8)</drawSizePortrait>
+						<drawRotated>false</drawRotated>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+
+						<hediffGraphics>
+							<BionicTail>Things/Tails/TailXBionic</BionicTail>
+							<BionicSuperTail>Things/Tails/TailXBionicSuper</BionicSuperTail>
+							<Frostbite>
+								<path>Things/Tails/TailMinorFrostBite</path>
+								<severity>
+									<a0.8>Things/Tails/TailExtremeFrostBite</a0.8>
+									<a0.5>Things/Tails/TailMajorFrostBite</a0.5>
+									<a0.2>Things/Tails/TailMinorFrostBite</a0.2>
+								</severity>
+							</Frostbite>
+						</hediffGraphics>
+
+						<backstoryGraphics>
+							<YouthSoldier>Things/Tails/TailXYouthSoldier</YouthSoldier>
+							<Winerunner>Things/Tails/TailXWinerunner</Winerunner>
+						</backstoryGraphics>
+
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(0.42,-0.22)</Male>
+									<Female>(0.42,-0.22)</Female>
+									<Fat>(0.42,-0.22)</Fat>
+									<Thin>(0.42,-0.22)</Thin>
+								</bodyTypes>
+								<crownTypes>
+									<Normal_Average>(0.42,-0.22)</Normal_Average>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0,-0.55)</Male>
+									<Female>(0,-0.55)</Female>
+									<Fat>(0,-0.55)</Fat>
+									<Thin>(0,-0.55)</Thin>
+								</bodyTypes>
+								<crownTypes>
+									<Normal_Average>(0.55,-0.55)</Normal_Average>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.42,-0.22)</Male>
+									<Female>(-0.42,-0.22)</Female>
+									<Fat>(-0.42,-0.22)</Fat>
+									<Thin>(-0.42,-0.22)</Thin>
+								</bodyTypes>
+								<crownTypes>
+									<Normal_Average>(-0.42, 0.22)</Normal_Average>
+								</crownTypes>
+							</east>
+						</offsets>
+						<backstoryRequirement>Backstory001</backstoryRequirement>
+
+						<drawnInBed>false</drawnInBed>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+				</bodyAddons>
+			</alienPartGenerator>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

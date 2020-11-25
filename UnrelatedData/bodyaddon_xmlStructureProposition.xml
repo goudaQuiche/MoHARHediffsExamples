@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace>
+		<alienRace>
+			<alienPartGenerator>
+				<newestBodyAddons>
+					<li>
+						<bodyPart>Tail</bodyPart>
+
+						<default>
+							<texture>
+								<path>Things/Tails/Tail</path>
+								<shaderType>Transparent</shaderType>
+								<colorChannel>skin</colorChannel>
+							</texture>
+
+							<transformation>
+								<angle>20</angle>
+								<drawSize>(1.25,0.8)</drawSize>
+								<drawSizePortrait>(1.25,0.8)</drawSizePortrait>
+								<drawRotated>false</drawRotated>
+								<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+
+								<offset>
+									<south>(0.42,-0.22)</south>
+									<north>(0,-0.55)</north>
+									<east>(-0.42,-0.22)</east>
+									<!-- <west></west> -->
+								</offset>
+
+								<!-- used when overriding default values -->
+								<!-- <offsetMod></offsetMod> maybe being able to override in specific subparts is enough-->
+								<!-- <dontDisplay></dontDisplay> ot <hideIf> section ?-->
+							</transformation>
+
+							<bodyTypes>
+								<Male/>
+								<Female>
+									<transformation>
+										<dontDisplay>true</dontDisplay>
+									</transformation>
+								</Female>
+								<Fat>
+									<!-- default offset + offsetMod = result; 0.42 + 0.05 -->
+									<offsetMod>
+										<south>(0.05,0.01)</south>
+										<north>(0.05,0.01)</north>
+										<east>(0.05,0.01)</east>
+									</offsetMod>
+								</Fat>
+								<Thin/>
+							</bodyTypes>
+
+							<crownTypes>
+								<Normal_Average>
+									<!-- default values are bypassed -->
+									<offset>
+										<south>(0.42,-0.22)</south>
+										<north>(0,-0.55)</north>
+										<east>(-0.42,-0.22)</east>
+										<!-- <west></west> -->
+									</offset>
+								</Normal_Average>
+							</crownTypes>
+
+							<!-- allows to clearly specify the path of a variant to avoid having 10x6 textures in the same path -->
+							<variant>
+								<li>
+									<texture>
+										<path>Things/Tails/Tail1</path>
+									</texture>
+									<!-- <transformation/> -->
+									<!-- chances to get picked for a variant -->
+									<weight></weight>
+								</li>
+								<!-- chances for the regular display to get picked-->
+								<defaultWeight></defaultWeight>
+							</variant>
+
+							<hideIf>
+								<inBed>true</inBed>
+								<ApparelTag>
+									<li>FullHead</li>
+								</ApparelTag>
+								<dead>false</dead>
+								<bodyType>
+									<li/>
+								</bodyType>
+								<lifeStage>
+									<li/>
+								</lifeStage>
+								<gender>
+									<li/>
+								</gender>
+							</hideIf>
+						</default>
+
+						<hediffGraphics>
+							<li>
+								<hediffDef>BionicTail</hediffDef>
+								<texture>
+									<path>Things/Tails/TailXBionic</path>
+									<shaderType>MoteGlow</shaderType>
+								</texture>
+								<!-- <transformation/> -->
+							</li>
+							<li>
+								<hediffDef>BionicTail</hediffDef>
+								<condition>
+									<li>
+										<texture>
+											<path>Things/Tails/TailExtremeFrostBite</path>
+										</texture>
+										<!-- <transformation/> -->
+
+										<severity>.8</severity>
+									</li>
+									<li>
+										<path>Things/Tails/TailMajorFrostBite</path>
+										<severity>.5</severity>
+									</li>
+									<li>
+										<path>Things/Tails/TailMinorFrostBite</path>
+										<severity>.2</severity>
+									</li>
+								</condition>
+								<!-- if multiple hediffs are on the same bodypart, which one will win? -->
+								<priority></priority>
+							</li>
+						</hediffGraphics>
+
+						<backstoryGraphics>
+							<li>
+								<backStoryDef>YouthSoldier</backStoryDef>
+								<texture>
+									<path>Things/Tails/TailXYouthSoldier</path>
+								</texture>
+							</li>
+							<li>
+								<backStoryDef>Winerunner</backStoryDef>
+								<texture>
+									<path>Things/Tails/TailXWinerunner</path>
+								</texture>
+							</li>
+						</backstoryGraphics>
+
+						<debug>false</debug>
+
+					</li>
+
+					<debug>true</debug>
+					<!-- 0 to 3? -->
+					<verbosityLevel>1</verbosityLevel>
+				</newestBodyAddons>
+			</alienPartGenerator>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="HiddenHediffBase">
+		<defName>Hediff_AnotherRandom_brainburn</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>burns or revelation</description>
+		<label>Hediff_AnotherRandom_brainburn</label>
+		<!-- <labelNoun>Hediff_Wraper_FondlingVestigialShell.labelNoun</labelNoun> -->
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_AnotherRandom">
+				<conditionsToApplyHediffs>
+					<pawn>
+						<ageRange>35~40</ageRange>
+					</pawn>
+				</conditionsToApplyHediffs>
+
+				<defaultCondition>
+					<bodyPart>
+						<bodyPartTag>
+							<li>ConsciousnessSource</li>
+						</bodyPartTag>
+					</bodyPart>
+				</defaultCondition>
+
+				<hediffPool>
+					<li>
+						<hediffDef>Burn</hediffDef>
+						<applyChance>.6~.8</applyChance>
+						<severity>.05~.07</severity>
+
+						<weight>8</weight>
+					</li>
+					<li>
+						<hediffDef>TraumaSavant</hediffDef>
+						<applyChance>.3~.4</applyChance>
+						<!-- <severity>.15~.17</severity> -->
+
+						<weight>2</weight>
+					</li>
+				</hediffPool>
+
+				<hediffToApplyNumRange>1~2</hediffToApplyNumRange>
+				<excludePickedItems>false</excludePickedItems>
+
+				<debug>true</debug>
+			</li>
+
+
+		</comps>
+	</HediffDef>
+
+	<!---->	
+	<HediffDef ParentName="HiddenHediffBase">
+		<defName>Hediff_AnotherRandom_2diseases</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>plague in left arm, flu in arm, maybe a bionic arm</description>
+		<label>Hediff_AnotherRandom_2diseases</label>
+		<!-- <labelNoun>Hediff_Wraper_FondlingVestigialShell.labelNoun</labelNoun> -->
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_AnotherRandom">
+				<conditionsToApplyHediffs>
+					<pawn>
+						<race>
+							<li>Human</li>
+							<li>Alien_GuineaPig</li>
+						</race>
+						<ageRange>20~40</ageRange>
+						<gender>
+							<li>Male</li>
+						</gender>
+					</pawn>
+					<bodyPart>
+						<bodyPartLabel>
+							<li>left foot</li>
+						</bodyPartLabel>
+					</bodyPart>
+				</conditionsToApplyHediffs>
+
+				<defaultCondition>
+					<bodyPart>
+						<bodyPartTag>
+							<li>ManipulationLimbCore</li>
+						</bodyPartTag>
+					</bodyPart>
+				</defaultCondition>
+
+				<hediffPool>
+					<li>
+						<hediffDef>Flu</hediffDef>
+						<applyChance>.4~.8</applyChance>
+						<severity>.05~.07</severity>
+						<weight>8</weight>
+
+						<specificCondition>
+							<bodyPart>
+								<bodyPartDef>
+									<li>Arm</li>
+								</bodyPartDef>
+							</bodyPart>
+						</specificCondition>
+					</li>
+					<li>
+						<hediffDef>Plague</hediffDef>
+						<applyChance>.4~.5</applyChance>
+						<severity>.15~.17</severity>
+						<weight>4</weight>
+
+						<specificCondition>
+							<bodyPart>
+								<bodyPartLabel>
+									<li>left arm</li>
+								</bodyPartLabel>
+							</bodyPart>
+						</specificCondition>
+					</li>
+					<li>
+						<hediffDef>BionicArm</hediffDef>
+						<applyChance>.95~1</applyChance>
+						<!-- <severity>.15~.17</severity> -->
+						<weight>2</weight>
+
+						<specificCondition>
+							<bodyPart>
+								<bodyPartLabel>
+									<li>right arm</li>
+								</bodyPartLabel>
+							</bodyPart>
+						</specificCondition>
+					</li>
+				</hediffPool>
+
+				<hediffToApplyNumRange>3~4</hediffToApplyNumRange>
+				<excludePickedItems>true</excludePickedItems>
+				<excludeRandomlyNotApplied>false</excludeRandomlyNotApplied>
+
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+
+
+</Defs>

@@ -13,10 +13,6 @@
 				<label>minor</label>
 				<becomeVisible>false</becomeVisible>
 			</li>
-			<li>
-				<minSeverity>0.9</minSeverity>
-				<label>major</label>
-			</li>
 		</stages>
 	</HediffDef>
 </Defs>
