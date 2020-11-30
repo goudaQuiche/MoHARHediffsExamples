@@ -7,22 +7,28 @@
 		<hediffClass>HediffWithComps</hediffClass>
 
 		<description>plague in stomach, flu in brain</description>
-		<label>MultipleHediffs</label>
+		<label>MultipleHediffs_stomachPlague_brainFlu</label>
 		<!-- <labelNoun>Hediff_Wraper_FondlingVestigialShell.labelNoun</labelNoun> -->
 
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
 				<bodyDef>Human</bodyDef>
-				<hediffToApply>
-					<li>Plague</li>	
-					<li>Flu</li>	
-				</hediffToApply>
-				<bodyPartDef>
-					<li>Stomach</li>
-					<li>Brain</li>
-				</bodyPartDef>
+				<hediffAndBodypart>
+					<li>
+						<hediff>Plague</hediff>
+						<bodyPart>Stomach</bodyPart>
+					</li>
+					<li>
+						<hediff>Flu</hediff>
+						<bodyPart>Brain</bodyPart>
+					</li>
+				</hediffAndBodypart>
+				
+				<debug>true</debug>
 			</li>
+			
 		</comps>
+		
 	</HediffDef>
 
 	<HediffDef ParentName="HiddenHediffBase">
@@ -30,27 +36,38 @@
 		<hediffClass>HediffWithComps</hediffClass>
 
 		<description>destroy all inner organs except for brain</description>
-		<label>AllInOne</label>
+		<label>MultipleAllInOne</label>
 
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
 				<bodyDef>Human</bodyDef>
-				<hediffToApply>
-					<li>MissingBodyPart</li>    
-					<li>MissingBodyPart</li>
-					<li>MissingBodyPart</li>
-					<li>MissingBodyPart</li>
-					<li>MissingBodyPart</li>
-					<li>MissingBodyPart</li>
-				</hediffToApply>
-				<bodyPartDef>
-					<li>Stomach</li>
-					<li>Lung</li>
-					<li>Lung</li>
-					<li>Kidney</li>
-					<li>Liver</li>
-					<li>Heart</li>
-				</bodyPartDef>
+				<hediffAndBodypart>
+					<li>
+						<hediff>MissingBodyPart</hediff>
+						<bodyPart>Stomach</bodyPart>
+					</li>
+					<li>
+						<hediff>MissingBodyPart</hediff>
+						<bodyPartLabel>left lung</bodyPartLabel>
+					</li>
+					<li>
+						<hediff>MissingBodyPart</hediff>
+						<bodyPartLabel>right lung</bodyPartLabel>
+					</li>
+					<li>
+						<hediff>MissingBodyPart</hediff>
+						<bodyPart>Kidney</bodyPart>
+					</li>
+					<li>
+						<hediff>MissingBodyPart</hediff>
+						<bodyPart>Liver</bodyPart>
+					</li>
+					<li>
+						<hediff>MissingBodyPart</hediff>
+						<bodyPart>Heart</bodyPart>
+					</li>
+				</hediffAndBodypart>
+				<debug>true</debug>
 			</li>
 		</comps>
 	</HediffDef> 
@@ -60,19 +77,62 @@
 		<hediffClass>HediffWithComps</hediffClass>
 
 		<description>destroy one finger and apply flu to whole body</description>
-		<label>AllInOne</label>
+		<label>Multiplemissingfinger</label>
 
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
-				<bodyDef>Human</bodyDef>
-				<hediffToApply>
-					<li>MissingBodyPart</li>    
-					<li>Flu</li>
-				</hediffToApply>
-				<bodyPartDef>
-					<li>Finger</li>
-					<li>Body</li>
-				</bodyPartDef>
+				<hediffAndBodypart>
+					<li>
+						<hediff>MissingBodyPart</hediff>
+						<bodyPart>Finger</bodyPart>
+					</li>
+					<li>
+						<hediff>Flu</hediff>
+						<bodyPart/>
+					</li>
+				</hediffAndBodypart>
+				
+				<debug>true</debug>
+			</li>
+			
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Hediff_BionicArms</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>destroy arms and go bionic</description>
+		<label>MultipleBionicArms</label>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+				<hediffAndBodypart>
+				
+					<li>
+						<hediff>MissingBodyPart</hediff>
+						<bodyPartLabel>left arm</bodyPartLabel>
+					</li>
+					<li>
+						<hediff>MissingBodyPart</hediff>
+						<bodyPartLabel>right arm</bodyPartLabel>
+					</li>
+					
+					<li>
+						<hediff>BionicArm</hediff>
+						<bodyPartLabel>right arm</bodyPartLabel>
+						<allowMissing>true</allowMissing>
+						<regenIfMissing>true</regenIfMissing>
+					</li>
+					<li>
+						<hediff>BionicArm</hediff>
+						<bodyPartLabel>left arm</bodyPartLabel>
+						<allowMissing>true</allowMissing>
+						<regenIfMissing>true</regenIfMissing>
+					</li>
+				</hediffAndBodypart>
+				
+				<debug>true</debug>
 			</li>
 		</comps>
 	</HediffDef> 
