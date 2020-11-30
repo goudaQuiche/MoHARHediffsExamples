@@ -7,7 +7,7 @@
 		<baseChance>10</baseChance>
 		
 		<thingDefs>
-			<li>MoharGamez_HorseshoesPin</li>
+			<li>MoharJoy_HorseshoesPin</li>
 		</thingDefs>
 		
 		<jobDef>Play_Horseshoes_CopyPasta_JobDef</jobDef>

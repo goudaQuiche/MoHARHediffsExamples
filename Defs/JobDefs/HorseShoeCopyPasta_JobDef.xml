@@ -16,14 +16,12 @@
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 
-	<!-- <ThingDef Class="MoharGamez.GameMotesClass"> -->
-	<ThingDef Class="MoharGamez.GameSettingsDef">
-		<!-- <defName>GenericTargetingGame</defName> -->
+	
+	<MoharJoy.GameSettingsDef>
 		<defName>HorseShoreCopyPastaParameters</defName>
 		<label>whatever</label>
 
-		<thingClass>MoharGamez.TargetingGameSetting</thingClass>
-		<!-- <thingClass>MoharGamez.GameMotesDef</thingClass> -->
+		<thingClass>MoharJoy.TargetingGameSetting</thingClass>
 
 		<gameSettingsList>
 
@@ -47,10 +45,6 @@
 			</li>
 
 		</gameSettingsList>
-	</ThingDef>
-	<!-- <MoteDef><Mote_Horseshoe/MoteDef> -->
-	<!-- <speed>3.8~5.6</speed> -->
-	<!-- <rotation>-300~300</rotation> -->
-	<!-- <skillDefScaling>Shooting</skillDefScaling> -->
-	<!-- <throwInterval>400</throwInterval> -->
+	</MoharJoy.GameSettingsDef>
+
 </Defs>

@@ -2,8 +2,8 @@
 <Defs>
 
 	<ThingDef ParentName="BuildingBase">
-		<defName>MoharGamez_HorseshoesPin</defName>
-		<label>MoharGamez horseshoes pin</label>
+		<defName>MoharJoy_HorseshoesPin</defName>
+		<label>MoharJoy horseshoes pin</label>
 		
 		<description>A simple ancient game played with a horseshoes and a large pin in the ground. Players toss horseshoes to try to get them to land on the pin. It's relaxing, and trains shooting skills.</description>
 		
