@@ -179,7 +179,7 @@ workDisables
 <li>Artistic</li>
 <li>Caring</li>
 <li>Cleaning</li>
-<li>Construction</li>
+<li>Construction</li> ManulaSkilled
 <li>Cooking</li>
 <li>Crafting</li>
 <li>Firefighting</li>
@@ -188,7 +188,7 @@ workDisables
 <li>Intellectual</li>
 <li>ManualDumb</li>
 <li>ManualSkilled</li>
-<li>Medicine</li>
+<li>Medicine</li> Caring ?
 <li>Mining</li>
 <li>PlantWork</li>
 <li>Plants</li>

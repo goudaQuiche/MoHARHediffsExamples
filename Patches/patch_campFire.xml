@@ -70,12 +70,12 @@
 						<coexistsWithSame>true</coexistsWithSame>
 						<coexistsWithOther>true</coexistsWithOther>
 						
-						<debug>true</debug>
+						<!-- <debug>true</debug> -->
 					</li>
 				</mote>
 
 				<workerReservationUpdateFrequency>10</workerReservationUpdateFrequency>
-				<debug>true</debug>
+				<!-- <debug>true</debug> -->
 				<!-- <verboseLevel>3</verboseLevel> -->
 			</li>
 		</value>
