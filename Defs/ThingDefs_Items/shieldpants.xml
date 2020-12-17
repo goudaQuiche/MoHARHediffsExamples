@@ -36,7 +36,7 @@
 		<inspectorTabs>
 			<li>DisplayITab.ITab_DisplayPicture</li>
 		</inspectorTabs>
-		<!--
+		
 		<comps>
 			<li Class="DisplayITab.CompProperties_ITab">
 			<Pages>
@@ -47,7 +47,7 @@
 			</Pages>
 			</li>
 		</comps>
-		-->
+		
 		<apparel>
 			<bodyPartGroups>
 				<li>Legs</li>

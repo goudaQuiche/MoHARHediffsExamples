@@ -63,7 +63,17 @@
 					<severity>.7</severity>
 				</li>
 			</outcomeDoers>
-		</ingestible>	
+		</ingestible>
+		
+		<inspectorTabs>
+			<li>DisplayITab.ITab_DisplayPicture</li>
+		</inspectorTabs>
+
+		<comps>
+			<li Class="DisplayITab.CompProperties_ITab">
+				<displayWay>RawTexture</displayWay>
+			</li>
+		</comps>
 	</ThingDef>
 
 </Defs>

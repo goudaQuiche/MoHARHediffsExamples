@@ -11,14 +11,14 @@
 		<thingClass>ThingWithComps</thingClass>
 		<category>Item</category>
 		<techLevel>Industrial</techLevel>
-		
+
 		<tickerType>Rare</tickerType>
-		
+
 		<graphicData>
 			<texPath>Things/Item/Drug/Syringue/Syringue_White</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(.85,.85)</drawSize>
+			<drawSize>.35</drawSize>
 			<flipExtraRotation>80</flipExtraRotation>
 		</graphicData>
 
@@ -30,9 +30,6 @@
 			<Mass>0.005</Mass>
 			<Flammability>0.7</Flammability>
 		</statBases>
-
-
-
 
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
@@ -128,7 +125,14 @@
 			</options>
 		</colorGenerator>
 
+		<inspectorTabs>
+			<li>DisplayITab.ITab_DisplayPicture</li>
+		</inspectorTabs>
+
 		<comps>
+			<li Class="DisplayITab.CompProperties_ITab">
+				<displayWay>RawTexture</displayWay>
+			</li>
 			<li Class="CompProperties_Drug">
 				<listOrder>1000</listOrder>
 				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
