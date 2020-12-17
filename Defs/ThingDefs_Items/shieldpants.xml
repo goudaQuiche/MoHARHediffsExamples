@@ -32,6 +32,22 @@
 			<StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
+		
+		<inspectorTabs>
+			<li>DisplayITab.ITab_DisplayPicture</li>
+		</inspectorTabs>
+		<!--
+		<comps>
+			<li Class="DisplayITab.CompProperties_ITab">
+			<Pages>
+				<li>ImageA</li>
+				<li>ImageB</li>
+				<li>ImageC</li>
+				<li>ImageD</li>
+			</Pages>
+			</li>
+		</comps>
+		-->
 		<apparel>
 			<bodyPartGroups>
 				<li>Legs</li>
