@@ -131,7 +131,7 @@
 
 		<comps>
 			<li Class="DisplayITab.CompProperties_ITab">
-				<displayWay>RawTexture</displayWay>
+				<displayWay>UnscaledTexture</displayWay>
 			</li>
 			<li Class="CompProperties_Drug">
 				<listOrder>1000</listOrder>
