@@ -28,4 +28,35 @@
 		</comps>
 	</HediffDef>
 
+	<HediffDef>
+		<defName>Hediff_ExclusiveBlackAndWhiteListTest</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		
+		<description>Hediff_Exclusive test</description>
+		<label>Hediff_Exclusive access list</label>
+		<labelNoun>Hediff_ExclusiveTest.labelNoun</labelNoun>
+		
+		<scenarioCanAdd>false</scenarioCanAdd>
+		
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffExclusive">
+				<hediffToNullify>
+					<li>AlcoholHigh</li>	
+				</hediffToNullify>
+				
+				<hediffToApply>Anesthetic</hediffToApply>
+				
+				<bodyDefWhiteList>
+					<li>Human</li>
+				</bodyDefWhiteList>
+				<bodyDefBlackList>
+					<li>TurtleLike</li>
+				</bodyDefBlackList>
+				<!-- <bodyPartDef>Brain</bodyPartDef> -->
+				<!-- <bodyDef>Human</bodyDef> -->
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
 </Defs>

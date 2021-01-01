@@ -99,6 +99,39 @@
 	</HediffDef>
 	
 	<HediffDef>
+		<defName>HediffMultiple_AccessList</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>destroy one finger and apply flu to whole body</description>
+		<label>HediffMultiple_AccessList</label>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+				<hediffAndBodypart>
+					<li>
+						<hediff>MissingBodyPart</hediff>
+						<bodyPart>Lung</bodyPart>
+					</li>
+					<li>
+						<hediff>Flu</hediff>
+						<bodyPart/>
+					</li>
+				</hediffAndBodypart>
+				
+				<bodyDefWhiteList>
+					<li>Human</li>
+				</bodyDefWhiteList>
+				<bodyDefBlackList>
+					<li>TurtleLike</li>
+				</bodyDefBlackList>
+				
+				<debug>true</debug>
+			</li>
+			
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
 		<defName>Hediff_BionicArms</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 
