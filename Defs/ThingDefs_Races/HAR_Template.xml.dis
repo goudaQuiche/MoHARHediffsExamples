@@ -154,7 +154,6 @@
 				<allowHumanBios>true</allowHumanBios>
 				
 				<!-- is my Race Racist and toward who ? -->
-				<!-- <ImmuneToXenophobia>false</ImmuneToXenophobia> -->
 				<immuneToXenophobia>false</immuneToXenophobia>
 				<notXenophobistTowards>
 					<li>OtherAlien</li>
