@@ -529,6 +529,10 @@
 		<comps>
 		<!-- if you have to use this you will know that you have to usually -->
 		</comps>
+		
+		<modExtensions>
+		<!-- if you have to use this you will know that you have to usually -->
+		</modExtensions>
 	</AlienRace.ThingDef_AlienRace>
 																																																												<!-- By Abraxas -->
 </Defs>
