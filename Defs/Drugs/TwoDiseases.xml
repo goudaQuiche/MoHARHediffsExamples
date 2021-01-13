@@ -26,6 +26,33 @@
 
 	<ThingDef ParentName="MoHarPillBase">
 	
+		<defName>MoharHediff_TwoDiseases_Vanilla</defName>
+		<label>MoharHediff_TwoDiseases_Vanilla</label>
+		
+		<description>A drug.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Hediff_Twodiseases</HediffDef>
+		</descriptionHyperlinks>
+
+
+		<ingestible>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Flu</hediffDef>
+					<severity>.5</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Plague</hediffDef>
+					<severity>.5</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+
+	</ThingDef>
+
+	<ThingDef ParentName="MoHarPillBase">
+	
 		<defName>MoharHediff_SuicidePill</defName>
 		<label>MoharHediff_SuicidePill</label>
 		

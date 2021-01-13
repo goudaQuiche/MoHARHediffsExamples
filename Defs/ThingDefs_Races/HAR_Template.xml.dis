@@ -31,6 +31,22 @@
 					<head>TestPawn/HeadAdults/</head>
 					<skeleton>TestPawn/Dessicated/</skeleton>
 					<skull>TestPawn/Skull/</skull>
+					<!-- below this are things that can alter how your race looks, ranging from :  -->
+					<!-- draw size(a multiplication of the texture display size) -->
+					<customDrawSize>(1.2, 1.2)</customDrawSize>
+					<customPortraitDrawSize>(1.2, 1.2)</customPortraitDrawSize>
+					<customHeadDrawSize>(1.2, 1.2)</customHeadDrawSize>
+					<customPortraitHeadDrawSize>(1.2, 1.2)</customPortraitHeadDrawSize>
+					<!-- Offset (changing the coordinates of where to place the rendered part) -->
+					<headOffset>(0.1, 0.2)</headOffset>
+					<headOffsetDirectional>
+						<north>(0.1, 0.1)</north>
+						<east>(0.1, 0.1)</east>
+						<south>(0.1, 0.1)</south>
+						<west>(0.1, 0.1)</west>
+					</headOffsetDirectional>
+					<!-- Shader (changes the rules to follow when rendering the parts) -->
+					<skinShader>CutoutSkin</skinShader>
 				</li>
 			</graphicPaths>
 
@@ -138,7 +154,8 @@
 				<allowHumanBios>true</allowHumanBios>
 				
 				<!-- is my Race Racist and toward who ? -->
-				<ImmuneToXenophobia>false</ImmuneToXenophobia>
+				<!-- <ImmuneToXenophobia>false</ImmuneToXenophobia> -->
+				<immuneToXenophobia>false</immuneToXenophobia>
 				<notXenophobistTowards>
 					<li>OtherAlien</li>
 					<li>AnotherAlien</li>
@@ -326,7 +343,7 @@
 				</apparelList>
 				<whiteApparelList><!-- if limtied not to these -->
 					<li>Example_Apparel</li>
-					<li MayRequire="Mod.ID">DefName</li><!-- this is how you build in other mods integrations without throwing an error if that mod is not loaded. This should not be used for Core and your own Rasce mod or it's dependencies but rather what ever is might not be loade alway or mods that are optional. (Using this should in theory be more friendly on load time than using Xpath in very large lists) -->
+					<li MayRequire="Mod.ID">DefName</li><!-- this is how you build in other mods integrations without throwing an error if that mod is not loaded. This should not be used for Core and your own Rasce mod or it's dependencies but rather what ever is might not be loade always or mods that are optional. (Using this should in theory be more friendly on load time than using Xpath in very large lists) -->
 				</whiteApparelList>
 				
 				<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons><!-- my race is limited -->
@@ -359,7 +376,7 @@
 				<whiteBuildingList>
 				</whiteBuildingList>
 				
-				<!-- <onlyDoRaceRestrictedPlants>false</onlyDoRaceRestrictedPlants> // does not work my race is limited -->
+				<onlyDoRaceRestrictedPlants>false</onlyDoRaceRestrictedPlants> <!-- does not work my race is limited -->
 				<plantList>
 				</plantList>
 				<whitePlantList>
@@ -388,7 +405,7 @@
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
-			<lifeExpectancy>100</lifeExpectancy>
+			<lifeExpectancy>80</lifeExpectancy>
 			<leatherDef>Leather_Human</leatherDef>
 			<nameCategory>HumanStandard</nameCategory>
 			<body>Human</body>
@@ -498,6 +515,12 @@
 			</surpriseAttack>
 		</li>
 		</tools>
+		
+		<!-- From Mechanoids but should work on Races as well  -->
+		<!-- <butcherProducts> -->
+			<!-- <Steel>185</Steel> -->
+			<!-- <ComponentIndustrial>6</ComponentIndustrial> -->
+		<!-- </butcherProducts> -->
 		
 		<recipes>
 		<!-- Just a normal list of recipes mostly not needed if using <humanRecipeImport>true</humanRecipeImport> asdie from adding non human recipes  -->

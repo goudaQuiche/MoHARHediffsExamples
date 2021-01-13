@@ -57,7 +57,7 @@
 						<li>GutWorms</li>
 					</TargetedHediffDefs>
 					-->
-					
+
 					<MoteDef>Mote_TendingDisease</MoteDef>
 				</RegularDiseaseTendingParams>
 
@@ -104,15 +104,15 @@
 						<li>AlcoholTolerance</li>
 						<li>AlcoholAddiction</li>
 						<li>Hangover</li>
-						
+
 						<li>AmbrosiaHigh</li>
 						<li>AmbrosiaTolerance</li>
 						<li>AmbrosiaAddiction</li>
-						
+
 						<li>FlakeHigh</li>
 						<!-- <li>FlakeTolerance</li> -->
 						<!-- <li>FlakeAddiction</li> -->
-						
+
 						<li>GoJuiceHigh</li>
 						<li>GoJuiceTolerance</li>
 						<li>GoJuiceAddiction</li>
@@ -120,23 +120,23 @@
 						<li>LuciferiumHigh</li>
 						<!-- <li>LuciferiumTolerance</li> -->
 						<li>LuciferiumAddiction</li>
-						
+
 						<li>PenoxycylineHigh</li>
 						<!-- <li>PenoxycylineTolerance</li> -->
 						<!-- <li>PenoxycylineAddiction</li> -->
-						
+
 						<li>PsychiteTeaHigh</li>
 						<!-- <li>PsychiteTeaTolerance</li> -->
 						<!-- <li>PsychiteTeaAddiction</li> -->
-						
+
 						<li>SmokeleafHigh</li>
 						<li>SmokeleafTolerance</li>
 						<li>SmokeleafAddiction</li>
-						
+
 						<li>WakeUpHigh</li>
 						<li>WakeUpTolerance</li>
 						<li>WakeUpAddiction</li>
-						
+
 						<li>YayoHigh</li>
 						<!-- <li>YayoTolerance</li> -->
 						<!-- <li>YayoAddiction</li> -->
@@ -201,6 +201,53 @@
 					<MoteDef>Mote_RegenBodyPart</MoteDef>
 				</BodyPartRegenParams>
 
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="HiddenHediffBase">
+
+		<defName>Hediff_Regeneration2</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>Hediff_Regeneration test 2</description>
+		<label>Hediff_Regeneration test 2.</label>
+		<labelNoun>Hediff_Regeneration.labelNoun</labelNoun>
+
+		<scenarioCanAdd>false</scenarioCanAdd>
+
+		<comps>
+			<li Class="MoharRegeneration.HediffCompProperties_Regeneration">
+
+				<CheckingTicksPeriod>300</CheckingTicksPeriod>
+
+				<PhysicalInjuryRegenParams>
+					<TreatmentLabel>organ healing</TreatmentLabel>
+
+					<PeriodBase>300~360</PeriodBase>
+					<HealingQuality>.05~.15</HealingQuality>
+					<TargetedHediffDefs>
+						<li>Bite</li>
+						<li>Bruise</li>
+						<li>Burn</li>
+						<li>ChemicalBurn</li>
+						<li>Crush</li>
+						<li>Crack</li>
+						<li>Cut</li>
+						<li>ExecutionCut</li>
+						<li>Frostbite</li>
+						<li>Gunshot</li>
+						<li>Shredded</li>
+						<li>Scratch</li>
+						<li>Stab</li>
+						<li>SurgicalCut</li>
+					</TargetedHediffDefs>
+
+					<HungerCost>.15</HungerCost>
+					<RestCost>.15</RestCost>
+
+				</PhysicalInjuryRegenParams>
 				<debug>true</debug>
 			</li>
 		</comps>
