@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!---->	
+	<!---->	
 	<HediffDef ParentName="HiddenHediffBase">
 		<defName>Hediff_AlcoholImmunity</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		
+
 		<description>Alcohol effects immunity. YoU MUst bE fUn At pARTies.</description>
 		<label>no alcohol effect</label>
 		<labelNoun>Hediff_AlcoholImmunity.labelNoun</labelNoun>
-		
+
 		<scenarioCanAdd>false</scenarioCanAdd>
-		
+
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
 				<hediffToNullify>
@@ -20,20 +20,24 @@
 					<!-- <li>AlcoholAddiction</li> -->
 					<!-- <li>Cirrhosis</li> -->
 				</hediffToNullify>
+				
+				<showMessage>true</showMessage>
+				<nullifyKey>AnotherHediffNullifier</nullifyKey>
 			</li>
+
 		</comps>
 	</HediffDef>
 	<!---->
 	<HediffDef>
 		<defName>Hediff_AlcoholImmunityWithFeet</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		
+
 		<description>Alcohol effects immunity. Only for people with one foot.</description>
 		<label>no alcohol effect if feet</label>
 		<labelNoun>Hediff_AlcoholImmunity.labelNoun</labelNoun>
-		
+
 		<scenarioCanAdd>false</scenarioCanAdd>
-		
+
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
 				<hediffToNullify>
@@ -46,20 +50,20 @@
 				<RequiredBodyPart>
 					<li>Foot</li>
 				</RequiredBodyPart>
-				
+
 			</li>
 		</comps>
 	</HediffDef>
-	
-<!---->	
+
+	<!---->	
 	<HediffDef>
 		<defName>Hediff_PlagueImmunityTwice</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		
+
 		<description>Plague immunity twice</description>
 		<label>Plague immune twice</label>
 		<labelNoun>Hediff_PlagueImmunityTwice.labelNoun</labelNoun>
-		
+
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
 				<limitedUsageNumber>2</limitedUsageNumber>
@@ -67,18 +71,23 @@
 					<li>Plague</li>	
 					<li>Animal_Plague</li>	
 				</hediffToNullify>
+				
+				<showMessage>true</showMessage>
+				<nullifyKey>HediffNullifier</nullifyKey>
+				<concatUsageLimit>true</concatUsageLimit>
+				<limitedKey>limitedUsage</limitedKey>
 			</li>
 		</comps>
 	</HediffDef>
-<!---->	
+	<!---->	
 	<HediffDef>
 		<defName>Hediff_FluImmunityForever</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		
+
 		<description>For ever Flu immune.</description>
 		<label>Flu immune</label>
 		<labelNoun>Hediff_FluImmunityForever.labelNoun</labelNoun>
-		
+
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
 				<hediffToNullify>
@@ -88,32 +97,32 @@
 			</li>
 		</comps>
 	</HediffDef>
-<!---->	
+	<!---->	
 	<HediffDef>
 		<defName>Hediff_ProdAndSteamerRemoval</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		
+
 		<description>removes all prod + steamer hediffs and applies immune to plague  twice</description>
-		
+
 		<label>Remove all prod and steamer hediff - Plague immune twice</label>
 		<labelNoun>Hediff_PlagueImmunity.labelNoun</labelNoun>
-		
+
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_HediffExclusive">
 				<hediffToNullify>
 					<li>Hediff_Steamer</li>	
 				</hediffToNullify>
-				
+
 				<hediffPatternToNullify>
 					<li>Hediff_MaterialProduction</li>
 					<li>Hediff_AnimalProduction</li>
 				</hediffPatternToNullify>
-				
+
 				<hediffToApply>Hediff_PlagueImmunityTwice</hediffToApply>
-				
+
 				<bodyDef>Human</bodyDef>
 				<bodyPartDef>Heart</bodyPartDef>
-				
+
 				<debug>false</debug>
 			</li>
 		</comps>

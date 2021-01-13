@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<AnotherHediffNullifier>{0} is immune to {1}</AnotherHediffNullifier>
+	<HediffNullifier>{0} is immune to {1} because {2} is a {3}</HediffNullifier>
+	<limitedUsage>({0} usage left)</limitedUsage>
+</LanguageData>
