@@ -18,19 +18,30 @@
 					<li>Megaspider</li>
 					<li>Megascarab</li>
 				</hatcherPawnList>
-				
-				<colonyAdoptedChance>.5</colonyAdoptedChance>
-				<neutralAdoptedChance>.3</neutralAdoptedChance>
-				<enemyAdoptedChance>.2</enemyAdoptedChance>
-				
+				<randomAdoption>
+					<li>
+						<factionType>player</factionType>
+						<weight>5</weight>
+					</li>
+					<li>
+						<factionType>neutral</factionType>
+						<weight>3</weight>
+					</li>
+					<li>
+						<factionType>enemy</factionType>
+						<weight>2</weight>
+					</li>
+				</randomAdoption>
+
+
 				<manhunterChance>.3</manhunterChance>
 				<newBornChance>.5</newBornChance>
-				
+
 				<!-- <debug>true</debug> -->
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="EggFertBase">
 		<defName>MoHar_PawnEgg</defName>
 		<label>MoHar_PawnEgg</label>
@@ -48,18 +59,29 @@
 				<hatcherPawnList>
 					<li>MoharHediff_basicMemberKind</li>
 				</hatcherPawnList>
-				
-				<colonyAdoptedChance>.75</colonyAdoptedChance>
-				<neutralAdoptedChance>.2</neutralAdoptedChance>
-				<enemyAdoptedChance>.05</enemyAdoptedChance>
-				
+
+				<randomAdoption>
+					<li>
+						<factionType>player</factionType>
+						<weight>75</weight>
+					</li>
+					<li>
+						<factionType>neutral</factionType>
+						<weight>20</weight>
+					</li>
+					<li>
+						<factionType>enemy</factionType>
+						<weight>5</weight>
+					</li>
+				</randomAdoption>
+
 				<manhunterChance>.05</manhunterChance>
 				<newBornChance>0</newBornChance>
 				<!-- <debug>true</debug> -->
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="EggFertBase">
 		<defName>MoHar_MechaEgg</defName>
 		<label>MoHar_MechaEgg</label>
@@ -79,19 +101,30 @@
 					<li>Mech_Lancer</li>
 					<li>Mech_Scyther</li>
 				</hatcherPawnList>
-				
-				<colonyAdoptedChance>.3</colonyAdoptedChance>
-				<neutralAdoptedChance>.3</neutralAdoptedChance>
-				<enemyAdoptedChance>.4</enemyAdoptedChance>
-				
+
+				<randomAdoption>
+					<li>
+						<factionType>player</factionType>
+						<weight>30</weight>
+					</li>
+					<li>
+						<factionType>neutral</factionType>
+						<weight>30</weight>
+					</li>
+					<li>
+						<factionType>enemy</factionType>
+						<weight>40</weight>
+					</li>
+				</randomAdoption>
+
 				<newBornChance>.2</newBornChance>
 				<manhunterChance>.5</manhunterChance>
 				<!-- <debug>true</debug> -->
 			</li>
 		</comps>
 	</ThingDef>
-	
-		<ThingDef ParentName="EggFertBase">
+
+	<ThingDef ParentName="EggFertBase">
 		<defName>MoHar_myOwnMechaEgg</defName>
 		<label>MoHar_myOwnMechaEgg</label>
 		<description>An egg</description>
@@ -108,11 +141,22 @@
 				<hatcherPawnList>
 					<li>Mohar_Scyther</li>
 				</hatcherPawnList>
-				
-				<colonyAdoptedChance>.9</colonyAdoptedChance>
-				<neutralAdoptedChance>.07</neutralAdoptedChance>
-				<enemyAdoptedChance>.03</enemyAdoptedChance>
-				
+
+				<randomAdoption>
+					<li>
+						<factionType>player</factionType>
+						<weight>90</weight>
+					</li>
+					<li>
+						<factionType>neutral</factionType>
+						<weight>7</weight>
+					</li>
+					<li>
+						<factionType>enemy</factionType>
+						<weight>3</weight>
+					</li>
+				</randomAdoption>
+
 				<newBornChance>.05</newBornChance>
 				<!-- <manhunterChance>.5</manhunterChance> -->
 				<!-- <debug>true</debug> -->

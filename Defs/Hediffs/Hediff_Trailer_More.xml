@@ -150,14 +150,14 @@
 			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
 				<period>10</period>
 				
-				<moteDef>
+				<motePool>
 					<li>Mote_PuddleRA</li>
 					<li>Mote_PuddleRB</li>
 					<li>Mote_PuddleRC</li>
 					<li>Mote_PuddleR_A</li>
 					<li>Mote_PuddleR_B</li>
 					<li>Mote_PuddleR_C</li>
-				</moteDef>
+				</motePool>
 
 				<scale>.6~.9</scale>
 			</li>

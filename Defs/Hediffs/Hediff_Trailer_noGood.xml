@@ -13,7 +13,7 @@
 			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
 				<period>15</period>
 				
-				<moteDef>
+				<motePool>
 					<li>Mote_PuddleR_A</li>
 					<li>Mote_PuddleR_B</li>
 					<li>Mote_PuddleR_C</li>
@@ -26,7 +26,7 @@
 					<li>Mote_PuddleY_A</li>
 					<li>Mote_PuddleY_B</li>
 					<li>Mote_PuddleY_C</li>
-				</moteDef>
+				</motePool>
 
 				<scale>0.5~.9</scale>
 			</li>
@@ -46,7 +46,7 @@
 			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
 				<period>10</period>
 				
-				<moteDef>
+				<motePool>
 					<li>Mote_PuddleR_A</li>
 					<li>Mote_PuddleR_B</li>
 					<li>Mote_PuddleR_C</li>
@@ -59,7 +59,7 @@
 					<li>Mote_PuddleY_A</li>
 					<li>Mote_PuddleY_B</li>
 					<li>Mote_PuddleY_C</li>
-				</moteDef>
+				</motePool>
 
 				<scale>0.7~.1</scale>
 			</li>
@@ -131,11 +131,11 @@
 			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
 				<period>15</period>
 				
-				<moteDef>
+				<motePool>
 					<li>Mote_PuddleBA</li>
 					<li>Mote_PuddleBB</li>
 					<li>Mote_PuddleBC</li>
-				</moteDef>
+				</motePool>
 
 				<scale>.4~.7</scale>
 			</li>
