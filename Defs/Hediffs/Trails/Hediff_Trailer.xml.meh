@@ -16,9 +16,10 @@
 				<period>10</period>
 
 				<motePool>
-					<li>Mote_PuddlePA</li>
-					<li>Mote_PuddlePB</li>
-					<li>Mote_PuddlePC</li>
+					<li>WhitePuddleA</li>
+					<li>WhitePuddleB</li>
+					<li>WhitePuddleC</li>
+					<li>WhitePuddleD</li>
 				</motePool>
 
 				<offSetPerBodyType>
@@ -47,9 +48,9 @@
 				<useColorRange>true</useColorRange>
 				<colorRange>
 					<colorA>(255, 0, 64)</colorA>
-					<colorB>(128, 0, 255)</colorB>
+					<colorB>(64, 0, 255)</colorB>
 					
-					<variationPerIteration>.2</variationPerIteration>
+					<variationPerIteration>.3</variationPerIteration>
 				</colorRange>
 
 				<scale>.6~.9</scale>
@@ -78,7 +79,7 @@
 					<li>Mote_PuddleBC</li>
 				</motePool>
 
-				<scale>.6~.9</scale>
+				<randomScale>.6~.9</randomScale>
 			</li>
 		</comps>
 	</HediffDef>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>Vertical_FireTrail_Hediff</defName>
+		<label>Vertical_FireTrail_Hediff</label>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+
+		<!-- <labelNoun>HeDiff.labelNoun whatever</labelNoun> -->
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>17</period>
+
+				<motePool>
+					<li>Fire01_AnimatedMote</li>
+					<li>Fire02_AnimatedMote</li>
+					<li>Fire03_AnimatedMote</li>
+					<li>Fire04_AnimatedMote</li>
+					<li>Fire05_AnimatedMote</li>
+					<li>Fire06_AnimatedMote</li>
+				</motePool>
+
+				<offSetPerBodyType>
+					<li>
+						<bodyType>Fat</bodyType>
+						<offset>(0,0,-.41)</offset>
+					</li>
+					<li>
+						<bodyType>Female</bodyType>
+						<offset>(0,0,-.39)</offset>
+					</li>
+					<li>
+						<bodyType>Hulk</bodyType>
+						<offset>(0,0,-.6)</offset>
+					</li>
+					<li>
+						<bodyType>Male</bodyType>
+						<offset>(0,0,-.34)</offset>
+					</li>
+					<li>
+						<bodyType>Thin</bodyType>
+						<offset>(0,0,-.31)</offset>
+					</li>
+				</offSetPerBodyType>
+
+				<randomScale>.75~1.25</randomScale>
+				<dynamicRotation>false</dynamicRotation>
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Grounded_FireTrail_Hediff</defName>
+		<label>Grounded_FireTrail_Hediff</label>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>17</period>
+
+				<motePool>
+					<li>Fire01_AnimatedMote</li>
+					<li>Fire02_AnimatedMote</li>
+					<li>Fire03_AnimatedMote</li>
+					<li>Fire04_AnimatedMote</li>
+					<li>Fire05_AnimatedMote</li>
+					<li>Fire06_AnimatedMote</li>
+				</motePool>
+
+				<offSetPerBodyType>
+					<li>
+						<bodyType>Fat</bodyType>
+						<offset>(0,0,-.41)</offset>
+					</li>
+					<li>
+						<bodyType>Female</bodyType>
+						<offset>(0,0,-.39)</offset>
+					</li>
+					<li>
+						<bodyType>Hulk</bodyType>
+						<offset>(0,0,-.6)</offset>
+					</li>
+					<li>
+						<bodyType>Male</bodyType>
+						<offset>(0,0,-.34)</offset>
+					</li>
+					<li>
+						<bodyType>Thin</bodyType>
+						<offset>(0,0,-.31)</offset>
+					</li>
+				</offSetPerBodyType>
+
+				<randomScale>.75~1.25</randomScale>
+				<dynamicRotation>true</dynamicRotation>
+				<rotationOffset>180</rotationOffset>
+				<!--
+				<footprint>
+					<intervalDistance>-.632</intervalDistance>
+					<offset>(0,0,-.3)</offset>
+					<distanceBetweenFeet>.17</distanceBetweenFeet>
+				</footprint>
+				-->
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Footprint_FireTrail_Hediff</defName>
+		<label>Footprint_FireTrail_Hediff</label>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>17</period>
+
+				<motePool>
+					<li>Fire01_AnimatedMote</li>
+					<li>Fire02_AnimatedMote</li>
+					<li>Fire03_AnimatedMote</li>
+					<li>Fire04_AnimatedMote</li>
+					<li>Fire05_AnimatedMote</li>
+					<li>Fire06_AnimatedMote</li>
+				</motePool>
+
+				<offSetPerBodyType>
+					<li>
+						<bodyType>Fat</bodyType>
+						<offset>(0,0,-.41)</offset>
+					</li>
+					<li>
+						<bodyType>Female</bodyType>
+						<offset>(0,0,-.39)</offset>
+					</li>
+					<li>
+						<bodyType>Hulk</bodyType>
+						<offset>(0,0,-.6)</offset>
+					</li>
+					<li>
+						<bodyType>Male</bodyType>
+						<offset>(0,0,-.34)</offset>
+					</li>
+					<li>
+						<bodyType>Thin</bodyType>
+						<offset>(0,0,-.31)</offset>
+					</li>
+				</offSetPerBodyType>
+
+				<randomScale>.75~1.25</randomScale>
+				<dynamicRotation>true</dynamicRotation>
+				<rotationOffset>180</rotationOffset>
+				<footprint>
+					<intervalDistance>-.632</intervalDistance>
+					<offset>(0,0,-.3)</offset>
+					<distanceBetweenFeet>.17</distanceBetweenFeet>
+				</footprint>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VerticalFootprint_FireTrail_Hediff</defName>
+		<label>VerticalFootprint_FireTrail_Hediff</label>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>17</period>
+
+				<motePool>
+					<li>Fire01_AnimatedMote</li>
+					<li>Fire02_AnimatedMote</li>
+					<li>Fire03_AnimatedMote</li>
+					<li>Fire04_AnimatedMote</li>
+					<li>Fire05_AnimatedMote</li>
+					<li>Fire06_AnimatedMote</li>
+				</motePool>
+
+				<offSetPerBodyType>
+					<li>
+						<bodyType>Fat</bodyType>
+						<offset>(0,0,-.41)</offset>
+					</li>
+					<li>
+						<bodyType>Female</bodyType>
+						<offset>(0,0,-.39)</offset>
+					</li>
+					<li>
+						<bodyType>Hulk</bodyType>
+						<offset>(0,0,-.6)</offset>
+					</li>
+					<li>
+						<bodyType>Male</bodyType>
+						<offset>(0,0,-.34)</offset>
+					</li>
+					<li>
+						<bodyType>Thin</bodyType>
+						<offset>(0,0,-.31)</offset>
+					</li>
+				</offSetPerBodyType>
+
+				<randomScale>.75~1.25</randomScale>
+				<dynamicRotation>false</dynamicRotation>
+				<!-- <rotationOffset>180</rotationOffset> -->
+				<footprint>
+					<intervalDistance>-.632</intervalDistance>
+					<offset>(0,0,-.3)</offset>
+					<distanceBetweenFeet>.17</distanceBetweenFeet>
+				</footprint>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

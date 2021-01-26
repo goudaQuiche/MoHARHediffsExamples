@@ -36,6 +36,33 @@
 
 	</ThingDef>
 	
+	<ThingDef ParentName="PuddleBase">
+		<defName>WhitePuddleA</defName>
+		<graphicData>
+			<texPath>Mote/Puddle/White/PuddleA</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="PuddleBase">
+		<defName>WhitePuddleB</defName>
+		<graphicData>
+			<texPath>Mote/Puddle/White/PuddleB</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="PuddleBase">
+		<defName>WhitePuddleC</defName>
+		<graphicData>
+			<texPath>Mote/Puddle/White/PuddleC</texPath>
+		</graphicData>
+	</ThingDef>
+		<ThingDef ParentName="PuddleBase">
+		<defName>WhitePuddleD</defName>
+		<graphicData>
+			<texPath>Mote/Puddle/White/PuddleD</texPath>
+		</graphicData>
+	</ThingDef>
+	
 	<!-- clean begin -->
 	<!-- blue	 -->
 	<ThingDef ParentName="PuddleBase">
