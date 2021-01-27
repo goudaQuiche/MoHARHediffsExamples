@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flip01Me">
+		<defName>Custom_AnimatedMote</defName>
+		
+		<thingClass>MoharGfx.CustomTransformation_Mote</thingClass>
+		
+		<transformation>
+			<rotation>
+				<straightenUp>
+					<aimedRotation>0</aimedRotation>
+					<goalLifeSpanRatio>.6</goalLifeSpanRatio>
+					<tolerance>2</tolerance>
+					<gracePeriod>
+						<li>0~.3</li>
+					</gracePeriod>
+				</straightenUp>
+				<!--
+				<periodicRandRot>
+					<randomAngle>2~15</randomAngle>
+					<chance>.5</chance>
+					<period>25</period>
+				</periodicRandRot>
+				-->
+				
+			</rotation>
+		</transformation>
+		
+		<debug>true</debug>
+	</MoharGfx.CustomTransformation_MoteDef>
+</Defs>

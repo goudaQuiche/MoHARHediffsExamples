@@ -11,7 +11,7 @@
 
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
-				<period>17</period>
+				<period>15~25</period>
 
 				<motePool>
 					<li>Fire01_AnimatedMote</li>
@@ -45,6 +45,19 @@
 					</li>
 				</offSetPerBodyType>
 
+				<restriction>
+					<onlyWhenMoving>true</onlyWhenMoving>
+					<allowedPostures>
+						<li>Standing</li>
+					</allowedPostures>
+					<!-- LayingOnGroundFaceUp, LayingOnGroundNormal, LayingInBed-->
+					<terrain>
+						<allowedInWater>false</allowedInWater>
+						<allowedSnowDepth>0~.4</allowedSnowDepth>
+						<!-- <forbiddenTerrains></forbiddenTerrains> -->
+					</terrain>
+				</restriction>
+				
 				<randomScale>.75~1.25</randomScale>
 				<dynamicRotation>false</dynamicRotation>
 				<!-- <debug>true</debug> -->
@@ -53,23 +66,23 @@
 	</HediffDef>
 
 	<HediffDef>
-		<defName>Grounded_FireTrail_Hediff</defName>
-		<label>Grounded_FireTrail_Hediff</label>
+		<defName>Dynamic_FireTrail_Hediff</defName>
+		<label>Dynamic_FireTrail_Hediff</label>
 
 		<hediffClass>HediffWithComps</hediffClass>
 		<description>trail leaver</description>
 
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
-				<period>17</period>
+				<period>15~25</period>
 
 				<motePool>
-					<li>Fire01_AnimatedMote</li>
-					<li>Fire02_AnimatedMote</li>
-					<li>Fire03_AnimatedMote</li>
-					<li>Fire04_AnimatedMote</li>
-					<li>Fire05_AnimatedMote</li>
-					<li>Fire06_AnimatedMote</li>
+					<li>Str8Fire01_AnimatedMote</li>
+					<li>Str8Fire02_AnimatedMote</li>
+					<li>Str8Fire03_AnimatedMote</li>
+					<li>Str8Fire04_AnimatedMote</li>
+					<li>Str8Fire05_AnimatedMote</li>
+					<li>Str8Fire06_AnimatedMote</li>
 				</motePool>
 
 				<offSetPerBodyType>
@@ -95,39 +108,43 @@
 					</li>
 				</offSetPerBodyType>
 
+				<restriction>
+					<onlyWhenMoving>true</onlyWhenMoving>
+					<allowedPostures>
+						<li>Standing</li>
+					</allowedPostures>
+					<terrain>
+						<allowedInWater>false</allowedInWater>
+						<allowedSnowDepth>0~.4</allowedSnowDepth>
+					</terrain>
+				</restriction>
+
 				<randomScale>.75~1.25</randomScale>
 				<dynamicRotation>true</dynamicRotation>
 				<rotationOffset>180</rotationOffset>
-				<!--
-				<footprint>
-					<intervalDistance>-.632</intervalDistance>
-					<offset>(0,0,-.3)</offset>
-					<distanceBetweenFeet>.17</distanceBetweenFeet>
-				</footprint>
-				-->
 				<!-- <debug>true</debug> -->
 			</li>
 		</comps>
 	</HediffDef>
 
 	<HediffDef>
-		<defName>Footprint_FireTrail_Hediff</defName>
-		<label>Footprint_FireTrail_Hediff</label>
+		<defName>DynamicFootprint_FireTrail_Hediff</defName>
+		<label>DynamicFootprint_FireTrail_Hediff</label>
 
 		<hediffClass>HediffWithComps</hediffClass>
 		<description>trail leaver</description>
 
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
-				<period>17</period>
+				<period>15~25</period>
 
 				<motePool>
-					<li>Fire01_AnimatedMote</li>
-					<li>Fire02_AnimatedMote</li>
-					<li>Fire03_AnimatedMote</li>
-					<li>Fire04_AnimatedMote</li>
-					<li>Fire05_AnimatedMote</li>
-					<li>Fire06_AnimatedMote</li>
+					<li>Str8Fire01_AnimatedMote</li>
+					<li>Str8Fire02_AnimatedMote</li>
+					<li>Str8Fire03_AnimatedMote</li>
+					<li>Str8Fire04_AnimatedMote</li>
+					<li>Str8Fire05_AnimatedMote</li>
+					<li>Str8Fire06_AnimatedMote</li>
 				</motePool>
 
 				<offSetPerBodyType>
@@ -153,6 +170,17 @@
 					</li>
 				</offSetPerBodyType>
 
+				<restriction>
+					<onlyWhenMoving>true</onlyWhenMoving>
+					<allowedPostures>
+						<li>Standing</li>
+					</allowedPostures>
+					<terrain>
+						<allowedInWater>false</allowedInWater>
+						<allowedSnowDepth>0~.4</allowedSnowDepth>
+					</terrain>
+				</restriction>
+
 				<randomScale>.75~1.25</randomScale>
 				<dynamicRotation>true</dynamicRotation>
 				<rotationOffset>180</rotationOffset>
@@ -161,7 +189,7 @@
 					<offset>(0,0,-.3)</offset>
 					<distanceBetweenFeet>.17</distanceBetweenFeet>
 				</footprint>
-				<debug>true</debug>
+				<!-- <debug>true</debug> -->
 			</li>
 		</comps>
 	</HediffDef>
@@ -175,7 +203,7 @@
 
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
-				<period>17</period>
+				<period>15~25</period>
 
 				<motePool>
 					<li>Fire01_AnimatedMote</li>
@@ -209,15 +237,26 @@
 					</li>
 				</offSetPerBodyType>
 
+				<restriction>
+					<onlyWhenMoving>true</onlyWhenMoving>
+					<allowedPostures>
+						<li>Standing</li>
+					</allowedPostures>
+					<terrain>
+						<allowedInWater>false</allowedInWater>
+						<allowedSnowDepth>0~.4</allowedSnowDepth>
+					</terrain>
+				</restriction>
+
 				<randomScale>.75~1.25</randomScale>
 				<dynamicRotation>false</dynamicRotation>
-				<!-- <rotationOffset>180</rotationOffset> -->
+				
 				<footprint>
 					<intervalDistance>-.632</intervalDistance>
 					<offset>(0,0,-.3)</offset>
 					<distanceBetweenFeet>.17</distanceBetweenFeet>
 				</footprint>
-				<debug>true</debug>
+				<!-- <debug>true</debug> -->
 			</li>
 		</comps>
 	</HediffDef>
