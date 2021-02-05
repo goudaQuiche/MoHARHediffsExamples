@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!---->	
+	<HediffDef ParentName="HiddenHediffBase">
+		<defName>Hediff_HEREHEGI</defName>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>stores data for hediff replacer hediff giver</description>
+		<label>Herehegi data</label>
+		<labelNoun>Tell me if you see this Hediff_HEREHEGI.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="HEREHEGI.HediffCompProperties_DataHediff">
+				<replaceHediffs>
+					<li>
+						<inputH>SleepingSickness</inputH>
+						<outputH>Frostbite</outputH>
+						<!-- <chance>1</chance> -->
+					</li>
+					<li>
+						<inputH>GutWorms</inputH>
+						<outputH>FibrousMechanites</outputH>
+						<chance>.5~.75</chance>
+					</li>
+					<li>
+						<inputH>Malaria</inputH>
+						<chance>1</chance>
+						<destroy>true</destroy>
+					</li>
+					<li>
+						<inputH>Heatstroke</inputH>
+						<outputH>Hypothermia</outputH>
+						<chance>1</chance>
+					</li>
+
+				</replaceHediffs>
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

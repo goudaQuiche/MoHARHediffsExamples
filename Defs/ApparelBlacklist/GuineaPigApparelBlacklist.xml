@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DefGen.ApparelBlacklistDef>
+		<defName>MyAlien_GuineaPig_ApparelRestriction</defName>
+		
+		<restrictions>
+			<li>
+				<race>Alien_GuineaPig</race>
+				<thingCategoryDefs>
+					<!-- <li>Headgear</li> -->
+					<li>ArmorHeadgear</li>
+					<!-- <li>HeadgearNoble</li> -->
+				</thingCategoryDefs>
+				
+				<!-- <debug>true</debug> -->
+				<reportResult>true</reportResult>
+			</li>
+		</restrictions>
+	</DefGen.ApparelBlacklistDef>
+</Defs>
