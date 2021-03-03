@@ -338,11 +338,11 @@
 	</HediffDef>
 	
 	<HediffDef ParentName="HiddenHediffBase">
-		<defName>Hediff_DeathSpawner_DelayedReborn</defName>
+		<defName>Hediff_DeathSpawner_EvilReborn</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 
 		<description>A rare weeb condition</description>
-		<label>Hediff_DeathSpawner_Reborn2</label>
+		<label>Hediff_DeathSpawner_EvilReborn</label>
 
 		<comps>
 			<li Class="MoharHediffs.HediffCompProperties_RandySpawnUponDeath">
@@ -364,7 +364,7 @@
 
 								<hediff>true</hediff>
 								<excludeHediff>
-									<li>Hediff_DeathSpawner_Reborn</li>
+									<li>Hediff_DeathSpawner_EvilReborn</li>
 								</excludeHediff>
 
 								<childBS>true</childBS>
@@ -386,6 +386,12 @@
 									<inheritedFaction>true</inheritedFaction>
 								</li>
 							</faction>
+							
+							<mentalState>
+								<li>
+									<mentalDef>ManhunterPermanent</mentalDef>
+								</li>
+							</mentalState>
 						</li>
 					</things>
 					<defaultSettings>

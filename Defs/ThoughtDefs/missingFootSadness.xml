@@ -49,8 +49,6 @@
 
 		<bodyPart>Foot</bodyPart>
 		<bpNum>1</bpNum>
-		
-		<!-- <debug>true</debug> -->
 	</MoharThoughts.MTWDef>
 
 	<MoharThoughts.MTWDef>
@@ -61,7 +59,6 @@
 		<race>Alien_GuineaPig</race>
 
 		<hediff>MissingBodyPart</hediff>
-		<!-- <ignoreThoughtIfAddedPart>true</ignoreThoughtIfAddedPart> -->
 
 		<lifeStages>
 			<li>HumanlikeAdult</li>
@@ -83,7 +80,7 @@
 		<bodyPart>Foot</bodyPart>
 		<bpNum>2</bpNum>
 		<!-- <bpNum>1~2</bpNum> -->
-		
+
 		<!-- <debug>true</debug> -->
 	</MoharThoughts.MTWDef>
 </Defs>
