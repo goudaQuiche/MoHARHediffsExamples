@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!---->	
+	<HediffDef>
+		<defName>Hediff_ExclusiveTest</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		
+		<description>Hediff_Exclusive test.</description>
+		<label>Hediff_Exclusive test.</label>
+		<labelNoun>Hediff_ExclusiveTest.labelNoun</labelNoun>
+		
+		<scenarioCanAdd>false</scenarioCanAdd>
+		
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffExclusive">
+				<hediffToNullify>
+					<li>AlcoholHigh</li>	
+					<li>Anesthetic</li>	
+					<li>AlcoholTolerance</li>
+				</hediffToNullify>
+
+				
+				<hediffToApply>Anesthetic</hediffToApply>
+				<!-- <bodyPartDef>Brain</bodyPartDef> -->
+				<!-- <bodyDef>Human</bodyDef> -->
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Hediff_ExclusiveBlackAndWhiteListTest</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		
+		<description>Hediff_Exclusive test</description>
+		<label>Hediff_Exclusive access list</label>
+		<labelNoun>Hediff_ExclusiveTest.labelNoun</labelNoun>
+		
+		<scenarioCanAdd>false</scenarioCanAdd>
+		
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffExclusive">
+				<hediffToNullify>
+					<li>AlcoholHigh</li>	
+				</hediffToNullify>
+				
+				<hediffToApply>Anesthetic</hediffToApply>
+				
+				<bodyDefWhiteList>
+					<li>Human</li>
+				</bodyDefWhiteList>
+				<bodyDefBlackList>
+					<li>TurtleLike</li>
+				</bodyDefBlackList>
+				<!-- <bodyPartDef>Brain</bodyPartDef> -->
+				<!-- <bodyDef>Human</bodyDef> -->
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->	
+
+	<!-- blue-->	
+	<HediffDef>
+		<defName>Hediff_IntensePurpleTrail</defName>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+		<label>trail intense purple</label>
+		<labelNoun>Tell me if you see this slugHeDiff.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>10</period>
+
+				<motePool>
+					<li>WhitePuddleA</li>
+					<li>WhitePuddleB</li>
+					<li>WhitePuddleC</li>
+					<li>WhitePuddleD</li>
+				</motePool>
+
+				<offSetPerBodyType>
+					<li>
+						<bodyType>Fat</bodyType>
+						<offset>(0,0,-.41)</offset>
+					</li>
+					<li>
+						<bodyType>Female</bodyType>
+						<offset>(0,0,-.39)</offset>
+					</li>
+					<li>
+						<bodyType>Hulk</bodyType>
+						<offset>(0,0,-.6)</offset>
+					</li>
+					<li>
+						<bodyType>Male</bodyType>
+						<offset>(0,0,-.34)</offset>
+					</li>
+					<li>
+						<bodyType>Thin</bodyType>
+						<offset>(0,0,-.31)</offset>
+					</li>
+				</offSetPerBodyType>
+
+				<useColorRange>true</useColorRange>
+				<colorRange>
+					<colorA>(255, 0, 64)</colorA>
+					<colorB>(64, 0, 255)</colorB>
+					
+					<variationPerIteration>.3</variationPerIteration>
+				</colorRange>
+
+				<scale>.6~.9</scale>
+
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- blue-->	
+	<HediffDef>
+		<defName>Hediff_IntenseBlueTrail</defName>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+		<label>trail intense blue</label>
+		<labelNoun>Tell me if you see this slugHeDiff.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>10</period>
+
+				<motePool>
+					<li>Mote_PuddleBA</li>
+					<li>Mote_PuddleBB</li>
+					<li>Mote_PuddleBC</li>
+				</motePool>
+
+				<randomScale>.6~.9</randomScale>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--green-->	
+	<HediffDef>
+		<defName>Hediff_IntenseGreenTrail</defName>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+		<label>trail intense green</label>
+		<labelNoun>Tell me if you see this slugHeDiff.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>10</period>
+
+				<motePool>
+					<li>Mote_PuddleGA</li>
+					<li>Mote_PuddleGB</li>
+					<li>Mote_PuddleGC</li>
+				</motePool>
+
+				<scale>.6~.9</scale>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--yellow-->	
+	<HediffDef>
+		<defName>Hediff_IntenseYellowTrail</defName>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+		<label>trail intense yellow</label>
+		<labelNoun>Tell me if you see this slugHeDiff.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>10</period>
+
+				<motePool>
+					<li>Mote_PuddleYA</li>
+					<li>Mote_PuddleYB</li>
+					<li>Mote_PuddleYC</li>
+				</motePool>
+
+				<scale>.6~.9</scale>
+			</li>
+		</comps>
+	</HediffDef>
+	<!--orange-->	
+	<HediffDef>
+		<defName>Hediff_IntenseOrangeTrail</defName>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+		<label>trail intense orange</label>
+		<labelNoun>Tell me if you see this slugHeDiff.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>10</period>
+
+				<motePool>
+					<li>Mote_PuddleOA</li>
+					<li>Mote_PuddleOB</li>
+					<li>Mote_PuddleOC</li>
+				</motePool>
+
+				<scale>.6~.9</scale>
+			</li>
+		</comps>
+	</HediffDef>
+	<!--red-->	
+	<HediffDef>
+		<defName>Hediff_IntenseRedTrail</defName>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+		<label>trail intense red</label>
+		<labelNoun>Tell me if you see this slugHeDiff.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>10</period>
+
+				<motePool>
+					<li>Mote_PuddleRA</li>
+					<li>Mote_PuddleRB</li>
+					<li>Mote_PuddleRC</li>
+				</motePool>
+
+				<scale>.6~.9</scale>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- rainbow -->	
+	<HediffDef>
+		<defName>Hediff_RainbowRandTrail</defName>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+		<label>trail rainbow rand</label>
+		<labelNoun>Tell me if you see this slugHeDiff.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_RainbowTrail">
+				<period>10</period>
+
+				<motePurpleDef>
+					<li>Mote_PuddlePA</li>
+					<li>Mote_PuddlePB</li>
+					<li>Mote_PuddlePC</li>
+				</motePurpleDef>
+				<moteBlueDef>
+					<li>Mote_PuddleBA</li>
+					<li>Mote_PuddleBB</li>
+					<li>Mote_PuddleBC</li>
+				</moteBlueDef>
+				<moteGreenDef>
+					<li>Mote_PuddleGA</li>
+					<li>Mote_PuddleGB</li>
+					<li>Mote_PuddleGC</li>
+				</moteGreenDef>
+				<moteYellowDef>					
+					<li>Mote_PuddleYA</li>
+					<li>Mote_PuddleYB</li>
+					<li>Mote_PuddleYC</li>
+				</moteYellowDef>
+				<moteOrangeDef>
+					<li>Mote_PuddleOA</li>
+					<li>Mote_PuddleOB</li>
+					<li>Mote_PuddleOC</li>
+				</moteOrangeDef>
+				<moteRedDef>
+					<li>Mote_PuddleRA</li>
+					<li>Mote_PuddleRB</li>
+					<li>Mote_PuddleRC</li>
+				</moteRedDef>
+
+				<staySameColorChance>.7</staySameColorChance>
+				<maxTimesSameColor>4</maxTimesSameColor>
+				<minTimesSameColor>2</minTimesSameColor>
+
+				<scale>.6~.9</scale>
+
+				<debug>false</debug>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

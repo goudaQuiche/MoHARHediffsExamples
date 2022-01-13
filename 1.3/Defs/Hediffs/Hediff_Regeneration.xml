@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->	
+	<HediffDef ParentName="HiddenHediffBase">
+
+		<defName>Hediff_Regeneration</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>Hediff_Regeneration test.</description>
+		<label>Hediff_Regeneration test.</label>
+		<labelNoun>Hediff_Regeneration.labelNoun</labelNoun>
+
+		<scenarioCanAdd>false</scenarioCanAdd>
+
+		<comps>
+			<li Class="MoharRegeneration.HediffCompProperties_Regeneration">
+
+				<CheckingTicksPeriod>300</CheckingTicksPeriod>
+
+				<!-- Tending -->
+				<BloodLossTendingParams>
+					<TreatmentLabel>blood loss tending</TreatmentLabel>
+
+					<PeriodBase>120~180</PeriodBase>
+					<HealingQuality>.75~2</HealingQuality>
+
+					<HungerCost>.03</HungerCost>
+					<RestCost>.04</RestCost>
+
+					<!-- <MoteDef>Mote_TendingBloodloss</MoteDef> -->
+				</BloodLossTendingParams>
+
+				<ChronicHediffTendingParams>
+					<TreatmentLabel>chronic disease tending</TreatmentLabel>
+
+					<PeriodBase>180~240</PeriodBase>
+					<HealingQuality>.75~2</HealingQuality>
+
+					<HungerCost>.05</HungerCost>
+					<RestCost>.06</RestCost>
+
+					<FleckDef>Mote_TendingChronicDisease</FleckDef>
+				</ChronicHediffTendingParams>
+
+				<RegularDiseaseTendingParams>
+					<TreatmentLabel>disease tending</TreatmentLabel>
+
+					<PeriodBase>300~360</PeriodBase>
+					<HealingQuality>.75~2</HealingQuality>
+
+					<HungerCost>.07</HungerCost>
+					<RestCost>.08</RestCost>
+
+					<!--
+					Optionnal
+					<TargetedHediffDefs>
+						<li>GutWorms</li>
+					</TargetedHediffDefs>
+					-->
+
+					<FleckDef>Mote_TendingDisease</FleckDef>
+				</RegularDiseaseTendingParams>
+
+				<!-- Hediff removal -->
+				<PhysicalInjuryRegenParams>
+					<TreatmentLabel>organ healing</TreatmentLabel>
+
+					<PeriodBase>300~360</PeriodBase>
+					<HealingQuality>.05~.15</HealingQuality>
+					<TargetedHediffDefs>
+						<li>Bite</li>
+						<li>Bruise</li>
+						<li>Burn</li>
+						<li>ChemicalBurn</li>
+						<li>Crush</li>
+						<li>Crack</li>
+						<li>Cut</li>
+						<li>ExecutionCut</li>
+						<li>Frostbite</li>
+						<li>Gunshot</li>
+						<li>Shredded</li>
+						<li>Scratch</li>
+						<li>Stab</li>
+						<li>SurgicalCut</li>
+					</TargetedHediffDefs>
+
+					<HungerCost>.11</HungerCost>
+					<RestCost>.13</RestCost>
+
+					<FleckDef>Mote_HealingInjury</FleckDef>
+				</PhysicalInjuryRegenParams>
+
+				<ChemicalHediffRegenParams>
+					<TreatmentLabel>chemical removal</TreatmentLabel>
+
+					<PeriodBase>300~360</PeriodBase>
+					<HealingQuality>.05~.1</HealingQuality>
+
+					<TargetedHediffDefs>
+						<li>ToxicBuildup</li>
+						<li>DrugOverdose</li>
+
+						<li>AlcoholHigh</li>
+						<li>AlcoholTolerance</li>
+						<li>AlcoholAddiction</li>
+						<li>Hangover</li>
+
+						<li>AmbrosiaHigh</li>
+						<li>AmbrosiaTolerance</li>
+						<li>AmbrosiaAddiction</li>
+
+						<li>FlakeHigh</li>
+						<!-- <li>FlakeTolerance</li> -->
+						<!-- <li>FlakeAddiction</li> -->
+
+						<li>GoJuiceHigh</li>
+						<li>GoJuiceTolerance</li>
+						<li>GoJuiceAddiction</li>
+
+						<li>LuciferiumHigh</li>
+						<!-- <li>LuciferiumTolerance</li> -->
+						<li>LuciferiumAddiction</li>
+
+						<li>PenoxycylineHigh</li>
+						<!-- <li>PenoxycylineTolerance</li> -->
+						<!-- <li>PenoxycylineAddiction</li> -->
+
+						<li>PsychiteTeaHigh</li>
+						<!-- <li>PsychiteTeaTolerance</li> -->
+						<!-- <li>PsychiteTeaAddiction</li> -->
+
+						<li>SmokeleafHigh</li>
+						<li>SmokeleafTolerance</li>
+						<li>SmokeleafAddiction</li>
+
+						<li>WakeUpHigh</li>
+						<li>WakeUpTolerance</li>
+						<li>WakeUpAddiction</li>
+
+						<li>YayoHigh</li>
+						<!-- <li>YayoTolerance</li> -->
+						<!-- <li>YayoAddiction</li> -->
+					</TargetedHediffDefs>
+
+					<HungerCost>.13</HungerCost>
+					<RestCost>.15</RestCost>
+
+					<FleckDef>Mote_HealingChemicals</FleckDef>
+				</ChemicalHediffRegenParams>
+
+				<DiseaseHediffRegenParams>
+					<TreatmentLabel>disease healing</TreatmentLabel>
+
+					<PeriodBase>300~360</PeriodBase>
+					<HealingQuality>.05~.1</HealingQuality>
+					<TargetedHediffDefs>
+						<li>WoundInfection</li>
+						<li>Flu</li>
+						<li>Animal_Flu</li>
+						<li>Plague</li>
+						<li>Animal_Plague</li>
+						<li>Malaria</li>
+						<li>SleepingSickness</li>
+						<!-- <li>GutWorms</li> -->
+					</TargetedHediffDefs>
+
+					<HungerCost>.15</HungerCost>
+					<RestCost>.17</RestCost>
+
+					<FleckDef>Mote_HealingDisease</FleckDef>
+				</DiseaseHediffRegenParams>
+
+				<!-- scares removal -->
+				<PermanentInjuryRegenParams>
+					<TreatmentLabel>scare removal</TreatmentLabel>
+
+					<PeriodBase>300~360</PeriodBase>
+					<HealingQuality>.03~.07</HealingQuality>
+
+					<HungerCost>.17</HungerCost>
+					<RestCost>.19</RestCost>
+
+					<!-- <BPMaxHealth>1</BPMaxHealth> -->
+
+					<FleckDef>Mote_RegenScare</FleckDef>
+				</PermanentInjuryRegenParams>
+
+				<!-- body part regen -->
+				<BodyPartRegenParams>
+					<TreatmentLabel>missing part regeneration</TreatmentLabel>
+
+					<PeriodBase>3000~3600</PeriodBase>
+
+					<HungerCost>.19</HungerCost>
+					<RestCost>.21</RestCost>
+
+					<BPMaxHealth>1</BPMaxHealth>
+					<RegenBodyPartChildrenAtOnce>true</RegenBodyPartChildrenAtOnce>
+					<techHediffTag>Simple</techHediffTag>
+
+					<FleckDef>Mote_RegenBodyPart</FleckDef>
+				</BodyPartRegenParams>
+
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="HiddenHediffBase">
+
+		<defName>Hediff_Regeneration2</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>Hediff_Regeneration test 2</description>
+		<label>Hediff_Regeneration test 2.</label>
+		<labelNoun>Hediff_Regeneration.labelNoun</labelNoun>
+
+		<scenarioCanAdd>false</scenarioCanAdd>
+
+		<comps>
+			<li Class="MoharRegeneration.HediffCompProperties_Regeneration">
+
+				<CheckingTicksPeriod>300</CheckingTicksPeriod>
+
+				<PhysicalInjuryRegenParams>
+					<TreatmentLabel>organ healing</TreatmentLabel>
+
+					<PeriodBase>300~360</PeriodBase>
+					<HealingQuality>.05~.15</HealingQuality>
+					<TargetedHediffDefs>
+						<li>Bite</li>
+						<li>Bruise</li>
+						<li>Burn</li>
+						<li>ChemicalBurn</li>
+						<li>Crush</li>
+						<li>Crack</li>
+						<li>Cut</li>
+						<li>ExecutionCut</li>
+						<li>Frostbite</li>
+						<li>Gunshot</li>
+						<li>Shredded</li>
+						<li>Scratch</li>
+						<li>Stab</li>
+						<li>SurgicalCut</li>
+					</TargetedHediffDefs>
+
+					<HungerCost>.15</HungerCost>
+					<RestCost>.15</RestCost>
+
+				</PhysicalInjuryRegenParams>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

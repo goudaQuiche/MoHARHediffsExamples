@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<JobDef>
+		<defName>Play_Horseshoes_CopyPasta_JobDef</defName>
+
+		<driverClass>MoharJoy.JobDriver_PlayGenericTargetingGame</driverClass>
+		<reportString>playing horseshoes.</reportString>
+
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>3</joyMaxParticipants>
+		<joySkill>Shooting</joySkill>
+		<joyXpPerTick>0.003</joyXpPerTick>
+		<joyKind>Gaming_Dexterity</joyKind>
+
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	
+	<MoharJoy.GameSettingsDef>
+		<defName>HorseShoreCopyPastaParameters</defName>
+		<label>whatever</label>
+
+		<thingClass>MoharJoy.TargetingGameSetting</thingClass>
+
+		<gameSettingsList>
+
+			<li>
+				<driverClass>MoharJoy.JobDriver_PlayGenericTargetingGame</driverClass>
+				<jobDef>Play_Horseshoes_CopyPasta_JobDef</jobDef>
+
+				<skillDefScaling>Shooting</skillDefScaling>
+				<throwInterval>400</throwInterval>
+
+				<projectileOptionList>
+					<li>
+						<mote>
+							<!-- <moteDef>Mote_Horseshoe</moteDef> -->
+							<moteDef>Mote_Horseshoe_CopyPasta</moteDef>
+							<speed>3.8~5.6</speed>
+							<rotation>-300~300</rotation>
+						</mote>
+						<weight>1</weight>
+					</li>
+				</projectileOptionList>
+			</li>
+
+		</gameSettingsList>
+	</MoharJoy.GameSettingsDef>
+
+</Defs>

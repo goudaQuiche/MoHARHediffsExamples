@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>missingFootSadness</defName>
+		<workerClass>MoharThoughts.RaceBPHediff</workerClass>
+
+		<stages>
+			<li>
+				<label>1 foot missing</label>
+				<description>me sad</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>missing2xFeetSadness</defName>
+		<workerClass>MoharThoughts.RaceBPHediff</workerClass>
+
+		<stages>
+			<li>
+				<label>2 feet missing</label>
+				<description>me sad 2x</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<MoharThoughts.MTWDef>
+		<defName>missing1FootSadness</defName>
+
+		<thought>missingFootSadness</thought>
+
+		<race>Alien_GuineaPig</race>
+
+		<hediff>MissingBodyPart</hediff>
+		<!-- <ignoreThoughtIfAddedPart>true</ignoreThoughtIfAddedPart> -->
+
+		<applyThoughtHediffList>
+			<li>WoodenFoot</li>
+			<li>PegLeg</li>
+			<li>SimpleProstheticLeg</li>
+		</applyThoughtHediffList>
+
+		<ignoreThoughtHediffList>
+			<li>BionicLeg</li>
+			<li>ArchotechLeg</li>
+		</ignoreThoughtHediffList>
+
+		<bodyPart>Foot</bodyPart>
+		<bpNum>1</bpNum>
+	</MoharThoughts.MTWDef>
+
+	<MoharThoughts.MTWDef>
+		<defName>missing2FeetSadness</defName>
+
+		<thought>missing2xFeetSadness</thought>
+
+		<race>Alien_GuineaPig</race>
+
+		<hediff>MissingBodyPart</hediff>
+
+		<lifeStages>
+			<li>HumanlikeAdult</li>
+			<li>HumanlikeMature</li>
+			<li>HumanlikeOld</li>
+		</lifeStages>
+
+		<applyThoughtHediffList>
+			<li>WoodenFoot</li>
+			<li>PegLeg</li>
+			<li>SimpleProstheticLeg</li>
+		</applyThoughtHediffList>
+
+		<ignoreThoughtHediffList>
+			<li>BionicLeg</li>
+			<li>ArchotechLeg</li>
+		</ignoreThoughtHediffList>
+
+		<bodyPart>Foot</bodyPart>
+		<bpNum>2</bpNum>
+		<!-- <bpNum>1~2</bpNum> -->
+
+		<!-- <debug>true</debug> -->
+	</MoharThoughts.MTWDef>
+</Defs>

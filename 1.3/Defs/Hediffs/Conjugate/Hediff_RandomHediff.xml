@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!---->	
+	<HediffDef>
+		<defName>Hediff_CoinFlip</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>Traumasavant or flu</description>
+		<label>Random hediff from list</label>
+		<!-- <labelNoun>Hediff_Wraper_FondlingVestigialShell.labelNoun</labelNoun> -->
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffRandom">
+				<bodyDef>Human</bodyDef>
+				<hediffPool>
+					<li>TraumaSavant</li>	
+					<li>Flu</li>	
+				</hediffPool>
+				<bodyPartDef>
+					<li>Brain</li>
+					<li>Hand</li>
+				</bodyPartDef>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Hediff_WeightedCoinFlip</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>Traumasavant or flu</description>
+		<label>Random hediff from weighted list</label>
+		<!-- <labelNoun>Hediff_Wraper_FondlingVestigialShell.labelNoun</labelNoun> -->
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffRandom">
+				<bodyDef>Human</bodyDef>
+				<hediffPool>
+					<li>TraumaSavant</li>	
+					<li>Flu</li>	
+				</hediffPool>
+				<bodyPartDef>
+					<li>Brain</li>
+					<li>Hand</li>
+				</bodyPartDef>
+				<weights>
+					<li>1</li>
+					<li>5</li>
+				</weights>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

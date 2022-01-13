@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="AttachedAnimatedMoteBase" Name="EyeFireMoteBase">
+		<defName>EyeFire_AnimatedMote</defName>
+		<!-- <thingClass>MoteThrown</thingClass> -->
+		<thingClass>MoharGfx.CustomTransformation_Mote</thingClass>
+
+		<graphicData>
+			<texPath>Mote/Fire_</texPath>
+			<drawSize>1</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+		<mote>
+			<fadeInTime>.15</fadeInTime>
+			<solidTime>.9</solidTime>
+			<fadeOutTime>.35</fadeOutTime>
+
+			<growthRate>-.15</growthRate>
+		</mote>
+
+		<transformation>
+			<animatedMote>
+				<frameOffset>0</frameOffset>
+				<ticksPerFrame>7</ticksPerFrame>
+			</animatedMote>
+		</transformation>
+	</MoharGfx.CustomTransformation_MoteDef>
+	
+	<MoharGfx.CustomTransformation_MoteDef ParentName="EyeFireMoteBase" Name="EyeFlip01Me">
+		<defName>EyeFire01_AnimatedMote</defName>
+	</MoharGfx.CustomTransformation_MoteDef>
+	
+	<MoharGfx.CustomTransformation_MoteDef ParentName="EyeFireMoteBase" Name="EyeFlip02Me">
+		<defName>EyeFire02_AnimatedMote</defName>
+		<transformation>
+			<animatedMote>
+				<frameOffset>4</frameOffset>
+				<ticksPerFrame>6</ticksPerFrame>
+			</animatedMote>
+		</transformation>
+	</MoharGfx.CustomTransformation_MoteDef>
+	
+	<MoharGfx.CustomTransformation_MoteDef ParentName="EyeFireMoteBase" Name="EyeFlip03Me">
+		<defName>EyeFire03_AnimatedMote</defName>
+		<transformation>
+			<animatedMote>
+				<frameOffset>8</frameOffset>
+				<ticksPerFrame>5</ticksPerFrame>
+			</animatedMote>
+		</transformation>
+	</MoharGfx.CustomTransformation_MoteDef>
+	
+	<MoharGfx.CustomTransformation_MoteDef ParentName="EyeFlip01Me">
+		<defName>EyeFire04_AnimatedMote</defName>
+		<transformation>
+			<misc>
+				<flipped>true</flipped>
+			</misc>
+		</transformation>
+	</MoharGfx.CustomTransformation_MoteDef>
+	<MoharGfx.CustomTransformation_MoteDef ParentName="EyeFlip02Me">
+		<defName>EyeFire05_AnimatedMote</defName>
+		<transformation>
+			<misc>
+				<flipped>true</flipped>
+			</misc>
+		</transformation>
+	</MoharGfx.CustomTransformation_MoteDef>
+	<MoharGfx.CustomTransformation_MoteDef ParentName="EyeFlip03Me">
+		<defName>EyeFire06_AnimatedMote</defName>
+		<transformation>
+			<misc>
+				<flipped>true</flipped>
+			</misc>
+		</transformation>
+	</MoharGfx.CustomTransformation_MoteDef>
+
+</Defs>

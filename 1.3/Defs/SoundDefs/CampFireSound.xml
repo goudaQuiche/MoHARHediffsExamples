@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SoundDef>
+		<defName>CampFire_Sustain_Sound</defName>  
+
+		<sustain>True</sustain>  
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<sustainFadeoutTime>1</sustainFadeoutTime>  
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Interact/Work/CampFire/Burning</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>13~17</volumeRange>      
+				<pitchRange>0.85~1.15</pitchRange>          
+				<sustainLoopDurationRange>2.4~0.98</sustainLoopDurationRange>
+				<sustainIntervalRange>-0.323~-0.33</sustainIntervalRange>      
+				<sustainAttack>0.06</sustainAttack>      
+				<sustainRelease>0.48</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>CampFire_Flint_Sound</defName>  
+		<context>MapOnly</context> 
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<gameSpeedRange>1~2</gameSpeedRange>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Interact/Work/CampFire/Burning/Flint</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>13~17</volumeRange>
+				<pitchRange>0.85~1.15</pitchRange>
+			</li>
+
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>CampFire_Extinguish_Sound</defName>  
+		<context>MapOnly</context> 
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<gameSpeedRange>1~2</gameSpeedRange>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Interact/Work/CampFire/Burning/Extinguish</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>13~17</volumeRange>
+				<pitchRange>0.85~1.15</pitchRange>
+			</li>
+
+		</subSounds>
+	</SoundDef>
+
+</Defs>

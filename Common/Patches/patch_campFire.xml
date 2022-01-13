@@ -24,6 +24,10 @@
 							<xVelocity>30~40</xVelocity>
 							<yVelocity>.5~.7</yVelocity>
 							<scale>1.5~2.5</scale>
+							
+							<offset>
+							<north>0,2</north>
+							</offset>
 						</transformation>
 
 						<graceTicks>60</graceTicks>

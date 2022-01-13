@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="MoHarPillBase" ParentName="MakeableDrugPillBase" Abstract="true">
+
+		<graphicData>
+			<!-- <texPath>Things/Item/Drug/Penoxycyline</texPath> -->
+			<texPath>Things/Item/Drug/Syringue</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>.6</drawSize>
+		</graphicData>
+
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>18</MarketValue>
+			<Mass>0.005</Mass>
+			<Flammability>0.7</Flammability>
+		</statBases>
+
+		<techLevel>Industrial</techLevel>
+
+		<costList>
+			<Neutroamine>1</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+
+				<li>
+					<weight>10</weight>
+					<only>RGB(238,144,142)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(239,167,222)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(210,137,227)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(146,120,221)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(145,195,230)</only>
+				</li>
+
+				<li>
+					<weight>10</weight>
+					<only>RGB(255,179,186)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(255,223,186)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(255,255,186)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(186,255,201)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(186,225,255)</only>
+				</li>
+
+				<li>
+					<weight>10</weight>
+					<only>RGB(231,85,85)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(169,225,133)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(108,220,223)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(244,223,98)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(244,124,191)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		
+	</ThingDef>
+</Defs>

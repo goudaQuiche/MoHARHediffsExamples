@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- <ThingDef ParentName="MakeableDrugPillBase"> -->
+	<ThingDef>
+
+		<defName>Syringue_Test</defName>
+		<label>Syringue_Test</label>
+		<description>A drug.</description>
+
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<techLevel>Industrial</techLevel>
+
+		<tickerType>Rare</tickerType>
+
+		<graphicData>
+			<texPath>Things/Item/Drug/Syringue/Syringue_White</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>.35</drawSize>
+			<flipExtraRotation>80</flipExtraRotation>
+		</graphicData>
+
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>300</WorkToMake>
+			<MarketValue>18</MarketValue>
+			<Mass>0.005</Mass>
+			<Flammability>0.7</Flammability>
+		</statBases>
+
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+			<foodType>Processed</foodType>
+			<baseIngestTicks>120</baseIngestTicks>
+			<chairSearchRadius>0</chairSearchRadius>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Take {0}</ingestCommandString>
+			<ingestReportString>Taking {0}.</ingestReportString>
+		</ingestible>
+
+		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
+		<designateHaulable>true</designateHaulable>
+
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+
+				<li>
+					<weight>10</weight>
+					<only>RGB(238,144,142)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(239,167,222)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(210,137,227)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(146,120,221)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(145,195,230)</only>
+				</li>
+
+				<li>
+					<weight>10</weight>
+					<only>RGB(255,179,186)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(255,223,186)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(255,255,186)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(186,255,201)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(186,225,255)</only>
+				</li>
+
+				<li>
+					<weight>10</weight>
+					<only>RGB(231,85,85)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(169,225,133)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(108,220,223)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(244,223,98)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGB(244,124,191)</only>
+				</li>
+			</options>
+		</colorGenerator>
+
+		<inspectorTabs>
+			<li>DisplayITab.ITab_DisplayPicture</li>
+		</inspectorTabs>
+
+		<comps>
+			<li Class="DisplayITab.CompProperties_ITab">
+				<displayWay>UnscaledTexture</displayWay>
+			</li>
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

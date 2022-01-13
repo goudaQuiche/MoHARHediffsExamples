@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->	
+
+	<!-- blue-->	
+	<HediffDef>
+		<defName>Hediff_IntensePurpleTrail</defName>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+		<label>trail intense purple</label>
+		<labelNoun>Tell me if you see this slugHeDiff.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>10</period>
+
+				<motePool>
+					<li>WhitePuddleA</li>
+					<li>WhitePuddleB</li>
+					<li>WhitePuddleC</li>
+					<li>WhitePuddleD</li>
+				</motePool>
+
+				<offSetPerBodyType>
+					<li>
+						<bodyType>Fat</bodyType>
+						<offset>(0,0,-.41)</offset>
+					</li>
+					<li>
+						<bodyType>Female</bodyType>
+						<offset>(0,0,-.39)</offset>
+					</li>
+					<li>
+						<bodyType>Hulk</bodyType>
+						<offset>(0,0,-.6)</offset>
+					</li>
+					<li>
+						<bodyType>Male</bodyType>
+						<offset>(0,0,-.34)</offset>
+					</li>
+					<li>
+						<bodyType>Thin</bodyType>
+						<offset>(0,0,-.31)</offset>
+					</li>
+				</offSetPerBodyType>
+
+				<colorRange>
+					<colorA>(255, 0, 64)</colorA>
+					<colorB>(64, 0, 255)</colorB>
+					
+					<variationPerIteration>.3</variationPerIteration>
+				</colorRange>
+
+				<randomScale>.6~.9</randomScale>
+
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

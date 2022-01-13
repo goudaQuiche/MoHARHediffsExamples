@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flip01Me">
+		<defName>ForeGround_Fire01_AnimatedMote</defName>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flip02Me">
+		<defName>ForeGround_Fire02_AnimatedMote</defName>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flip03Me">
+		<defName>ForeGround_Fire03_AnimatedMote</defName>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flipped04Me">
+		<defName>ForeGround_Fire04_AnimatedMote</defName>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flipped05Me">
+		<defName>ForeGround_Fire05_AnimatedMote</defName>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flipped06Me">
+		<defName>ForeGround_Fire06_AnimatedMote</defName>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+	</MoharGfx.CustomTransformation_MoteDef>
+</Defs>

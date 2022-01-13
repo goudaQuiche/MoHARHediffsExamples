@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MoharGfx.CustomTransformation_MoteDef Name="AttachedAnimatedMoteBase" Abstract="true">
+		<!-- <thingClass>MoteThrownAttached</thingClass> -->
+
+		<label>AttachedAnimatedMoteBase</label>
+		<category>Mote</category>
+
+		<graphicData>
+			<graphicClass>MoharGfx.Graphic_AnimatedMote</graphicClass>
+			<!-- <shaderType>MoteGlow</shaderType> -->
+		</graphicData>
+
+		<!-- <altitudeLayer>MoteLow</altitudeLayer> -->
+		<tickerType>Normal</tickerType>
+		<useHitPoints>false</useHitPoints>
+		<isSaveable>false</isSaveable>
+		<rotatable>false</rotatable>
+		<mote/>
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="AttachedAnimatedMoteBase" Name="FireMoteBase">
+		<defName>Fire_AnimatedMote</defName>
+		<!-- <thingClass>MoteThrown</thingClass> -->
+		<thingClass>MoharGfx.CustomTransformation_Mote</thingClass>
+
+		<graphicData>
+			<texPath>Mote/Fire_</texPath>
+			<drawSize>1.9</drawSize>
+			<shaderType>MoteGlow</shaderType>
+
+			<!--
+			<shaderType>MoteGlowDistortBackground</shaderType>
+			<shaderParameters>
+				<_DistortionTex>/Things/Mote/PsycastDistortionMask</_DistortionTex>
+			</shaderParameters>
+			-->
+
+			<!-- <color>RGBA(48, 0, 0, 225)</color> -->
+			<drawOffset>(0, 0, .35)</drawOffset>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<fadeInTime>.15</fadeInTime>
+			<solidTime>.9</solidTime>
+			<fadeOutTime>.35</fadeOutTime>
+
+			<growthRate>-.55</growthRate>
+			<!-- <growthRate>5</growthRate> -->
+		</mote>
+
+		<transformation>
+			<scale>
+				<pulsingScale>
+					<range>(.05,.15)</range>
+					<speed>10</speed>
+				</pulsingScale>
+			</scale>
+			<animatedMote>
+				<frameOffset>0</frameOffset>
+				<!-- <randomFrameOffset>0~11</randomFrameOffset> -->
+				<ticksPerFrame>7</ticksPerFrame>
+			</animatedMote>
+		</transformation>
+	</MoharGfx.CustomTransformation_MoteDef>
+
+</Defs>
