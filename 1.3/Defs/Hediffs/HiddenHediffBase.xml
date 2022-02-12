@@ -7,6 +7,7 @@
 
 		<initialSeverity>.001</initialSeverity>
 		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>False</isBad>
 
 		<stages>
 			<li>

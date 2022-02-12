@@ -57,7 +57,66 @@
 						<!-- <forbiddenTerrains></forbiddenTerrains> -->
 					</terrain>
 				</restriction>
-				
+
+				<randomScale>.75~1.25</randomScale>
+				<dynamicRotation>false</dynamicRotation>
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef>
+		<defName>Vertical_FireTrail_Hediff2</defName>
+		<label>Vertical_FireTrail_Hediff2</label>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>trail leaver</description>
+
+		<!-- <labelNoun>HeDiff.labelNoun whatever</labelNoun> -->
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_TrailLeaver">
+				<period>15~25</period>
+
+				<motePool>
+					<li>LifeSpanFire_AnimatedMote</li>
+				</motePool>
+
+				<offSetPerBodyType>
+					<li>
+						<bodyType>Fat</bodyType>
+						<offset>(0,0,-.41)</offset>
+					</li>
+					<li>
+						<bodyType>Female</bodyType>
+						<offset>(0,0,-.39)</offset>
+					</li>
+					<li>
+						<bodyType>Hulk</bodyType>
+						<offset>(0,0,-.6)</offset>
+					</li>
+					<li>
+						<bodyType>Male</bodyType>
+						<offset>(0,0,-.34)</offset>
+					</li>
+					<li>
+						<bodyType>Thin</bodyType>
+						<offset>(0,0,-.31)</offset>
+					</li>
+				</offSetPerBodyType>
+
+				<restriction>
+					<onlyWhenMoving>true</onlyWhenMoving>
+					<allowedPostures>
+						<li>Standing</li>
+					</allowedPostures>
+					<!-- LayingOnGroundFaceUp, LayingOnGroundNormal, LayingInBed-->
+					<terrain>
+						<allowedInWater>false</allowedInWater>
+						<allowedSnowDepth>0~.4</allowedSnowDepth>
+						<!-- <forbiddenTerrains></forbiddenTerrains> -->
+					</terrain>
+				</restriction>
+
 				<randomScale>.75~1.25</randomScale>
 				<dynamicRotation>false</dynamicRotation>
 				<!-- <debug>true</debug> -->
@@ -250,7 +309,7 @@
 
 				<randomScale>.75~1.25</randomScale>
 				<dynamicRotation>false</dynamicRotation>
-				
+
 				<footprint>
 					<intervalDistance>-.632</intervalDistance>
 					<offset>(0,0,-.3)</offset>
