@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->	
+	<HediffDef>
+		<defName>UbetTester_LifeStage</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>A rare condition that forces to test another class</description>
+		<label>UbetTester_LifeStage</label>
+		<labelNoun>Tell me if you see this UbetTester_Hediff.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="UbetTester.HediffCompProperties_UbetTesterProperties">
+				<ubet>LifeStageSeasonDraftedGender</ubet>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>UbetTester_Relation</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>A rare condition that forces to test another class</description>
+		<label>UbetTester_Relation</label>
+		<labelNoun>Tell me if you see this UbetTester_Hediff.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="UbetTester.HediffCompProperties_UbetTesterProperties">
+				<ubet>RelationWeather</ubet>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>UbetTester_BodyPart</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>A rare condition that forces to test another class</description>
+		<label>UbetTester_BodyPart</label>
+		<labelNoun>Tell me if you see this UbetTester_Hediff.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="UbetTester.HediffCompProperties_UbetTesterProperties">
+				<ubet>BodyPartApparel</ubet>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>
