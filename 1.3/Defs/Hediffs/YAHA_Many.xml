@@ -3,12 +3,12 @@
 
 	<!---->	
 	<HediffDef ParentName="HiddenHediffBase">
-		<defName>Alien_GuineaPig_ManyHediffsPerLifeStage</defName>
+		<defName>YAHA_drunkenMonk</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 
-		<description>apply multiple hediff per lifestage</description>
-		<label>ManyHediffPerLifeStage</label>
-		<labelNoun>ManyHediffPerLifeStage.labelNoun</labelNoun>
+		<description>apply multiple hediff if drafted</description>
+		<label>YAHA_drunkenMonk</label>
+		<labelNoun>YAHA_drunkenMonk.labelNoun</labelNoun>
 
 		<isBad>false</isBad>
 
@@ -17,261 +17,22 @@
 				<associations>
 					<li>
 						<hediffPool>
-							<li>Alien_GuineaPig_OHPLS_baby</li>
-						</hediffPool>
-						<!--
-							<randomHediffPool>
-								<li>
-									<randomHediff>
-										<li>
-											<hediffPool>Flu</hediffPool>
-											<weight>65</weight>
-										</li>
-										<li>
-											<hediffPool>Malaria</hediffPool>
-											<weight>30</weight>
-										</li>
-										<li>
-											<hediffPool>Plague</hediffPool>
-											<weight>5</weight>
-										</li>
-									</randomHediff>
-								</li>
-							</randomHediffPool>
-							-->
-
-						<bodyPart>
-							<li>left pinky</li>
-							<li>right pinky</li>
-						</bodyPart>
-						<condition>
-							<!-- default=1
-								<randomChance>1~1</randomChance>-->
-
-							<nature>
-								<!-- default=Either
-								<gender>Male</gender>
-								<gender>Female</gender>
-								<gender>Either</gender>
-								-->
-
-								<lifeStage>
-									<li>HumanlikeBaby</li>
-								</lifeStage>
-								<!-- <pawnKind><li>Villager</li></pawnKind> -->
-								<!-- <trait><li>Bloodlust</li></trait> -->
-							</nature>
-
-							<!--
-								<job>
-									<currentJob><li>LayDownResting</li></currentJob>
-									// pastJob not implemented
-									<pastJob><li>LayDownResting</li></pastJob>
-								</job>
-								-->
-
-							<!--
-								<environment>
-									<season>
-										<li>Spring</li>
-										<li>Summer</li>
-										<li>Fall</li>
-										<li>Winter</li>
-									</season>
-									<weather>
-										<li>Clear</li>
-										<li>Fog</li>
-										<li>Rain</li>
-										<li>DryThunderstorm</li>
-										<li>RainyThunderstorm</li>
-										<li>FoggyRain</li>
-										<li>SnowHard</li>
-										<li>SnowGentle</li>
-									</weather>
-								</environment>
-								-->
-
-						</condition>
-						<specifics>
-							<!-- default=1
-								<severity>1~1</severity> -->
-
-							<!-- default=1
-								<applyNumLimit>1</applyNumLimit> -->
-							<!-- -1 is infinite -->
-							<applyNumLimit>-1</applyNumLimit>
-
-							<removeIfFalse>false</removeIfFalse>
-							<!-- // removeIfOtherTrue not implemented -->
-							<!-- <removeIfOtherTrue>false</removeIfOtherTrue> -->
-						</specifics>
-
-					</li>
-					<li>
-						<hediffPool>
-							<li>Alien_GuineaPig_OHPLS_toddler</li>
+							<li><hediff>AlcoholHigh</hediff><severity>.15~.2</severity></li>
+							<li><hediff>GoJuiceHigh</hediff><severity>.15~.2</severity></li>
 						</hediffPool>
 
-						<bodyPart>
-							<li>left pinky</li>
-							<li>right pinky</li>
-						</bodyPart>
-
-						<condition>
-							<nature>
-								<lifeStage>
-									<li>HumanlikeToddler</li>
-								</lifeStage>
-							</nature>
-						</condition>
-
+						<condition>IsDraftedCondition</condition>
+						
 						<specifics>
 							<applyNumLimit>-1</applyNumLimit>
-							<removeIfFalse>false</removeIfFalse>
+							<removeIfFalse>true</removeIfFalse>
 						</specifics>
-					</li>
-					<li>
-						<hediffPool>
-							<li>Alien_GuineaPig_OHPLS_child</li>
-						</hediffPool>
 
-						<bodyPart>
-							<li>left pinky</li>
-							<li>right pinky</li>
-						</bodyPart>
-
-						<condition>
-							<nature>
-								<lifeStage>
-									<li>HumanlikeChild</li>
-								</lifeStage>
-							</nature>
-						</condition>
-
-						<specifics>
-							<applyNumLimit>-1</applyNumLimit>
-							<removeIfFalse>false</removeIfFalse>
-						</specifics>
-					</li>
-					<li>
-						<hediffPool>
-							<li>Alien_GuineaPig_OHPLS_teenager</li>
-						</hediffPool>
-
-						<bodyPart>
-							<li>left pinky</li>
-							<li>right pinky</li>
-						</bodyPart>
-
-						<condition>
-							<nature>
-								<lifeStage>
-									<li>HumanlikeTeenager</li>
-								</lifeStage>
-							</nature>
-						</condition>
-
-						<specifics>
-							<applyNumLimit>-1</applyNumLimit>
-							<removeIfFalse>false</removeIfFalse>
-						</specifics>
-					</li>
-					<li>
-						<hediffPool>
-							<li>Alien_GuineaPig_OHPLS_adult</li>
-						</hediffPool>
-
-						<bodyPart>
-							<li>left pinky</li>
-							<li>right pinky</li>
-						</bodyPart>
-
-						<condition>
-							<nature>
-								<lifeStage>
-									<li>HumanlikeAdult</li>
-								</lifeStage>
-							</nature>
-						</condition>
-
-						<specifics>
-							<applyNumLimit>-1</applyNumLimit>
-							<removeIfFalse>false</removeIfFalse>
-						</specifics>
-					</li>
-					<li>
-						<hediffPool>
-							<li>Alien_GuineaPig_OHPLS_mature</li>
-						</hediffPool>
-
-						<bodyPart>
-							<li>left pinky</li>
-							<li>right pinky</li>
-						</bodyPart>
-
-						<condition>
-							<nature>
-								<lifeStage>
-									<li>HumanlikeMature</li>
-								</lifeStage>
-							</nature>
-						</condition>
-
-						<specifics>
-							<applyNumLimit>-1</applyNumLimit>
-							<removeIfFalse>false</removeIfFalse>
-						</specifics>
-					</li>
-					<li>
-						<hediffPool>
-							<li>Alien_GuineaPig_OHPLS_old</li>
-						</hediffPool>
-
-						<bodyPart>
-							<li>left pinky</li>
-							<li>right pinky</li>
-						</bodyPart>
-
-						<condition>
-							<nature>
-								<lifeStage>
-									<li>HumanlikeOld</li>
-								</lifeStage>
-							</nature>
-						</condition>
-
-						<specifics>
-							<applyNumLimit>-1</applyNumLimit>
-							<removeIfFalse>false</removeIfFalse>
-						</specifics>
-					</li>
-					<li>
-						<hediffPool>
-							<li>Alien_GuineaPig_OHPLS_elder</li>
-						</hediffPool>
-
-						<bodyPart>
-							<li>left pinky</li>
-							<li>right pinky</li>
-						</bodyPart>
-
-						<condition>
-							<nature>
-								<lifeStage>
-									<li>HumanlikeElder</li>
-								</lifeStage>
-							</nature>
-						</condition>
-
-						<specifics>
-							<applyNumLimit>-1</applyNumLimit>
-							<removeIfFalse>false</removeIfFalse>
-						</specifics>
 					</li>
 				</associations>
 
-				<!-- <checkFrequency>1800</checkFrequency> -->
-				<!-- <debug>true</debug> -->
+				<checkFrequency>300</checkFrequency>
+				<debug>true</debug>
 			</li>
 		</comps>
 	</HediffDef>

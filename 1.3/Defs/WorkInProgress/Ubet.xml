@@ -73,7 +73,8 @@
 			</leaf>
 		</trunk>
 	</Ubet.UbetDef>
-
+	
+	<!-- isPawn && ( Has alive Spouse && in map with Clear Weather ) -->
 	<Ubet.UbetDef>
 		<defName>RelationWeather</defName>
 		<trunk>
@@ -106,6 +107,7 @@
 		</trunk>
 	</Ubet.UbetDef>
 
+	<!-- isPawn && ( Has nose && Wears apparel made of synthread ) -->
 	<Ubet.UbetDef>
 		<defName>BodyPartApparel</defName>
 		<trunk>
@@ -136,6 +138,15 @@
 					</leaf>
 				</li>
 			</leaf>
+		</trunk>
+	</Ubet.UbetDef>
+	
+	<Ubet.UbetDef>
+		<defName>IsDraftedCondition</defName>
+		<trunk>
+			<initialCondition>
+				<type>isDrafted</type>
+			</initialCondition>
 		</trunk>
 	</Ubet.UbetDef>
 </Defs>

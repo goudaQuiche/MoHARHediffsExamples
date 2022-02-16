@@ -13,6 +13,7 @@
 		</hediffGivers>
 	</HediffGiverSetDef>
 
+	<!--
 	<HediffGiverSetDef>
 		<defName>GuineaPig_ManyHediffPersLifeStage_HediffGiverSet</defName>
 		<hediffGivers>
@@ -28,5 +29,5 @@
 			</li>
 		</hediffGivers>
 	</HediffGiverSetDef>
-	
+	-->
 </Defs>
