@@ -19,17 +19,17 @@
 						<li>
 							<condition>
 								<type>belongsToLifeStage</type>
-								<parameter>
+								<stringArg>
 									<li>HumanlikeAdult</li>
-								</parameter>
+								</stringArg>
 							</condition>
 						</li>
 						<li>
 							<condition>
 								<type>isOnMapWithSeason</type>
-								<parameter>
+								<stringArg>
 									<li>Spring</li>
-								</parameter>
+								</stringArg>
 							</condition>
 						</li>
 						<li>
@@ -88,17 +88,17 @@
 						<li>
 							<condition>
 								<type>hasAliveRelation</type>
-								<parameter>
+								<stringArg>
 									<li>Spouse</li>
-								</parameter>
+								</stringArg>
 							</condition>
 						</li>
 						<li>
 							<condition>
 								<type>isOnMapWithWeather</type>
-								<parameter>
+								<stringArg>
 									<li>Clear</li>
-								</parameter>
+								</stringArg>
 							</condition>
 						</li>
 					</leaf>
@@ -122,17 +122,17 @@
 							<operand>not</operand>
 							<condition>
 								<type>hasBodyPart</type>
-								<parameter>
+								<stringArg>
 									<li>Nose</li>
-								</parameter>
+								</stringArg>
 							</condition>
 						</li>
 						<li>
 							<condition>
 								<type>wearsApparelMadeOf</type>
-								<parameter>
+								<stringArg>
 									<li>Synthread</li>
-								</parameter>
+								</stringArg>
 							</condition>
 						</li>
 					</leaf>
