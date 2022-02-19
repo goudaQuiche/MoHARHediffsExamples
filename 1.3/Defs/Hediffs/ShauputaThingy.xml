@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>Grim_CreeperSlasher</defName>		
+		<label>corpse harborer</label>
+		<description>harbors corpses on its body that they can use.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>    
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="YAHA.HediffCompProperties_YetAnotherHediffApplier">
+				<associations>
+					<li>
+						<hediffPool>
+							<li>
+								<hediff>Grim_CreeperLady</hediff>
+								<severity>1.0</severity>
+							</li>
+						</hediffPool>
+						<condition>IsDraftedCondition</condition>
+						<bodyPart>
+							<li>left arm</li>
+						</bodyPart>
+						<specifics>
+							<applyNumLimit>-1</applyNumLimit>
+							<removeIfFalse>true</removeIfFalse>
+						</specifics>
+					</li>
+				</associations>
+				<checkFrequency>10</checkFrequency>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Grim_CreeperLady</defName>
+		<label>ladies</label>
+		<description>they woke, they angery, they horny, they'll fak you up m8.</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>    
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<addedPartProps>		
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>false</solid>
+			<partEfficiency>1.00</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>slash</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>25</power>
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

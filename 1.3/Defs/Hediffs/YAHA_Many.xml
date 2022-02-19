@@ -3,12 +3,11 @@
 
 	<!---->	
 	<HediffDef ParentName="HiddenHediffBase">
-		<defName>YAHA_drunkenMonk</defName>
+		<defName>YAHA_TriggeredDrunkenMonk</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 
 		<description>apply multiple hediff if drafted</description>
-		<label>YAHA_drunkenMonk</label>
-		<labelNoun>YAHA_drunkenMonk.labelNoun</labelNoun>
+		<label>YAHA_TriggeredDrunkenMonk</label>
 
 		<isBad>false</isBad>
 
@@ -17,12 +16,61 @@
 				<associations>
 					<li>
 						<hediffPool>
-							<li><hediff>AlcoholHigh</hediff><severity>.15~.2</severity></li>
-							<li><hediff>GoJuiceHigh</hediff><severity>.15~.2</severity></li>
+							<li>
+								<hediff>AlcoholHigh</hediff>
+								<severity>.15~.2</severity>
+							</li>
+							<li>
+								<hediff>GoJuiceHigh</hediff>
+								<severity>.15~.2</severity>
+							</li>
 						</hediffPool>
 
 						<condition>IsDraftedCondition</condition>
-						
+
+						<specifics>
+							<applyNumLimit>-1</applyNumLimit>
+							<removeIfFalse>true</removeIfFalse>
+							<triggerEvent>
+								<li>draft</li>
+							</triggerEvent>
+						</specifics>
+
+					</li>
+				</associations>
+
+				<checkFrequency>300</checkFrequency>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="HiddenHediffBase">
+		<defName>YAHA_DrunkenMonk</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply multiple hediff if drafted</description>
+		<label>YAHA_DrunkenMonk</label>
+
+		<isBad>false</isBad>
+
+		<comps>
+			<li Class="YAHA.HediffCompProperties_YetAnotherHediffApplier">
+				<associations>
+					<li>
+						<hediffPool>
+							<li>
+								<hediff>AlcoholHigh</hediff>
+								<severity>.15~.2</severity>
+							</li>
+							<li>
+								<hediff>GoJuiceHigh</hediff>
+								<severity>.15~.2</severity>
+							</li>
+						</hediffPool>
+
+						<condition>IsDraftedCondition</condition>
+
 						<specifics>
 							<applyNumLimit>-1</applyNumLimit>
 							<removeIfFalse>true</removeIfFalse>
