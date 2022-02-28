@@ -30,12 +30,12 @@
 			</li>
 		</comps>
 	</HediffDef>
-
+	
 	<HediffDef>
-		<defName>UbetTester_BodyPart</defName>
+		<defName>UbetTester_PawnHasNoNoseAndWearsAnySynthreadApparel</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<description>A rare condition that forces to test another class</description>
-		<label>UbetTester_BodyPart</label>
+		<label>UbetTester_Apparel</label>
 		<labelNoun>Tell me if you see this UbetTester_Hediff.labelNoun</labelNoun>
 
 		<comps>
@@ -45,5 +45,6 @@
 			</li>
 		</comps>
 	</HediffDef>
+	
 
 </Defs>

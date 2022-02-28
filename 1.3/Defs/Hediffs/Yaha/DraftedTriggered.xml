@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- drafted with trigger -->	
+	<HediffDef ParentName="HiddenHediffBase">
+		<defName>YAHA_DraftedTriggered</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply multiple hediff if drafted</description>
+		<label>YAHA_DraftedTriggered</label>
+
+		<isBad>false</isBad>
+
+		<comps>
+			<li Class="YAHA.HediffCompProperties_YetAnotherHediffApplier">
+				<associations>
+					<li>
+						<hediffPool>
+							<li>
+								<hediff>AlcoholHigh</hediff>
+								<severity>.15~.2</severity>
+							</li>
+							<li>
+								<hediff>GoJuiceHigh</hediff>
+								<severity>.15~.2</severity>
+							</li>
+						</hediffPool>
+
+						<condition>IsDraftedCondition</condition>
+
+						<specifics>
+							<applyNumLimit>-1</applyNumLimit>
+							<removeIfFalse>true</removeIfFalse>
+							<triggerEvent>
+								<li>draft</li>
+							</triggerEvent>
+						</specifics>
+
+					</li>
+				</associations>
+
+				<checkFrequency>300</checkFrequency>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="HiddenHediffBase">
+		<defName>YAHA_Drafted</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply multiple hediff if drafted</description>
+		<label>YAHA_Drafted</label>
+
+		<isBad>false</isBad>
+
+		<comps>
+			<li Class="YAHA.HediffCompProperties_YetAnotherHediffApplier">
+				<associations>
+					<li>
+						<hediffPool>
+							<li>
+								<hediff>AlcoholHigh</hediff>
+								<severity>.15~.2</severity>
+							</li>
+							<li>
+								<hediff>GoJuiceHigh</hediff>
+								<severity>.15~.2</severity>
+							</li>
+						</hediffPool>
+
+						<condition>IsDraftedCondition</condition>
+
+						<specifics>
+							<applyNumLimit>-1</applyNumLimit>
+							<removeIfFalse>true</removeIfFalse>
+						</specifics>
+
+					</li>
+				</associations>
+
+				<checkFrequency>300</checkFrequency>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

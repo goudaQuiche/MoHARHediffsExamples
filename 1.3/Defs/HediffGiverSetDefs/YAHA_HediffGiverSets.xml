@@ -5,7 +5,7 @@
 		<defName>YAHA_HediffGiver</defName>
 		<hediffGivers>
 			<li Class="HediffGiver_Birthday">
-				<hediff>YAHA_TriggeredDrunkenMonk</hediff>
+				<hediff>YAHA_WeaponTriggered</hediff>
 				<ageFractionChanceCurve>
 					<points>
 						<li>(0, 1)</li>

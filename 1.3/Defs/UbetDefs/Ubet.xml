@@ -20,7 +20,9 @@
 							<condition>
 								<type>belongsToLifeStage</type>
 								<stringArg>
-									<li>HumanlikeAdult</li>
+									<li>
+										<li>HumanlikeAdult</li>
+									</li>
 								</stringArg>
 							</condition>
 						</li>
@@ -28,7 +30,9 @@
 							<condition>
 								<type>isOnMapWithSeason</type>
 								<stringArg>
-									<li>Spring</li>
+									<li>
+										<li>Spring</li>
+									</li>
 								</stringArg>
 							</condition>
 						</li>
@@ -73,7 +77,7 @@
 			</leaf>
 		</trunk>
 	</Ubet.UbetDef>
-	
+
 	<!-- isPawn && ( Has alive Spouse && in map with Clear Weather ) -->
 	<Ubet.UbetDef>
 		<defName>RelationWeather</defName>
@@ -89,7 +93,9 @@
 							<condition>
 								<type>hasAliveRelation</type>
 								<stringArg>
-									<li>Spouse</li>
+									<li>
+										<li>Spouse</li>
+									</li>
 								</stringArg>
 							</condition>
 						</li>
@@ -97,7 +103,9 @@
 							<condition>
 								<type>isOnMapWithWeather</type>
 								<stringArg>
-									<li>Clear</li>
+									<li>
+										<li>Clear</li>
+									</li>
 								</stringArg>
 							</condition>
 						</li>
@@ -112,7 +120,7 @@
 		<defName>BodyPartApparel</defName>
 		<trunk>
 			<initialCondition>
-				<type>isPawn</type>
+				<type>isHuman</type>
 			</initialCondition>
 			<leaf>
 				<li>
@@ -123,7 +131,9 @@
 							<condition>
 								<type>hasBodyPart</type>
 								<stringArg>
-									<li>Nose</li>
+									<li>
+										<li>Nose</li>
+									</li>
 								</stringArg>
 							</condition>
 						</li>
@@ -131,7 +141,9 @@
 							<condition>
 								<type>wearsApparelMadeOf</type>
 								<stringArg>
-									<li>Synthread</li>
+									<li>
+										<li>Hyperweave</li>
+									</li>
 								</stringArg>
 							</condition>
 						</li>
@@ -140,12 +152,28 @@
 			</leaf>
 		</trunk>
 	</Ubet.UbetDef>
-	
+
+	<!-- pawn is drafted -->
 	<Ubet.UbetDef>
 		<defName>IsDraftedCondition</defName>
 		<trunk>
 			<initialCondition>
 				<type>isDrafted</type>
+			</initialCondition>
+		</trunk>
+	</Ubet.UbetDef>
+
+	<!-- pawn has club equiped -->
+	<Ubet.UbetDef>
+		<defName>HasClubEquiped</defName>
+		<trunk>
+			<initialCondition>
+				<type>usesWeapon</type>
+				<stringArg>
+					<li>
+						<li>MeleeWeapon_Club</li>
+					</li>
+				</stringArg>
 			</initialCondition>
 		</trunk>
 	</Ubet.UbetDef>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!---->	
+	<!-- drafted with trigger -->	
 	<HediffDef ParentName="HiddenHediffBase">
-		<defName>YAHA_TriggeredDrunkenMonk</defName>
+		<defName>YAHA_WeaponTriggered</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 
 		<description>apply multiple hediff if drafted</description>
-		<label>YAHA_TriggeredDrunkenMonk</label>
+		<label>YAHA_WeaponTriggered</label>
 
 		<isBad>false</isBad>
 
@@ -26,13 +26,13 @@
 							</li>
 						</hediffPool>
 
-						<condition>IsDraftedCondition</condition>
+						<condition>HasClubEquiped</condition>
 
 						<specifics>
 							<applyNumLimit>-1</applyNumLimit>
 							<removeIfFalse>true</removeIfFalse>
 							<triggerEvent>
-								<li>draft</li>
+								<li>equipWeapon</li>
 							</triggerEvent>
 						</specifics>
 
@@ -46,11 +46,11 @@
 	</HediffDef>
 	
 	<HediffDef ParentName="HiddenHediffBase">
-		<defName>YAHA_DrunkenMonk</defName>
+		<defName>YAHA_Weapon</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 
 		<description>apply multiple hediff if drafted</description>
-		<label>YAHA_DrunkenMonk</label>
+		<label>YAHA_Weapon</label>
 
 		<isBad>false</isBad>
 
@@ -69,7 +69,7 @@
 							</li>
 						</hediffPool>
 
-						<condition>IsDraftedCondition</condition>
+						<condition>HasClubEquiped</condition>
 
 						<specifics>
 							<applyNumLimit>-1</applyNumLimit>
