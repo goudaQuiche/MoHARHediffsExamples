@@ -115,7 +115,8 @@
 		</trunk>
 	</Ubet.UbetDef>
 
-	<!-- isPawn && ( Has nose && Wears apparel made of synthread ) -->
+	<!-- isHuman && ( Has no nose && Wears apparel made of synthread ) -->
+	<!-- problem with NOT ? -->
 	<Ubet.UbetDef>
 		<defName>BodyPartApparel</defName>
 		<trunk>
@@ -172,6 +173,20 @@
 				<stringArg>
 					<li>
 						<li>MeleeWeapon_Club</li>
+					</li>
+				</stringArg>
+			</initialCondition>
+		</trunk>
+	</Ubet.UbetDef>
+	<!-- pawn has club equiped -->
+	<Ubet.UbetDef>
+		<defName>HasFlu</defName>
+		<trunk>
+			<initialCondition>
+				<type>hasHediff</type>
+				<stringArg>
+					<li>
+						<li>Flu</li>
 					</li>
 				</stringArg>
 			</initialCondition>

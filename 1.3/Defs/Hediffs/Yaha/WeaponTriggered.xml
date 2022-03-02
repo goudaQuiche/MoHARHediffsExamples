@@ -32,7 +32,7 @@
 							<applyNumLimit>-1</applyNumLimit>
 							<removeIfFalse>true</removeIfFalse>
 							<triggerEvent>
-								<li>equipWeapon</li>
+								<li>weapon</li>
 							</triggerEvent>
 						</specifics>
 
