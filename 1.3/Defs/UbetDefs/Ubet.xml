@@ -183,7 +183,7 @@
 		<defName>HasFlu</defName>
 		<trunk>
 			<initialCondition>
-				<type>hasHediff</type>
+				<type>hasAnyHediff</type>
 				<stringArg>
 					<li>
 						<li>Flu</li>
