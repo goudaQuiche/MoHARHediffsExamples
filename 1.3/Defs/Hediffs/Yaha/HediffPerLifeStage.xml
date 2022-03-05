@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="HiddenHediffBase">
+		<defName>YAHA_LifeStage</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply 1 hediff per lifestage</description>
+		<label>YAHA_LifeStage</label>
+
+		<isBad>false</isBad>
+
+		<comps>
+			<li Class="YAHA.HediffCompProperties_YetAnotherHediffApplier">
+				<associations>
+					<li>
+						<condition>IsTeenagerGuineaPig</condition>
+
+						<hediffPool>
+							<li>
+								<hediff>Alien_GuineaPig_OHPLS_teenager</hediff>
+							</li>
+						</hediffPool>
+
+						<specifics>
+							<applyNumLimit>-1</applyNumLimit>
+							<removeIfFalse>true</removeIfFalse>
+						</specifics>
+
+					</li>
+					<li>
+						<condition>IsAdultGuineaPig</condition>
+
+						<hediffPool>
+							<li>
+								<hediff>Alien_GuineaPig_OHPLS_adult</hediff>
+							</li>
+						</hediffPool>
+
+						<specifics>
+							<applyNumLimit>-1</applyNumLimit>
+							<removeIfFalse>true</removeIfFalse>
+						</specifics>
+
+					</li>
+					<li>
+						<condition>IsMatureGuineaPig</condition>
+
+						<hediffPool>
+							<li>
+								<hediff>Alien_GuineaPig_OHPLS_mature</hediff>
+							</li>
+						</hediffPool>
+
+						<specifics>
+							<applyNumLimit>-1</applyNumLimit>
+							<removeIfFalse>true</removeIfFalse>
+						</specifics>
+
+					</li>
+					<li>
+						<condition>IsOldGuineaPig</condition>
+
+						<hediffPool>
+							<li>
+								<hediff>Alien_GuineaPig_OHPLS_old</hediff>
+							</li>
+						</hediffPool>
+
+						<specifics>
+							<applyNumLimit>-1</applyNumLimit>
+							<removeIfFalse>true</removeIfFalse>
+						</specifics>
+
+					</li>
+					<li>
+						<condition>IsElderGuineaPig</condition>
+
+						<hediffPool>
+							<li>
+								<hediff>Alien_GuineaPig_OHPLS_elder</hediff>
+							</li>
+						</hediffPool>
+
+						<specifics>
+							<applyNumLimit>-1</applyNumLimit>
+							<removeIfFalse>true</removeIfFalse>
+						</specifics>
+
+					</li>
+				</associations>
+
+				<checkFrequency>300</checkFrequency>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>
