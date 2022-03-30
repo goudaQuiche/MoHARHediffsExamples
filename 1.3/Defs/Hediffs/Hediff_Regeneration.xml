@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!---->	
 	<HediffDef ParentName="HiddenHediffBase">
@@ -251,6 +251,102 @@
 				<debug>true</debug>
 			</li>
 		</comps>
+	</HediffDef>
+	<!---->	
+	<HediffDef ParentName="HiddenHediffBase">
+
+		<defName>Hediff_RegenerationRegrow</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>Hediff_Regeneration test.</description>
+		<label>Hediff_Regeneration regrow.</label>
+		<labelNoun>Hediff_Regeneration.labelNoun</labelNoun>
+
+		<scenarioCanAdd>false</scenarioCanAdd>
+
+		<comps>
+			<li Class="MoharRegeneration.HediffCompProperties_Regeneration">
+
+				<CheckingTicksPeriod>60</CheckingTicksPeriod>
+
+				<!-- body part regen -->
+				<PhysicalInjuryRegenParams>
+					<TreatmentLabel>regrown part healing</TreatmentLabel>
+
+					<PeriodBase>60~120</PeriodBase>
+					<HealingQuality>.02~.03</HealingQuality>
+					<TargetedHediffDefs>
+						<li>RegrowFrailty</li>
+					</TargetedHediffDefs>
+
+					<HungerCost>.05</HungerCost>
+					<RestCost>.05</RestCost>
+
+					<FleckDef>Mote_HealingInjury</FleckDef>
+				</PhysicalInjuryRegenParams>
+
+				<!-- body part regen -->
+				<BodyPartRegenParams>
+					<TreatmentLabel>missing part regeneration</TreatmentLabel>
+
+					<PeriodBase>500~600</PeriodBase>
+
+					<HungerCost>.1</HungerCost>
+					<RestCost>.1</RestCost>
+
+					<BPMaxHealth>.1</BPMaxHealth>
+					<RegenBodyPartChildrenAtOnce>false</RegenBodyPartChildrenAtOnce>
+					<!-- <techHediffTag>Simple</techHediffTag> -->
+					<parentMinHealthRequirement>.75</parentMinHealthRequirement>
+					<regrownHediff>RegrowFrailty</regrownHediff>
+
+					<FleckDef>Mote_RegenBodyPart</FleckDef>
+				</BodyPartRegenParams>
+
+				<removeRegenWhenNoPendingTreatment>true</removeRegenWhenNoPendingTreatment>
+
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="InjuryBase">
+		<defName>RegrowFrailty</defName>
+		<label>regrow frailty</label>
+		<labelNoun>a regrow frailty</labelNoun>
+		<description>A natural weakness inherent to body part regrowing.</description>
+
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<!-- <tendable>false</tendable> -->
+		<comps>
+
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>tended</labelTendedWellInner>
+				<labelSolidTendedWell>protected</labelSolidTendedWell>
+			</li>
+
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>regrow scar</permanentLabel>
+			</li>
+
+			<!--
+			<li Class="HediffCompProperties_SelfHeal">
+				<healAmount>0.05</healAmount>
+			</li>
+			-->
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.15</infectionChance>
+			</li>
+		</comps>
+		
+		<injuryProps>
+			<painPerSeverity>0.015</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+			<!-- <bleedRate>0.01</bleedRate> -->
+			<canMerge>false</canMerge>
+			<useRemovedLabel>true</useRemovedLabel>
+		</injuryProps>
 	</HediffDef>
 
 </Defs>
