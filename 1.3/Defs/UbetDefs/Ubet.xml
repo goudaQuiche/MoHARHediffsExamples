@@ -5,7 +5,7 @@
 		<defName>LifeStageSeasonDraftedGender</defName>
 		<trunk>
 			<initialCondition>
-				<type>isPawn</type>
+				<type>isHuman</type>
 			</initialCondition>
 
 			<!-- and is implied for initial condition; 
@@ -83,7 +83,7 @@
 		<defName>RelationWeather</defName>
 		<trunk>
 			<initialCondition>
-				<type>isPawn</type>
+				<type>isHuman</type>
 			</initialCondition>
 			<leaf>
 				<li>
