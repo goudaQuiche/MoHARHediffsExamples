@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flip01Me">
+		<defName>Str8Fire01_AnimatedMote</defName>
+		
+		<transformation>
+			<rotation>
+				<straightenUp>
+					<aimedRotation>0</aimedRotation>
+					<goalLifeSpanRatio>.6</goalLifeSpanRatio>
+					<tolerance>2</tolerance>
+					<gracePeriod>
+						<li>0~.3</li>
+					</gracePeriod>
+				</straightenUp>
+			</rotation>
+		</transformation>
+		
+		<!-- <debug>true</debug> -->
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flip02Me">
+		<defName>Str8Fire02_AnimatedMote</defName>
+		<transformation>
+			<rotation>
+				<straightenUp>
+					<aimedRotation>0</aimedRotation>
+					<goalLifeSpanRatio>.6</goalLifeSpanRatio>
+					<tolerance>2</tolerance>
+					<gracePeriod>
+						<li>0~.3</li>
+					</gracePeriod>
+				</straightenUp>
+			</rotation>
+		</transformation>
+		
+		<!-- <debug>true</debug> -->
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flip03Me">
+		<defName>Str8Fire03_AnimatedMote</defName>
+		<transformation>
+			<rotation>
+				<straightenUp>
+					<aimedRotation>0</aimedRotation>
+					<goalLifeSpanRatio>.6</goalLifeSpanRatio>
+					<tolerance>2</tolerance>
+					<gracePeriod>
+						<li>0~.3</li>
+					</gracePeriod>
+				</straightenUp>
+			</rotation>
+		</transformation>
+		
+		<!-- <debug>true</debug> -->
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flipped04Me">
+		<defName>Str8Fire04_AnimatedMote</defName>
+		<transformation>
+			<rotation>
+				<straightenUp>
+					<aimedRotation>0</aimedRotation>
+					<goalLifeSpanRatio>.6</goalLifeSpanRatio>
+					<tolerance>2</tolerance>
+					<gracePeriod>
+						<li>0~.3</li>
+					</gracePeriod>
+				</straightenUp>
+			</rotation>
+		</transformation>
+		
+		<!-- <debug>true</debug> -->
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flipped05Me">
+		<defName>Str8Fire05_AnimatedMote</defName>
+		<transformation>
+			<rotation>
+				<straightenUp>
+					<aimedRotation>0</aimedRotation>
+					<goalLifeSpanRatio>.6</goalLifeSpanRatio>
+					<tolerance>2</tolerance>
+					<gracePeriod>
+						<li>0~.3</li>
+					</gracePeriod>
+				</straightenUp>
+			</rotation>
+		</transformation>
+		
+		<!-- <debug>true</debug> -->
+	</MoharGfx.CustomTransformation_MoteDef>
+	
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flipped06Me">
+		<defName>Str8Fire06_AnimatedMote</defName>
+		<transformation>
+			<rotation>
+			<straightenUp>
+					<aimedRotation>0</aimedRotation>
+					<goalLifeSpanRatio>.6</goalLifeSpanRatio>
+					<tolerance>2</tolerance>
+					<gracePeriod>
+						<li>0~.3</li>
+					</gracePeriod>
+				</straightenUp>
+			</rotation>
+		</transformation>
+		
+		<!-- <debug>true</debug> -->
+	</MoharGfx.CustomTransformation_MoteDef>
+</Defs>

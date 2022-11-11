@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<Ubet.UbetDef>
+		<defName>IsDraftedOrAttackingOrBerserk</defName>
+		<trunk>
+			<initialCondition>
+				<type>belongsToRace</type>
+				<stringArg>
+					<li>
+						<li>Alien_GuineaPig</li>
+					</li>
+				</stringArg>
+			</initialCondition>
+			<leaf>
+				<li>
+					<operand>or</operand>
+					<leaf>
+						<li>
+							<condition>
+								<type>isDrafted</type>
+							</condition>
+						</li>
+						<li>
+							<condition>
+								<type>isPerformingJob</type>
+								<stringArg>
+									<li>
+										<li>AttackMelee</li>
+										<li>AttackStatic</li>
+										<li>Wait_Combat</li>
+									</li>
+								</stringArg>
+							</condition>
+						</li>
+						<li>
+							<condition>
+								<type>isInSpecificMentalState</type>
+								<stringArg>
+									<li>
+										<li>Berserk</li>
+									</li>
+								</stringArg>
+							</condition>
+						</li>
+					</leaf>
+				</li>
+			</leaf>
+		</trunk>
+	</Ubet.UbetDef>
+</Defs>

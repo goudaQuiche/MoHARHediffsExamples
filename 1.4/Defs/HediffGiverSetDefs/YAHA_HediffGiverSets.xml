@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffGiverSetDef>
+		<defName>YAHA_HediffGiver</defName>
+		<hediffGivers>
+			<li Class="HediffGiver_Birthday">
+				<hediff>YAHA_WeaponTriggered</hediff>
+				<ageFractionChanceCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</ageFractionChanceCurve>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+	
+</Defs>

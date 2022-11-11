@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>ImageA</defName>
+		<graphicData>
+			<texPath>ITab/Image01</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>ImageB</defName>
+		<graphicData>
+			<texPath>ITab/Image02</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>ImageC</defName>
+		<graphicData>
+			<texPath>ITab/Image03</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>ImageD</defName>
+		<graphicData>
+			<texPath>ITab/Image04</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

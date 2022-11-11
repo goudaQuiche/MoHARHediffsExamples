@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>InnerShine_Hediff</defName>
+		<label>InnerShine_Hediff</label>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>attached motes</description>
+
+		<!-- <labelNoun>HeDiff.labelNoun whatever</labelNoun> -->
+
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_InnerShine">
+				<innerShinePool>
+					<!-- body -->
+					<!--
+					<li>
+						<label>body</label>
+
+						<spawningRules>
+							<spawnedMax>2</spawnedMax>
+							<period>80~120</period>
+						</spawningRules>
+
+						<motePool>
+							<li>ForeGround_Fire01_AnimatedMote</li>
+							<li>ForeGround_Fire02_AnimatedMote</li>
+							<li>ForeGround_Fire03_AnimatedMote</li>
+							<li>ForeGround_Fire04_AnimatedMote</li>
+							<li>ForeGround_Fire05_AnimatedMote</li>
+							<li>ForeGround_Fire06_AnimatedMote</li>
+						</motePool>
+
+						<linkType>body</linkType>
+
+						<defaultDrawRules>
+							<randomScale>.95~1.25</randomScale>
+							<offset>(0, 0, -.35)</offset>
+						</defaultDrawRules>
+
+						<restriction>
+							<onlyWhenMoving>false</onlyWhenMoving>
+							<allowedPostures>
+								<li>Standing</li>
+							</allowedPostures>
+
+						</restriction>
+					</li>
+					-->
+					<!-- head -->
+					<!--
+					<li>
+						<label>head</label>
+
+						<spawningRules>
+							<spawnedMax>1</spawnedMax>
+							<period>40~60</period>
+						</spawningRules>
+
+						<motePool>
+							<li>ForeGround_Fire01_AnimatedMote</li>
+							<li>ForeGround_Fire02_AnimatedMote</li>
+							<li>ForeGround_Fire03_AnimatedMote</li>
+							<li>ForeGround_Fire04_AnimatedMote</li>
+							<li>ForeGround_Fire05_AnimatedMote</li>
+							<li>ForeGround_Fire06_AnimatedMote</li>
+						</motePool>
+
+						<linkType>head</linkType>
+
+						<defaultDrawRules>
+							<randomScale>.75~.95</randomScale>
+							<offset>(0, 0, -.15)</offset>
+						</defaultDrawRules>
+
+						<restriction>
+							<onlyWhenMoving>false</onlyWhenMoving>
+							<allowedPostures>
+								<li>Standing</li>
+							</allowedPostures>
+						</restriction>
+					</li>
+					-->
+
+					<!-- RightEye -->
+
+					<!-- Left Eye -->
+					<!--
+					<li>
+						<label>leftEye</label>
+
+						<spawningRules>
+							<spawnedMax>2</spawnedMax>
+							<period>15~25</period>
+						</spawningRules>
+
+						<motePool>
+							<li>EyeFire01_AnimatedMote</li>
+							<li>EyeFire02_AnimatedMote</li>
+							<li>EyeFire03_AnimatedMote</li>
+							<li>EyeFire04_AnimatedMote</li>
+							<li>EyeFire05_AnimatedMote</li>
+							<li>EyeFire06_AnimatedMote</li>
+						</motePool>
+
+						<linkType>head</linkType>
+
+						<defaultDrawRules>
+							<randomScale>.35~.45</randomScale>
+							<offset>(.11, 0, -.03)</offset>
+						</defaultDrawRules>
+
+						<restriction>
+							<onlyWhenMoving>false</onlyWhenMoving>
+							<allowedPostures>
+								<li>Standing</li>
+							</allowedPostures>
+							<allowedRotation>
+								<li>South</li>
+								<li>East</li>
+							</allowedRotation>
+
+						</restriction>
+					</li>
+					-->
+				</innerShinePool>
+
+				<innerShineDefPool>
+					<li>LeftEyeShine</li>
+					<li>RightEyeShine</li>
+				</innerShineDefPool>
+
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<MoharHediffs.InnerShineDef Name="ShiningEyeBase">
+		<defName>LeftEyeShine</defName>
+		<item>
+			<label>leftEye</label>
+
+			<spawningRules>
+				<spawnedMax>2</spawnedMax>
+				<period>15~25</period>
+			</spawningRules>
+
+			<motePool>
+				<li>EyeFire01_AnimatedMote</li>
+				<li>EyeFire02_AnimatedMote</li>
+				<li>EyeFire03_AnimatedMote</li>
+				<li>EyeFire04_AnimatedMote</li>
+				<li>EyeFire05_AnimatedMote</li>
+				<li>EyeFire06_AnimatedMote</li>
+			</motePool>
+
+			<linkType>head</linkType>
+
+			<defaultDrawRules>
+				<randomScale>.35~.45</randomScale>
+				<offset>(.11, 0, -.03)</offset>
+			</defaultDrawRules>
+
+			<restriction>
+				<onlyWhenMoving>false</onlyWhenMoving>
+				<allowedPostures>
+					<li>Standing</li>
+				</allowedPostures>
+				<allowedRotation>
+					<li>South</li>
+					<li>East</li>
+				</allowedRotation>
+
+			</restriction>
+		</item>
+	</MoharHediffs.InnerShineDef>
+	
+	<MoharHediffs.InnerShineDef parentName="ShiningEyeBase">
+		<li>
+			<defName>RightEyeShine</defName>
+			<item>
+				<label>rightEye</label>
+
+				<defaultDrawRules>
+					<offset>(-.11, 0, -.03)</offset>
+				</defaultDrawRules>
+
+				<restriction>
+					<allowedRotation inherit="false">
+						<li>South</li>
+						<li>West</li>
+					</allowedRotation>
+				</restriction>
+			</li>
+		</MoharHediffs.InnerShineDef>
+	</Defs>

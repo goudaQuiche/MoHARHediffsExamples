@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffGiverSetDef>
+		<defName>HEREGI_HediffGiverSet</defName>
+		<hediffGivers>
+			<li Class="HEREHEGI.HediffReplacer_HediffGiver">
+				<hediff>Hediff_HEREHEGI</hediff>
+				<!-- if no partsToAffect specified, will be affect whole body -->
+				<partsToAffect>
+					<li>Nose</li>
+				</partsToAffect>
+				
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+
+</Defs>

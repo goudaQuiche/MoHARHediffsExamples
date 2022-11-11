@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<JoyGiverDef>
+		<defName>Play_Horseshoes_CopyPasta_JoyGiverDef</defName>
+		
+		<giverClass>JoyGiver_WatchBuilding</giverClass>
+		<baseChance>10</baseChance>
+		
+		<thingDefs>
+			<li>MoharJoy_HorseshoesPin</li>
+		</thingDefs>
+		
+		<jobDef>Play_Horseshoes_CopyPasta_JobDef</jobDef>
+		
+		<desireSit>false</desireSit>
+		<joyKind>Gaming_Dexterity</joyKind>
+		
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+</Defs>

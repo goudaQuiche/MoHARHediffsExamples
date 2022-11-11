@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MoharGfx.CustomTransformation_MoteDef ParentName="FireMoteBase" Name="Flip01Me">
+		<defName>Fire01_AnimatedMote</defName>
+		<transformation>
+			<scale>
+				<pulsingScale>
+					<range>(.05,.15)</range>
+					<speed>10</speed>
+				</pulsingScale>
+			</scale>
+			<animatedMote>
+				<frameOffset>0</frameOffset>
+				<ticksPerFrame>7</ticksPerFrame>
+			</animatedMote>
+		</transformation>
+		<!-- <debug>true</debug> -->
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="FireMoteBase" Name="Flip02Me">
+		<defName>Fire02_AnimatedMote</defName>
+		<transformation>
+			<scale>
+				<pulsingScale>
+					<range>(.025,.175)</range>
+					<speed>6</speed>
+				</pulsingScale>
+			</scale>
+			<animatedMote>
+				<frameOffset>4</frameOffset>
+				<ticksPerFrame>6</ticksPerFrame>
+			</animatedMote>
+		</transformation>
+		<!-- <debug>true</debug> -->
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="FireMoteBase" Name="Flip03Me">
+		<defName>Fire03_AnimatedMote</defName>
+		<transformation>
+			<scale>
+				<pulsingScale>
+					<range>(0,.2)</range>
+					<speed>8</speed>
+				</pulsingScale>
+			</scale>
+			<animatedMote>
+				<frameOffset>8</frameOffset>
+				<ticksPerFrame>5</ticksPerFrame>
+			</animatedMote>
+		</transformation>
+		<!-- <debug>true</debug> -->
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flip01Me" Name="Flipped04Me">
+		<defName>Fire04_AnimatedMote</defName>
+		<transformation>
+			<misc>
+				<flipped>true</flipped>
+			</misc>
+		</transformation>
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flip02Me" Name="Flipped05Me">
+		<defName>Fire05_AnimatedMote</defName>
+		<transformation>
+			<misc>
+				<flipped>true</flipped>
+			</misc>
+		</transformation>
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="Flip03Me" Name="Flipped06Me">
+		<defName>Fire06_AnimatedMote</defName>
+		<transformation>
+			<misc>
+				<flipped>true</flipped>
+			</misc>
+		</transformation>
+	</MoharGfx.CustomTransformation_MoteDef>
+
+	<MoharGfx.CustomTransformation_MoteDef ParentName="FireMoteBase">
+		<defName>LifeSpanFire_AnimatedMote</defName>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+		<transformation>
+			<scale>
+				<pulsingScale>
+					<range>(.05,.15)</range>
+					<speed>10</speed>
+				</pulsingScale>
+			</scale>
+			<animatedMote>
+				<frameOffset>0</frameOffset>
+				<ticksPerFrame>7</ticksPerFrame>
+				<engine>moteLifespan</engine>
+			</animatedMote>
+		</transformation>
+		<!-- <debug>true</debug> -->
+	</MoharGfx.CustomTransformation_MoteDef>
+</Defs>

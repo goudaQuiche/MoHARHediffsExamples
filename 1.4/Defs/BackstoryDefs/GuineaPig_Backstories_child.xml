@@ -1,0 +1,37 @@
+<Defs>
+    <AlienRace.AlienBackstoryDef>
+		<defName>GuineaPigBS01</defName>
+		<title>GuineaPig</title>
+		<titleShort>GuineaPig</titleShort>
+		<baseDesc>[PAWN_nameDef] is GuineaPig.</baseDesc>
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>ImmuneBS</li>
+		</spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef>
+		<defName>GuineaPigBS02</defName>
+		<title>GuineaPig</title>
+		<titleShort>GuineaPig</titleShort>
+		<baseDesc>[PAWN_nameDef] is GuineaPig.</baseDesc>
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>MaterialProductionBS</li>
+		</spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef>
+		<defName>GuineaPigBS03</defName>
+		<title>GuineaPig</title>
+		<titleShort>GuineaPig</titleShort>
+		<baseDesc>[PAWN_nameDef] is GuineaPig.</baseDesc>
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>AnimalProductionBS</li>
+		</spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+</Defs>

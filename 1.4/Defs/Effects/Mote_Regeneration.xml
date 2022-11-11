@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- tending -->
+
+	<FleckDef Name="RegenerationMoteBase" ParentName="FleckBase">
+		<defName>Mote_TendingBloodloss</defName>
+		<graphicData>
+			<texPath>Mote/Regeneration/TendingBloodloss</texPath>
+		</graphicData>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+
+		<fadeInTime>0.08</fadeInTime>
+		<solidTime>1.4</solidTime>
+		<fadeOutTime>1.5</fadeOutTime>
+
+	</FleckDef>
+
+	<FleckDef ParentName="RegenerationMoteBase">
+		<defName>Mote_TendingChronicDisease</defName>
+		<graphicData>
+			<texPath>Mote/Regeneration/TendingChronicDisease</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="RegenerationMoteBase">
+		<defName>Mote_TendingDisease</defName>
+		<graphicData>
+			<texPath>Mote/Regeneration/TendingDisease</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<!-- healing -->
+	<FleckDef ParentName="RegenerationMoteBase">
+		<defName>Mote_HealingChemicals</defName>
+		<graphicData>
+			<texPath>Mote/Regeneration/HealingChemicals</texPath>
+		</graphicData>
+
+	</FleckDef>
+	<FleckDef ParentName="RegenerationMoteBase">
+		<defName>Mote_HealingDisease</defName>
+		<graphicData>
+			<texPath>Mote/Regeneration/HealingDisease</texPath>
+		</graphicData>
+	</FleckDef>
+	<FleckDef ParentName="RegenerationMoteBase">
+		<defName>Mote_HealingInjury</defName>
+		<graphicData>
+			<texPath>Mote/Regeneration/HealingInjury</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<!-- regen -->
+	<FleckDef ParentName="RegenerationMoteBase">
+		<defName>Mote_RegenScare</defName>
+		<graphicData>
+			<texPath>Mote/Regeneration/RegenScare</texPath>
+		</graphicData>
+	</FleckDef>
+	<FleckDef ParentName="RegenerationMoteBase">
+		<defName>Mote_RegenBodyPart</defName>
+		<graphicData>
+			<texPath>Mote/Regeneration/RegenBodyPart</texPath>
+		</graphicData>
+	</FleckDef>
+</Defs>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<Ubet.UbetDef>
+		<defName>IsAdultRaceMember</defName>
+		<trunk>
+			<initialCondition>
+				<type>belongsToRace</type>
+				<stringArg>
+					<li>
+						<li>Alien_GuineaPig</li>
+					</li>
+				</stringArg>
+			</initialCondition>
+			<leaf>
+				<li>
+					<leaf>
+						<li>
+							<condition>
+								<type>belongsToLifeStage</type>
+								<stringArg>
+									<li>
+										<li>HumanlikeAdult</li>
+										<li>HumanlikeMature</li>
+									</li>
+								</stringArg>
+							</condition>
+						</li>
+					</leaf>
+				</li>
+			</leaf>
+		</trunk>
+	</Ubet.UbetDef>
+</Defs>

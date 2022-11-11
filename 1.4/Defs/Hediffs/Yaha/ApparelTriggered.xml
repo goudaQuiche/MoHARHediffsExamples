@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>YAHA_ApparelTriggered</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply multiple hediff if drafted</description>
+		<label>YAHA_ApparelTriggered</label>
+
+		<isBad>false</isBad>
+
+		<comps>
+			<li Class="YAHA.HediffCompProperties_YetAnotherHediffApplier">
+				<associations>
+					<li>
+						<hediffPool>
+							<li>
+								<hediff>AlcoholHigh</hediff>
+								<severity>.15~.2</severity>
+							</li>
+							<li>
+								<hediff>GoJuiceHigh</hediff>
+								<severity>.15~.2</severity>
+							</li>
+						</hediffPool>
+
+						<condition>BodyPartApparel</condition>
+
+						<specifics>
+							<applyNumLimit>-1</applyNumLimit>
+							<removeIfFalse>true</removeIfFalse>
+							<triggerEvent>
+								<li>apparel</li>
+							</triggerEvent>
+						</specifics>
+
+					</li>
+				</associations>
+
+				<checkFrequency>300</checkFrequency>
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>
