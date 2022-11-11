@@ -7,7 +7,12 @@
 		<description>GuineaPig desc</description>
 
 		<statBases>
-			<!-- nothing -->
+			<MarketValue>1750</MarketValue>
+			<MoveSpeed>4.6</MoveSpeed>
+			<ComfyTemperatureMin>16</ComfyTemperatureMin>
+			<ComfyTemperatureMax>26</ComfyTemperatureMax>
+			<LeatherAmount>75</LeatherAmount>
+			<RoyalFavorValue>3</RoyalFavorValue>
 		</statBases>
 
 		<tools>
@@ -74,6 +79,12 @@
 				<humanRecipeImport>true</humanRecipeImport>
 				<maleGenderProbability>.5</maleGenderProbability>
 
+				<growthAges>
+					<li>7</li>
+					<li>10</li>
+					<li>13</li>
+				</growthAges>
+
 				<factionRelations>
 					<!-- nothing -->
 				</factionRelations>
@@ -88,9 +99,11 @@
 						<li>Fat</li>
 						<li>Hulk</li>
 						<li>Thin</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 					</bodyTypes>
 
-					<headTypes>
+					<headTypes Inherit="False">
 						<li>Male_AverageNormal</li>
 						<li>Male_AverageWide</li>
 						<li>Male_AveragePointy</li>
@@ -225,9 +238,38 @@
 				</li>
 			</lifeStageAges>
 
-			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>10</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>3</BasicWorker>
+				<Warden>10</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>13</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>10</Art>
+				<Crafting>7</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>13</Research>
+			</lifeStageWorkSettings>
+
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
 
 			<ageGenerationCurve>
 				<points>

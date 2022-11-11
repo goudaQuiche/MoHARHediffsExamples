@@ -8,6 +8,9 @@
 
 		<slot>Adulthood</slot>
 
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+
 		<spawnCategories>
 			<li>ImmuneBS</li>
 		</spawnCategories>
@@ -27,6 +30,9 @@
 		<baseDesc>[PAWN_nameDef] is MoreGuineaPig</baseDesc>
 
 		<slot>Adulthood</slot>
+
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
 
 		<spawnCategories>
 			<li>MaterialProductionBS</li>
@@ -51,6 +57,9 @@
 
 		<slot>Adulthood</slot>
 
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+
 		<spawnCategories>
 			<li>AnimalProductionBS</li>
 		</spawnCategories>
@@ -74,6 +83,9 @@
 		<baseDesc>[PAWN_nameDef] is MoreGuineaPig</baseDesc>
 
 		<slot>Adulthood</slot>
+
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
 
 		<spawnCategories>
 			<li>RegularBS</li>

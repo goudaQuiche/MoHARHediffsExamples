@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation  Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_GuineaPig"]/race/hediffGiverSets</xpath>
+				<value>
+					<li>YAHA_HediffGiver</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
